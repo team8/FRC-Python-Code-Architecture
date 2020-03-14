@@ -1,0 +1,16 @@
+[robotpy]
+run = wpilib._impl.start:Main
+
+[robotpybuild]
+wpilib_core = wpilib.pkgcfg
+wpilibc = wpilib._impl.pkgcfg
+wpilibc_controller = wpilib.controller.pkgcfg
+wpilibc_drive = wpilib.drive.pkgcfg
+wpilibc_geometry = wpilib.geometry.pkgcfg
+wpilibc_interfaces = wpilib.interfaces.pkgcfg
+wpilibc_kinematics = wpilib.kinematics.pkgcfg
+wpilibc_simulation = wpilib.simulation.pkgcfg
+wpilibc_spline = wpilib.spline.pkgcfg
+wpilibc_trajectory = wpilib.trajectory.pkgcfg
+wpilibc_trajectory_constraint = wpilib.trajectory.constraint.pkgcfg
+
