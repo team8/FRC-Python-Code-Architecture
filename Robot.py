@@ -2,7 +2,6 @@
 import wpilib
 import wpilib.drive
 
-
 class MyRobot(wpilib.TimedRobot):
     def robotInit(self):
         """
