@@ -9,7 +9,7 @@ class MyRobot(wpilib.TimedRobot):
         This function is called upon program startup and
         should be used for any initialization code.
         """
-        # self.left_motor = wpilib.Spark(0)
+        self.left_motor = wpilib.Talon(0)
         # self.right_motor = wpilib.Spark(1)
         # self.drive = wpilib.drive.DifferentialDrive(self.left_motor, self.right_motor)
         # self.stick = wpilib.Joystick(0)
