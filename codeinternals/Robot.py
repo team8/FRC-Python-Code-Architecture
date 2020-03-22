@@ -1,5 +1,7 @@
 import wpilib
-import RobotCode
+
+from codeinternals import UserRobotCode
+
 
 class MyRobot(wpilib.TimedRobot):
     def robotInit(self):
@@ -19,17 +21,20 @@ class MyRobot(wpilib.TimedRobot):
         # self.timer.start()
 
     def autonomousPeriodic(self):
-         """This function is called periodically during autonomous."""
-        #
-        # # Drive for two seconds
-        # if self.timer.get() < 2.0:
-        #     self.drive.arcadeDrive(-0.5, 0)  # Drive forwards at half speed
-        # else:
-        #     self.drive.arcadeDrive(0, 0)  # Stop robot
+        """This function is called periodically during autonomous."""
+
+    #
+    # # Drive for two seconds
+    # if self.timer.get() < 2.0:
+    #     self.drive.arcadeDrive(-0.5, 0)  # Drive forwards at half speed
+    # else:
+    #     self.drive.arcadeDrive(0, 0)  # Stop robot
 
     def teleopPeriodic(self):
+        userRobotCode = UserRobotCode
+        userRobotCode.robotCode()
         """This function is called periodically during operator control."""
-        RobotCode.robotCode();
+
 
 if __name__ == "__main__":
     wpilib.run(MyRobot)
