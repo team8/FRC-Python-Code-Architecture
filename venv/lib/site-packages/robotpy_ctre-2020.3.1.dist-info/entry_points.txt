@@ -1,0 +1,3 @@
+[robotpybuild]
+ctre = ctre.pkgcfg
+
