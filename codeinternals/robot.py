@@ -1,6 +1,6 @@
 from wpilib._wpilib import PWMTalonFX as talon
 import wpilib
-from codeinternals import UserRobotCode
+from codeinternals import user_robot_code
 
 
 class MyRobot(wpilib.TimedRobot):
@@ -31,7 +31,7 @@ class MyRobot(wpilib.TimedRobot):
     #     self.drive.arcadeDrive(0, 0)  # Stop robot
 
     def teleopPeriodic(self):
-        userRobotCode = UserRobotCode
+        userRobotCode =
         userRobotCode.robotCode()
         """This function is called periodically during operator control."""
 

@@ -1,8 +1,6 @@
 from wpilib._wpilib import Joystick
 
 
-
-
 class HardwareAdapter:
     class DriveHardware:
         ctre.TalonFX(0)

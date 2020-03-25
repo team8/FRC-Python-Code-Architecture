@@ -1,5 +1,5 @@
-from codeinternals.subsystems import Drive
+from codeinternals.subsystems import drive
 
 
 class Commands:
-    wantedDriveState = Drive.State.IDLE;
+    wantedDriveState = drive.State.IDLE;
