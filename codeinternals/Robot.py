@@ -1,5 +1,5 @@
+from wpilib._wpilib import PWMTalonFX as talon
 import wpilib
-
 from codeinternals import UserRobotCode
 
 
@@ -37,4 +37,5 @@ class MyRobot(wpilib.TimedRobot):
 
 
 if __name__ == "__main__":
+    talon.TalonFX(0);
     wpilib.run(MyRobot)
