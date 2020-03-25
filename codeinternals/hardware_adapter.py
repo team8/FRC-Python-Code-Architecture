@@ -1,9 +1,15 @@
 from wpilib._wpilib import Joystick
 
+from codeinternals import ctre
+
 
 class HardwareAdapter:
     class DriveHardware:
-        ctre.TalonFX(0)
+        leftTalonMaster = ctre.TalonFX(0);
+        rightTalonMaster = ctre.TalonFX(1);
+        leftMiddleTalonSlave = ctre.TalonFX(2);
+        #todo Finish
+
 
     class JoystickHardware:
         driveJoystick = Joystick(0)

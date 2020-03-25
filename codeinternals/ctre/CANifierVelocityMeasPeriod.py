@@ -1,0 +1,125 @@
+# encoding: utf-8
+# module ctre._ctre
+# from C:\Users\Nolan\Documents\Robotics\python-frc-robot-architecture\venv\lib\site-packages\ctre\_ctre.cp37-win_amd64.pyd
+# by generator 1.147
+# no doc
+
+# imports
+import pybind11_builtins as __pybind11_builtins
+import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
+import wpilib._wpilib as __wpilib__wpilib
+
+
+class CANifierVelocityMeasPeriod(__pybind11_builtins.pybind11_object):
+    """
+    Enum for velocity periods used for CANifier
+    
+    Members:
+    
+      Period_1Ms : 1ms velocity measurement period
+    
+      Period_2Ms : 2ms velocity measurement period
+    
+      Period_5Ms : 5ms velocity measurement period
+    
+      Period_10Ms : 10ms velocity measurement period
+    
+      Period_20Ms : 20ms velocity measurement period
+    
+      Period_25Ms : 25ms velocity measurement period
+    
+      Period_50Ms : 50ms velocity measurement period
+    
+      Period_100Ms : 100ms velocity measurement period
+    """
+    def __eq__(self, *args, **kwargs): # real signature unknown
+        """ (self: object, arg0: object) -> bool """
+        pass
+
+    def __getstate__(self, *args, **kwargs): # real signature unknown
+        """ (self: object) -> int_ """
+        pass
+
+    def __hash__(self, *args, **kwargs): # real signature unknown
+        """ (self: object) -> int_ """
+        pass
+
+    def __init__(self, arg0): # real signature unknown; restored from __doc__
+        """ __init__(self: ctre._ctre.CANifierVelocityMeasPeriod, arg0: int) -> None """
+        pass
+
+    def __int__(self): # real signature unknown; restored from __doc__
+        """ __int__(self: ctre._ctre.CANifierVelocityMeasPeriod) -> int """
+        return 0
+
+    def __ne__(self, *args, **kwargs): # real signature unknown
+        """ (self: object, arg0: object) -> bool """
+        pass
+
+    def __repr__(self, *args, **kwargs): # real signature unknown
+        """ (self: handle) -> str """
+        pass
+
+    def __setstate__(self, *args, **kwargs): # real signature unknown
+        """ (self: ctre._ctre.CANifierVelocityMeasPeriod, arg0: int) -> None """
+        pass
+
+    name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    """(self: handle) -> str
+"""
+
+
+    Period_100Ms = CANifierVelocityMeasPeriod.Period_100Ms
+    Period_10Ms = CANifierVelocityMeasPeriod.Period_10Ms
+    Period_1Ms = CANifierVelocityMeasPeriod.Period_1Ms
+    Period_20Ms = CANifierVelocityMeasPeriod.Period_20Ms
+    Period_25Ms = CANifierVelocityMeasPeriod.Period_25Ms
+    Period_2Ms = CANifierVelocityMeasPeriod.Period_2Ms
+    Period_50Ms = CANifierVelocityMeasPeriod.Period_50Ms
+    Period_5Ms = CANifierVelocityMeasPeriod.Period_5Ms
+    __entries = {
+        'Period_100Ms': (
+            CANifierVelocityMeasPeriod.Period_100Ms,
+            '100ms velocity measurement period',
+        ),
+        'Period_10Ms': (
+            CANifierVelocityMeasPeriod.Period_10Ms,
+            '10ms velocity measurement period',
+        ),
+        'Period_1Ms': (
+            CANifierVelocityMeasPeriod.Period_1Ms,
+            '1ms velocity measurement period',
+        ),
+        'Period_20Ms': (
+            CANifierVelocityMeasPeriod.Period_20Ms,
+            '20ms velocity measurement period',
+        ),
+        'Period_25Ms': (
+            CANifierVelocityMeasPeriod.Period_25Ms,
+            '25ms velocity measurement period',
+        ),
+        'Period_2Ms': (
+            CANifierVelocityMeasPeriod.Period_2Ms,
+            '2ms velocity measurement period',
+        ),
+        'Period_50Ms': (
+            CANifierVelocityMeasPeriod.Period_50Ms,
+            '50ms velocity measurement period',
+        ),
+        'Period_5Ms': (
+            CANifierVelocityMeasPeriod.Period_5Ms,
+            '5ms velocity measurement period',
+        ),
+    }
+    __members__ = {
+        'Period_100Ms': CANifierVelocityMeasPeriod.Period_100Ms,
+        'Period_10Ms': CANifierVelocityMeasPeriod.Period_10Ms,
+        'Period_1Ms': CANifierVelocityMeasPeriod.Period_1Ms,
+        'Period_20Ms': CANifierVelocityMeasPeriod.Period_20Ms,
+        'Period_25Ms': CANifierVelocityMeasPeriod.Period_25Ms,
+        'Period_2Ms': CANifierVelocityMeasPeriod.Period_2Ms,
+        'Period_50Ms': CANifierVelocityMeasPeriod.Period_50Ms,
+        'Period_5Ms': CANifierVelocityMeasPeriod.Period_5Ms,
+    }
+
+
