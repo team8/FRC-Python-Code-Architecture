@@ -1,4 +1,4 @@
-from codeinternals.subsystems.drivecontrollers.DriveControllerBase import DriveControllerBase
+from codeinternals.subsystems.drivecontrollers.drive_controller_base import DriveControllerBase
 
 
 class MoveStraightController(DriveControllerBase):

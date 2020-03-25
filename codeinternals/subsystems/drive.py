@@ -1,6 +1,6 @@
 from enum import Enum
 
-from codeinternals.subsystems.SubystemBase import SubsystemBase
+from codeinternals.subsystems.subsystem_base import SubsystemBase
 
 
 class Drive(SubsystemBase):
