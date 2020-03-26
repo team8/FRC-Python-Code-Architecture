@@ -16,12 +16,12 @@ class Drive(SubsystemBase):
         self.isNewState = self.state != self.__wantedState
         self.state = self.__wantedState
         print("Drive Subsystem Running...")
-        if self.__isNewState:
-            if self.__state == Drive.State.IDLE:
+        if self.isNewState:
+            if self.__wantedState == Drive.State.IDLE:
                 self.controller = None
-            if state == Drive.State.MOVE_STRAIGHT:
+            if self.__wantedState == Drive.State.MOVE_STRAIGHT:
                 self.controller = MoveStraightController()
-            if state == Drive.State.TURN:
+            if self.__wantedState == Drive.State.TURN:
                 self.controller = TurnController()
         if self.controller is None:
             self.outputs = None
