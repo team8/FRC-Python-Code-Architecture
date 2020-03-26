@@ -1,5 +1,7 @@
 from enum import Enum
 
+from codeinternals.subsystems.drivecontrollers.move_straight_controller import MoveStraightController
+from codeinternals.subsystems.drivecontrollers.turn_controller import TurnController
 from codeinternals.subsystems.subsystem_base import SubsystemBase
 
 
@@ -8,6 +10,23 @@ class Drive(SubsystemBase):
         IDLE = 0
         MOVE_STRAIGHT = 1
         TURN = 2
-    def update(self):
-        print("Drive Subsystem Running...")
 
+    def update(self, commands, state):
+        self.__wantedState = commands.getDriveWantedState()
+        self.isNewState = self.state != self.__wantedState
+        self.state = self.__wantedState
+        print("Drive Subsystem Running...")
+        if self.__isNewState:
+            if self.__state == Drive.State.IDLE:
+                self.controller = None
+            if state == Drive.State.MOVE_STRAIGHT:
+                self.controller = MoveStraightController()
+            if state == Drive.State.TURN:
+                self.controller = TurnController()
+        if self.controller is None:
+            self.outputs = None
+        else:
+            self.outputs = self.controller.update()
+
+    def getOutput(self):
+        return self.outputs

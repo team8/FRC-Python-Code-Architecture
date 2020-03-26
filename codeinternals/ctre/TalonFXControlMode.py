@@ -1,5 +1,5 @@
 
-class TalonFXControlMode():
+class TalonFXControlMode:
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ (self: object, arg0: object) -> bool """
