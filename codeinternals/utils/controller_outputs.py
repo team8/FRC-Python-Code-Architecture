@@ -23,3 +23,12 @@ class ControllerOutputs:
 
     def setIdle(self):
         self.setPercentageOutput(0)
+
+    def getControlMode(self):
+        return self.__controlMode
+
+    def getGains(self):
+        return self.__gains
+
+    def getReference(self):
+        return  self.__reference

@@ -1,7 +1,10 @@
 import wpilib
 
+from codeinternals.subsystems.drive import Drive
 
-class MyRobot(wpilib.TimedRobot):
+
+class Robot(wpilib.TimedRobot):
+    enabledSystems = ["drive"]
     def robotInit(self):
         """
         This function is called upon program startup and
@@ -31,4 +34,4 @@ class MyRobot(wpilib.TimedRobot):
     def teleopPeriodic(self):
         print("teleop")
 if __name__ == "__main__":
-    wpilib.run(MyRobot)
+    wpilib.run(Robot)

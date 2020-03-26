@@ -1,0 +1,1 @@
+maxWheelPercentOutput = 0.4

@@ -6,6 +6,7 @@ from codeinternals.subsystems.subsystem_base import SubsystemBase
 
 
 class Drive(SubsystemBase):
+
     class State(Enum):
         IDLE = 0
         MOVE_STRAIGHT = 1
