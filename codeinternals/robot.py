@@ -1,4 +1,5 @@
 import wpilib
+from wpilib.controller import PIDController
 
 from codeinternals.subsystems.drive import Drive
 

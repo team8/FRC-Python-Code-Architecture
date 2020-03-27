@@ -1,16 +1,5 @@
-# encoding: utf-8
-# module ctre._ctre
-# from C:\Users\Nolan\Documents\Robotics\python-frc-robot-architecture\venv\lib\site-packages\ctre\_ctre.cp37-win_amd64.pyd
-# by generator 1.147
-# no doc
-
-# imports
-import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
-
-
 from .CANBusAddressable import CANBusAddressable
+
 
 class CANCoder(CANBusAddressable):
     """
@@ -18,7 +7,8 @@ class CANCoder(CANBusAddressable):
     
     Device for interfacing common devices to the CAN bus.
     """
-    def clearStickyFaults(self, timeoutMs=0): # real signature unknown; restored from __doc__
+
+    def clearStickyFaults(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         clearStickyFaults(self: ctre._ctre.CANCoder, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -32,7 +22,8 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configAbsoluteSensorRange(self, absoluteSensorRange, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configAbsoluteSensorRange(self, absoluteSensorRange,
+                                  timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configAbsoluteSensorRange(self: ctre._ctre.CANCoder, absoluteSensorRange: ctre._ctre.AbsoluteSensorRange, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -50,7 +41,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configAllSettings(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configAllSettings(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configAllSettings(self: ctre._ctre.CANCoder, allConfigs: ctre._ctre.CANCoderConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -66,7 +57,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configFactoryDefault(self, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configFactoryDefault(self, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configFactoryDefault(self: ctre._ctre.CANCoder, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -80,7 +71,8 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configFeedbackCoefficient(self, sensorCoefficient, unitString, sensortimeBase, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configFeedbackCoefficient(self, sensorCoefficient, unitString, sensortimeBase,
+                                  timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configFeedbackCoefficient(self: ctre._ctre.CANCoder, sensorCoefficient: float, unitString: str, sensortimeBase: ctre._ctre.SensorTimeBase, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -105,7 +97,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configGetCustomParam(self, paramIndex, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configGetCustomParam(self, paramIndex, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configGetCustomParam(self: ctre._ctre.CANCoder, paramIndex: int, timeoutMs: int = 0) -> int
         
@@ -125,7 +117,7 @@ class CANCoder(CANBusAddressable):
         """
         return 0
 
-    def configGetParameter(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configGetParameter(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configGetParameter(*args, **kwargs)
         Overloaded function.
@@ -170,7 +162,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configMagnetOffset(self, offsetDegrees, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configMagnetOffset(self, offsetDegrees, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configMagnetOffset(self: ctre._ctre.CANCoder, offsetDegrees: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -189,7 +181,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configSensorDirection(self, bSensorDirection, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSensorDirection(self, bSensorDirection, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSensorDirection(self: ctre._ctre.CANCoder, bSensorDirection: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -207,7 +199,8 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configSensorInitializationStrategy(self, initializationStrategy, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSensorInitializationStrategy(self, initializationStrategy,
+                                           timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSensorInitializationStrategy(self: ctre._ctre.CANCoder, initializationStrategy: ctre._ctre.SensorInitializationStrategy, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -227,7 +220,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configSetCustomParam(self, newValue, paramIndex, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSetCustomParam(self, newValue, paramIndex, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSetCustomParam(self: ctre._ctre.CANCoder, newValue: int, paramIndex: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -249,7 +242,8 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configSetParameter(self, param, value, subValue, ordinal, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSetParameter(self, param, value, subValue, ordinal,
+                           timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSetParameter(self: ctre._ctre.CANCoder, param: ctre._ctre.ParamEnum, value: float, subValue: int, ordinal: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -275,7 +269,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configVelocityMeasurementPeriod(self, period, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVelocityMeasurementPeriod(self, period, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVelocityMeasurementPeriod(self: ctre._ctre.CANCoder, period: ctre._ctre.SensorVelocityMeasPeriod, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -294,7 +288,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def configVelocityMeasurementWindow(self, windowSize, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVelocityMeasurementWindow(self, windowSize, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVelocityMeasurementWindow(self: ctre._ctre.CANCoder, windowSize: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -313,7 +307,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def destroyAllCANCoders(self): # real signature unknown; restored from __doc__
+    def destroyAllCANCoders(self):  # real signature unknown; restored from __doc__
         """
         destroyAllCANCoders() -> None
         
@@ -321,7 +315,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def getAbsolutePosition(self): # real signature unknown; restored from __doc__
+    def getAbsolutePosition(self):  # real signature unknown; restored from __doc__
         """
         getAbsolutePosition(self: ctre._ctre.CANCoder) -> float
         
@@ -334,7 +328,7 @@ class CANCoder(CANBusAddressable):
         """
         return 0.0
 
-    def getAllConfigs(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getAllConfigs(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getAllConfigs(self: ctre._ctre.CANCoder, allConfigs: ctre._ctre.CANCoderConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -350,7 +344,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def getBusVoltage(self): # real signature unknown; restored from __doc__
+    def getBusVoltage(self):  # real signature unknown; restored from __doc__
         """
         getBusVoltage(self: ctre._ctre.CANCoder) -> float
         
@@ -360,7 +354,7 @@ class CANCoder(CANBusAddressable):
         """
         return 0.0
 
-    def getFaults(self, toFill): # real signature unknown; restored from __doc__
+    def getFaults(self, toFill):  # real signature unknown; restored from __doc__
         """
         getFaults(self: ctre._ctre.CANCoder, toFill: ctre._ctre.CANCoderFaults) -> ctre._ctre.ErrorCode
         
@@ -372,7 +366,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def getFirmwareVersion(self): # real signature unknown; restored from __doc__
+    def getFirmwareVersion(self):  # real signature unknown; restored from __doc__
         """
         getFirmwareVersion(self: ctre._ctre.CANCoder) -> int
         
@@ -382,7 +376,7 @@ class CANCoder(CANBusAddressable):
         """
         return 0
 
-    def getLastError(self): # real signature unknown; restored from __doc__
+    def getLastError(self):  # real signature unknown; restored from __doc__
         """
         getLastError(self: ctre._ctre.CANCoder) -> ctre._ctre.ErrorCode
         
@@ -396,7 +390,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def getLastTimestamp(self): # real signature unknown; restored from __doc__
+    def getLastTimestamp(self):  # real signature unknown; restored from __doc__
         """
         getLastTimestamp(self: ctre._ctre.CANCoder) -> float
         
@@ -404,7 +398,7 @@ class CANCoder(CANBusAddressable):
         """
         return 0.0
 
-    def getLastUnitString(self): # real signature unknown; restored from __doc__
+    def getLastUnitString(self):  # real signature unknown; restored from __doc__
         """
         getLastUnitString(self: ctre._ctre.CANCoder) -> str
         
@@ -412,7 +406,7 @@ class CANCoder(CANBusAddressable):
         """
         return ""
 
-    def getMagnetFieldStrength(self): # real signature unknown; restored from __doc__
+    def getMagnetFieldStrength(self):  # real signature unknown; restored from __doc__
         """
         getMagnetFieldStrength(self: ctre._ctre.CANCoder) -> ctre._ctre.MagnetFieldStrength
         
@@ -422,7 +416,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def getPosition(self): # real signature unknown; restored from __doc__
+    def getPosition(self):  # real signature unknown; restored from __doc__
         """
         getPosition(self: ctre._ctre.CANCoder) -> float
         
@@ -433,7 +427,7 @@ class CANCoder(CANBusAddressable):
         """
         return 0.0
 
-    def getStatusFramePeriod(self, frame, timeoutMs=0): # real signature unknown; restored from __doc__
+    def getStatusFramePeriod(self, frame, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         getStatusFramePeriod(self: ctre._ctre.CANCoder, frame: ctre._ctre.CANCoderStatusFrame, timeoutMs: int = 0) -> int
         
@@ -449,7 +443,7 @@ class CANCoder(CANBusAddressable):
         """
         return 0
 
-    def getStickyFaults(self, toFill): # real signature unknown; restored from __doc__
+    def getStickyFaults(self, toFill):  # real signature unknown; restored from __doc__
         """
         getStickyFaults(self: ctre._ctre.CANCoder, toFill: ctre._ctre.CANCoderStickyFaults) -> ctre._ctre.ErrorCode
         
@@ -461,7 +455,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def getVelocity(self): # real signature unknown; restored from __doc__
+    def getVelocity(self):  # real signature unknown; restored from __doc__
         """
         getVelocity(self: ctre._ctre.CANCoder) -> float
         
@@ -474,7 +468,7 @@ class CANCoder(CANBusAddressable):
         """
         return 0.0
 
-    def hasResetOccurred(self): # real signature unknown; restored from __doc__
+    def hasResetOccurred(self):  # real signature unknown; restored from __doc__
         """
         hasResetOccurred(self: ctre._ctre.CANCoder) -> bool
         
@@ -484,7 +478,7 @@ class CANCoder(CANBusAddressable):
         """
         return False
 
-    def setPosition(self, newPosition, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setPosition(self, newPosition, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setPosition(self: ctre._ctre.CANCoder, newPosition: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -497,7 +491,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def setPositionToAbsolute(self, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setPositionToAbsolute(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setPositionToAbsolute(self: ctre._ctre.CANCoder, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -508,7 +502,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def setStatusFramePeriod(self, statusFrame, periodMs, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setStatusFramePeriod(self, statusFrame, periodMs, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setStatusFramePeriod(self: ctre._ctre.CANCoder, statusFrame: ctre._ctre.CANCoderStatusFrame, periodMs: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -526,7 +520,7 @@ class CANCoder(CANBusAddressable):
         """
         pass
 
-    def __init__(self, deviceNumber): # real signature unknown; restored from __doc__
+    def __init__(self, deviceNumber):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.CANCoder, deviceNumber: int) -> None
         
@@ -535,5 +529,3 @@ class CANCoder(CANBusAddressable):
         :param deviceNumber: The CAN Device ID of the CANCoder.
         """
         pass
-
-

@@ -20,6 +20,9 @@ class HardwareWriter:
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         drive_hardware.left_slave_falcon.follow(drive_hardware.left_master_falcon)
         drive_hardware.right_slave_falcon.follow(drive_hardware.right_master_falcon)
+        drive_hardware.left_falcon_encoder.setPosition(0.0)
+        drive_hardware.right_falcon_encoder.setPosition(0.0)
+        drive_hardware.right_falcon_encoder.setPositionToAbsolute(0.0)
 
     def updateDrive(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()

@@ -10,6 +10,8 @@ class HardwareAdapter:
             self.left_slave_falcon = ctre.TalonFX(2)
             self.right_master_falcon = ctre.TalonFX(3)
             self.right_slave_falcon = ctre.TalonFX(4)
+            self.left_falcon_encoder = ctre.CANCoder(0)
+            self.right_falcon_encoder = ctre.CANCoder(3)
 
         def __getInstance__(self):
             return self
