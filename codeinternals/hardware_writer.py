@@ -49,3 +49,8 @@ class HardwareWriter:
         drive_hardware.right_master_falcon.config_kI(right_output.getGains().getI())
         drive_hardware.right_master_falcon.config_kD(right_output.getGains().getD())
         drive_hardware.right_master_falcon.config_kF(right_output.getGains().getF())
+        drive_hardware.right_master_falcon.configMotionAcceleration(right_output.getGains().getAcceleration())
+        drive_hardware.right_master_falcon.configMotionCruiseVelocity(right_output.getGains().getVelocity())
+        drive_hardware.left_master_falcon.configMotionAcceleration(right_output.getGains().getAcceleration())
+        drive_hardware.left_master_falcon.configMotionCruiseVelocity(right_output.getGains().getVelocity())
+

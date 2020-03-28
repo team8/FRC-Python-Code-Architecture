@@ -4,6 +4,8 @@ class Gains:
     d = 0
     f = 0
     ff = 0
+    acceleration = 0
+    velocity = 0
 
     def __init__(self, p, i, d, f, ff):
         self.p = p
@@ -26,3 +28,9 @@ class Gains:
 
     def getFF(self):
         return self.ff
+
+    def getAcceleration(self):
+        return self.acceleration
+
+    def getVelocity(self):
+        return self.velocity
