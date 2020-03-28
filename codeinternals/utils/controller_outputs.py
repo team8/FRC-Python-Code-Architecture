@@ -1,9 +1,10 @@
 from codeinternals.ctre import TalonFXControlMode
+from codeinternals.utils.gains import Gains
 
 
 class ControllerOutputs:
     __controlMode = TalonFXControlMode.Disabled
-    __gains = None
+    __gains = Gains()
     __reference = 0.0
 
     def setPercentageOutput(self, output):
