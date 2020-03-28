@@ -32,4 +32,4 @@ class ControllerOutputs:
         return self.__gains
 
     def getReference(self):
-        return  self.__reference
+        return self.__reference

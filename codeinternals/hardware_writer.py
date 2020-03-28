@@ -27,6 +27,7 @@ class HardwareWriter:
         left_output = drive_output.leftOutput
         right_output = drive_output.rightOutput
         if drive_output is not None:
+            self.setGains()
             drive_hardware.left_master_falcon.set(left_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                   left_output.getGains().getFF())
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
@@ -34,3 +35,17 @@ class HardwareWriter:
         else:
             drive_hardware.left_master_falcon.setNeutralMode(NeutralMode.Brake)
             drive_hardware.right_master_falcon.setNeutralMode(NeutralMode.Brake)
+
+    def setGains(self):
+        drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
+        drive_output = Drive.getOutput()
+        left_output = drive_output.leftOutput
+        right_output = drive_output.rightOutput
+        drive_hardware.left_master_falcon.config_kP(left_output.getGains().getP())
+        drive_hardware.left_master_falcon.config_kI(left_output.getGains().getI())
+        drive_hardware.left_master_falcon.config_kD(left_output.getGains().getD())
+        drive_hardware.left_master_falcon.config_kF(left_output.getGains().getF())
+        drive_hardware.right_master_falcon.config_kP(right_output.getGains().getP())
+        drive_hardware.right_master_falcon.config_kI(right_output.getGains().getI())
+        drive_hardware.right_master_falcon.config_kD(right_output.getGains().getD())
+        drive_hardware.right_master_falcon.config_kF(right_output.getGains().getF())
