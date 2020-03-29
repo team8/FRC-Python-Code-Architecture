@@ -20,6 +20,10 @@ class HardwareWriter:
         drive_hardware.right_slave_falcon.follow(drive_hardware.right_master_falcon)
         drive_hardware.right_master_falcon.setInverted(InvertType.InvertMotorOutput)
 
+    def configureLighting(self):
+        lighting_hardware = HardwareAdapter.LightingHardware.__getInstance__()
+        lighting_hardware.led_strip.start()
+
     def __updateDrive(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         drive_output = Drive.getOutput()

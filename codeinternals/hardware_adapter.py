@@ -1,4 +1,5 @@
 from wpilib._wpilib import Joystick
+from wpilib import AddressableLED
 
 from codeinternals import ctre
 from codeinternals.constants import port_constants
@@ -23,6 +24,13 @@ class HardwareAdapter:
         def __init__(self):
             self.driveJoystick = Joystick(port_constants.drive_joystick_id)
             self.turnJoystick = Joystick(port_constants.turn_joystick_id)
+
+        def __getInstance__(self):
+            return self
+
+    class LightingHardware:
+        def __init__(self):
+            self.led_strip = AddressableLED(5)
 
         def __getInstance__(self):
             return self
