@@ -53,4 +53,6 @@ class HardwareWriter:
         drive_hardware.right_master_falcon.configMotionCruiseVelocity(right_output.getGains().getVelocity())
         drive_hardware.left_master_falcon.configMotionAcceleration(right_output.getGains().getAcceleration())
         drive_hardware.left_master_falcon.configMotionCruiseVelocity(right_output.getGains().getVelocity())
+        drive_hardware.left_master_falcon.configClosedloopRamp(drive_constants.closedLoopRampSec)
+        drive_hardware.right_master_falcon.configClosedloopRamp(drive_constants.closedLoopRampSec)
 

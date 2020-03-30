@@ -1,16 +1,4 @@
-# encoding: utf-8
-# module ctre._ctre
-# from C:\Users\Nolan\Documents\Robotics\python-frc-robot-architecture\venv\lib\site-packages\ctre\_ctre.cp37-win_amd64.pyd
-# by generator 1.147
-# no doc
-
-# imports
-import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
-
-
-from .IMotorController import IMotorController
+from codeinternals.ctre import IMotorController
 
 class BaseMotorController(IMotorController):
     """ Base motor controller features for all CTRE CAN motor controllers. """
