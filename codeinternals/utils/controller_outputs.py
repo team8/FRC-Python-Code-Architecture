@@ -1,6 +1,6 @@
 from codeinternals.ctre import TalonFXControlMode
 from codeinternals.utils.gains import Gains
-
+from codeinternals.constants import drive_constants
 
 class ControllerOutputs:
     __controlMode = TalonFXControlMode.Disabled
@@ -13,17 +13,17 @@ class ControllerOutputs:
         self.__controlMode = TalonFXControlMode.PercentOutput
 
     def setTargetVelocity(self, targetVelocity, gains: Gains):
-        self.__reference = targetVelocity
+        self.__reference = targetVelocity/drive_constants.velocityConversionFactor
         self.__gains = gains
         self.__controlMode = TalonFXControlMode.Velocity
 
     def setTargetPosition(self, targetPosition, gains: Gains):
-        self.__reference = targetPosition
+        self.__reference = targetPosition/drive_constants.positionConversionFactor
         self.__gains = gains
         self.__controlMode = TalonFXControlMode.Position
 
     def setMotionMagicTargetPosition(self, targetPosition, gains: Gains):
-        self.__reference = targetPosition
+        self.__reference = targetPosition/drive_constants.positionConversionFactor
         self.__gains = gains
         self.__controlMode = TalonFXControlMode.MotionMagic
 

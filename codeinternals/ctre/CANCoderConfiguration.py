@@ -1,16 +1,5 @@
-# encoding: utf-8
-# module ctre._ctre
-# from C:\Users\Nolan\Documents\Robotics\python-frc-robot-architecture\venv\lib\site-packages\ctre\_ctre.cp37-win_amd64.pyd
-# by generator 1.147
-# no doc
+from codeinternals.ctre import CustomParamConfiguration
 
-# imports
-import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
-
-
-from .CustomParamConfiguration import CustomParamConfiguration
 
 class CANCoderConfiguration(CustomParamConfiguration):
     """ Configurables available to CANCoder """
@@ -80,7 +69,7 @@ Default is "Per Second"."""
     """String holding the unit to report in.  This impacts all routines(except for ConfigMagnetOffset) and the self-test in Tuner.
 The string value itself is arbitrary.The max number of letters will depend on firmware versioning, but generally CANCoder
 supports up to eight letters.However, common units such as "centimeters" are supported explicitly despite exceeding the eight-letter limit.
-Default is "deg""""
+Default is "deg"""
 
     velocityMeasurementPeriod = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Velocity measurement period to use"""

@@ -14,3 +14,6 @@ class MoveStraightController(DriveControllerBase):
         print("Approaching Target")
         # drive_constants.moveStraightGains.calculate()
         return self.output
+
+    def checkFinished(self) -> bool:
+        return True
