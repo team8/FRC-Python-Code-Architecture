@@ -22,6 +22,11 @@ class ControllerOutputs:
         self.__gains = gains
         self.__controlMode = TalonFXControlMode.Position
 
+    def setMotionMagicTargetPosition(self, targetPosition, gains: Gains):
+        self.__reference = targetPosition
+        self.__gains = gains
+        self.__controlMode = TalonFXControlMode.MotionMagic
+
     def setIdle(self):
         self.setPercentageOutput(0)
 
