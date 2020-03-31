@@ -1,6 +1,6 @@
 from wpilib import AddressableLED
 from codeinternals.utils.color import color
-
+import time
 
 class OneColorController:
     def __init__(self, wanted_color, length):
@@ -14,11 +14,17 @@ class OneColorController:
 
         self.length = length
 
+        self.start_time = time.time()
+
     def update(self):
         self.data = [self.led.LEDData(255, 0, 0) for i in range(self.length)]
 
         for d in self.data:
-            d.setHSV(self.h, self.s, self.v)
+            if int(time.time() - self.start_time()) % 2 == 0:
+                d.setHSV(self.h, self.s, self.v)
+
+            else:
+                d.setHSV(0, 0, 0)
 
         self.led.setData(self.data)
 
