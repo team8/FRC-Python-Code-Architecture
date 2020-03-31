@@ -1,5 +1,4 @@
 def color(x):
-
     if x == "red":
         return 0, 255, 100
 
