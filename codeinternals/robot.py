@@ -1,9 +1,7 @@
 import wpilib
-from wpilib.controller import PIDController
 
 from codeinternals.hardware_reader import HardwareReader
 from codeinternals.hardware_writer import HardwareWriter
-from codeinternals.subsystems.drive import Drive
 
 
 class Robot(wpilib.TimedRobot):
@@ -31,6 +29,7 @@ class Robot(wpilib.TimedRobot):
     def teleopPeriodic(self):
         HardwareReader.updateState()
         HardwareWriter.updateSubsystems()
+
 
 if __name__ == "__main__":
     wpilib.run(Robot)

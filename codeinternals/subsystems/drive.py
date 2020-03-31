@@ -17,9 +17,7 @@ class Drive(SubsystemBase):
         HardwareReader.resetGyro()
         self.__wantedState = commands.getDriveWantedState()
         self.isNewState = self.state != self.__wantedState
-
         self.isControllerFinished = True if self.controller is None else (True if self.controller.checkFinished() else False)
-        print("Drive Subsystem Running...")
         if self.isNewState and self.isControllerFinished:
             self.state = self.__wantedState
             if self.state == Drive.State.IDLE:

@@ -13,7 +13,8 @@ class HardwareAdapter:
             self.right_slave_falcon = ctre.TalonFX(4)
             self.left_falcon_encoder = ctre.CANCoder(0)
             self.right_falcon_encoder = ctre.CANCoder(3)
-            self.gyro = PigeonIMU(0) #TODO put actual id
+            self.gyro = PigeonIMU(0)  # TODO put actual id
+
         def __getInstance__(self):
             return self
 

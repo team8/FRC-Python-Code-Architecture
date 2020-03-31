@@ -3,15 +3,13 @@ from codeinternals.utils.drive_outputs import DriveOutputs
 
 
 class MoveStraightController(DriveControllerBase):
-    targetDistance = 0
+    __targetDistance = 0
 
     def __init__(self, targetDistance):
-        print("MoveController has started!")
         self.output = DriveOutputs()
-        self.targetDistance = targetDistance
+        self.__targetDistance = targetDistance
 
     def update(self):
-        print("Approaching Target")
         # drive_constants.moveStraightGains.calculate()
         return self.output
 
