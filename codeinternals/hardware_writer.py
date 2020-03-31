@@ -3,7 +3,6 @@ from codeinternals.hardware_adapter import HardwareAdapter
 from codeinternals.robot import Robot
 from codeinternals.subsystems.drive import Drive
 from codeinternals.constants import drive_constants
-from codeinternals.utils import math_util
 
 
 class HardwareWriter:
