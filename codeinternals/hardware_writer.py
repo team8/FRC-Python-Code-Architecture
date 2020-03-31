@@ -8,25 +8,25 @@ from codeinternals.constants import drive_constants
 class HardwareWriter:
     def configureSubsystems(self):
         if Robot.enabledSystems.__contains__("drive"):
-            HardwareWriter.configureDrive()
+            self.__configureDrive()
 
     def updateSubsystems(self):
         if Robot.enabledSystems.__contains__("drive"):
-            HardwareWriter.updateDrive()
+            self.__updateDrive()
 
-    def configureDrive(self):
+    def __configureDrive(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         drive_hardware.left_slave_falcon.follow(drive_hardware.left_master_falcon)
         drive_hardware.right_slave_falcon.follow(drive_hardware.right_master_falcon)
         drive_hardware.right_master_falcon.setInverted(InvertType.InvertMotorOutput)
 
-    def updateDrive(self):
+    def __updateDrive(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         drive_output = Drive.getOutput()
         left_output = drive_output.leftOutput
         right_output = drive_output.rightOutput
         if drive_output is not None:
-            self.setGains()
+            self.__setGains()
             drive_hardware.left_master_falcon.set(left_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                   left_output.getGains().getFF())
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
@@ -35,7 +35,7 @@ class HardwareWriter:
             drive_hardware.left_master_falcon.setNeutralMode(NeutralMode.Brake)
             drive_hardware.right_master_falcon.setNeutralMode(NeutralMode.Brake)
 
-    def setGains(self):
+    def __setGains(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         drive_output = Drive.getOutput()
         left_output = drive_output.leftOutput

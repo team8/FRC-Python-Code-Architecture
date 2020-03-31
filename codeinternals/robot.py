@@ -1,21 +1,17 @@
 import wpilib
 from wpilib.controller import PIDController
 
+from codeinternals.hardware_reader import HardwareReader
+from codeinternals.hardware_writer import HardwareWriter
 from codeinternals.subsystems.drive import Drive
 
 
 class Robot(wpilib.TimedRobot):
     enabledSystems = ["drive"]
+
     def robotInit(self):
-        """
-        This function is called upon program startup and
-        should be used for any initialization code.
-        """
-        # self.left_motor = wpilib.Spark(0)
-        # self.right_motor = wpilib.Spark(1)
-        # self.drive = wpilib.drive.DifferentialDrive(self.left_motor, self.right_motor)
-        # self.stick = wpilib.Joystick(0)
-        # self.timer = wpilib.Timer()
+        HardwareReader.configureState()
+        HardwareWriter.configureSubsystems()
 
     def autonomousInit(self):
         """This function is run once each time the robot enters autonomous mode."""
@@ -33,6 +29,8 @@ class Robot(wpilib.TimedRobot):
     #     self.drive.arcadeDrive(0, 0)  # Stop robot
 
     def teleopPeriodic(self):
-        print("teleop")
+        HardwareReader.updateState()
+        HardwareWriter.updateSubsystems()
+
 if __name__ == "__main__":
     wpilib.run(Robot)

@@ -4,15 +4,15 @@ from codeinternals import robot_state
 
 class HardwareReader:
     def configureState(self):
-        self.configureDriveSensors()
+        self.__configureDriveSensors()
 
     def updateState(self):
-        self.updateDriveSensors()
+        self.__updateDriveSensors()
 
-    def configureDriveSensors(self):
+    def __configureDriveSensors(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         drive_hardware.gyro.setCompassAngle(0)
 
-    def updateDriveSensors(self):
+    def __updateDriveSensors(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         robot_state.gyroCompassHeadingDegrees = drive_hardware.gyro.getCompassHeading()
