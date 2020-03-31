@@ -7,11 +7,11 @@ from codeinternals.constants import drive_constants
 
 class HardwareWriter:
     def configureSubsystems(self):
-        if Robot.enabledSystems.__contains__("drive"):
+        if Robot.enabledSystems.__contains__(Drive.getInstance()):
             self.__configureDrive()
 
     def updateSubsystems(self):
-        if Robot.enabledSystems.__contains__("drive"):
+        if Robot.enabledSystems.__contains__(Drive.getInstance()):
             self.__updateDrive()
 
     def __configureDrive(self):

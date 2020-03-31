@@ -13,6 +13,9 @@ class Drive(SubsystemBase):
         MOVE_STRAIGHT = 1
         TURN = 2
 
+    def start(self):
+        self.instance = Drive()
+
     def update(self, commands, state):
         HardwareReader.resetGyro()
         self.__wantedState = commands.getDriveWantedState()
@@ -33,3 +36,6 @@ class Drive(SubsystemBase):
 
     def getOutput(self):
         return self.outputs
+
+    def getInstance(self):
+        return self.instance

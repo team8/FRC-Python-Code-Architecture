@@ -2,32 +2,29 @@ import wpilib
 
 from codeinternals.hardware_reader import HardwareReader
 from codeinternals.hardware_writer import HardwareWriter
+from codeinternals.subsystems.drive import Drive
 
 
 class Robot(wpilib.TimedRobot):
-    enabledSystems = ["drive"]
+    enabledSystems = [Drive.getInstance()]
 
     def robotInit(self):
-        HardwareReader.configureState()
-        HardwareWriter.configureSubsystems()
+        """Happens on code deployment"""
 
     def autonomousInit(self):
-        """This function is run once each time the robot enters autonomous mode."""
-        # self.timer.reset()
-        # self.timer.start()
+        """Happens at beginning of autonomous sequence"""
 
     def autonomousPeriodic(self):
-        """This function is called periodically during autonomous."""
+        """Called every 20ms through autonomous period"""
 
-    #
-    # # Drive for two seconds
-    # if self.timer.get() < 2.0:
-    #     self.drive.arcadeDrive(-0.5, 0)  # Drive forwards at half speed
-    # else:
-    #     self.drive.arcadeDrive(0, 0)  # Stop robot
+    def teleopInit(self):
+        HardwareReader.configureState()
+        for subsystem in self.enabledSystems: subsystem.start()
+        HardwareWriter.configureSubsystems()
 
     def teleopPeriodic(self):
         HardwareReader.updateState()
+        for subsystem in self.enabledSystems: subsystem.update()
         HardwareWriter.updateSubsystems()
 
 
