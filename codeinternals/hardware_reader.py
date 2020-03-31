@@ -10,9 +10,12 @@ class HardwareReader:
         self.__updateDriveSensors()
 
     def __configureDriveSensors(self):
-        drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
-        drive_hardware.gyro.setCompassAngle(0)
+        self.resetGyro()
 
     def __updateDriveSensors(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         robot_state.gyroCompassHeadingDegrees = drive_hardware.gyro.getCompassHeading()
+
+    def resetGyro(self):
+        drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
+        drive_hardware.gyro.setCompassAngle(0)

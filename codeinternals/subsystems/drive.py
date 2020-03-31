@@ -1,7 +1,8 @@
 from enum import Enum
 
+from codeinternals.hardware_reader import HardwareReader
 from codeinternals.subsystems.drivecontrollers.move_straight_controller import MoveStraightController
-from codeinternals.subsystems.drivecontrollers.turn_controller import TurnController
+from codeinternals.subsystems.drivecontrollers.turn_controller import TurnYawController
 from codeinternals.subsystems.subsystem_base import SubsystemBase
 
 
@@ -13,6 +14,7 @@ class Drive(SubsystemBase):
         TURN = 2
 
     def update(self, commands, state):
+        HardwareReader.resetGyro()
         self.__wantedState = commands.getDriveWantedState()
         self.isNewState = self.state != self.__wantedState
 
@@ -25,7 +27,7 @@ class Drive(SubsystemBase):
             elif self.state == Drive.State.MOVE_STRAIGHT:
                 self.controller = MoveStraightController()
             elif self.state == Drive.State.TURN:
-                self.controller = TurnController()
+                self.controller = TurnYawController()
         if self.controller is None:
             self.outputs = None
         else:
