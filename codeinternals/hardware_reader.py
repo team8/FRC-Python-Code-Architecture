@@ -15,6 +15,7 @@ class HardwareReader:
     def __updateDriveSensors(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
         robot_state.gyroCompassHeadingDegrees = drive_hardware.gyro.getCompassHeading()
+        robot_state.activeTrajectoryPosition = drive_hardware.right_master_falcon.getActiveTrajectoryPosition()
 
     def resetGyro(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
