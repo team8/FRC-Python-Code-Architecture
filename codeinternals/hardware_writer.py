@@ -9,10 +9,14 @@ class HardwareWriter:
     def configureSubsystems(self):
         if Robot.enabledSystems.__contains__(Drive.getInstance()):
             self.__configureDrive()
+        if Robot.enabledSystems.__contains__("lighting"):
+            self.configureLighting()
 
     def updateSubsystems(self):
         if Robot.enabledSystems.__contains__(Drive.getInstance()):
             self.__updateDrive()
+        if Robot.enabledSystems.__contains__("lighting"):
+            self.updateLighting()
 
     def __configureDrive(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
@@ -58,3 +62,12 @@ class HardwareWriter:
         drive_hardware.left_master_falcon.configMotionCruiseVelocity(right_output.getGains().getVelocity())
         drive_hardware.left_master_falcon.configClosedloopRamp(drive_constants.closedLoopRampSec)
         drive_hardware.right_master_falcon.configClosedloopRamp(drive_constants.closedLoopRampSec)
+
+
+    def updateLighting(self):
+        lighting_hardware = HardwareAdapter.LightingHardware.__getInstance__()
+
+
+
+
+
