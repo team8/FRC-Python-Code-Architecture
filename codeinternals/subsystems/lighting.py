@@ -1,6 +1,7 @@
 from enum import Enum
 from codeinternals.subsystems.subsystem_base import SubsystemBase
 from codeinternals.subsystems.lightingcontrollers.one_color_controller import OneColorController
+import time
 
 
 class Lighting(SubsystemBase):
@@ -13,11 +14,18 @@ class Lighting(SubsystemBase):
         self.isNewState = self.state != self.__wantedState
         self.state = self.__wantedState
 
-        print("Lighting Subsystem Running...")
-
         if self.isNewState:
             if self.state == Lighting.State.IDLE:
                 self.controller = None
 
             elif self.state == Lighting.State.SHOOTING:
-                self.controller = OneColorController()
+                self.controller = OneColorController("green", 5.0)
+
+    def isFinished(self, controller):
+        if (time.time() - controller.start) >= controller.start():
+            return True
+        else:
+            return False
+
+    def getOutput(self):
+        return self.controller

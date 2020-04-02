@@ -66,6 +66,8 @@ class HardwareWriter:
 
     def updateLighting(self):
         lighting_hardware = HardwareAdapter.LightingHardware.__getInstance__()
+        lighting_output = Lighting.getOutput()
+        lighting_hardware.led_strip.setData(lighting_output)
 
 
 

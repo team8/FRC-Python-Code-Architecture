@@ -23,3 +23,7 @@ class Commands:
 
     def setDriveStateJoystickControl(self):
         self.wantedDriveState = Drive.State.JOYSTICK_DRIVE
+
+    def getLightingWantedState(self):
+        return self.wantedLightingState
+
