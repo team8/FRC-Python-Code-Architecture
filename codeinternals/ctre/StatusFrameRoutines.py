@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class StatusFrameRoutines(__pybind11_builtins.pybind11_object):
     """ Class to allow conversion from StatusFrame to EnhancedStatusFrame """
-    def promote(self, statusFrame): # real signature unknown; restored from __doc__
+
+    def promote(self, statusFrame):  # real signature unknown; restored from __doc__
         """
         promote(self: ctre._ctre.StatusFrameRoutines, statusFrame: ctre._ctre.StatusFrame) -> ctre._ctre.StatusFrameEnhanced
         
@@ -24,8 +23,6 @@ class StatusFrameRoutines(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.StatusFrameRoutines) -> None """
         pass
-
-

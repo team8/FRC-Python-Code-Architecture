@@ -6,8 +6,6 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class Orchestra(__pybind11_builtins.pybind11_object):
@@ -38,7 +36,9 @@ class Orchestra(__pybind11_builtins.pybind11_object):
     Calling set on any of the TalonFX instruments while the orchestra is
     playing will pause the orchestra.
     """
-    def addInstrument(self, instrument, *args, **kwargs): # real signature unknown; NOTE: unreliably restored from __doc__ 
+
+    def addInstrument(self, instrument, *args,
+                      **kwargs):  # real signature unknown; NOTE: unreliably restored from __doc__
         """
         addInstrument(self: ctre._ctre.Orchestra, instrument: ctre::phoenix::motorcontrol::can::TalonFX) -> ctre._ctre.ErrorCode
         
@@ -50,7 +50,7 @@ class Orchestra(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def clearInstruments(self): # real signature unknown; restored from __doc__
+    def clearInstruments(self):  # real signature unknown; restored from __doc__
         """
         clearInstruments(self: ctre._ctre.Orchestra) -> ctre._ctre.ErrorCode
         
@@ -60,7 +60,7 @@ class Orchestra(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def isPlaying(self): # real signature unknown; restored from __doc__
+    def isPlaying(self):  # real signature unknown; restored from __doc__
         """
         isPlaying(self: ctre._ctre.Orchestra) -> bool
         
@@ -70,7 +70,7 @@ class Orchestra(__pybind11_builtins.pybind11_object):
         """
         return False
 
-    def loadMusic(self, filePath): # real signature unknown; restored from __doc__
+    def loadMusic(self, filePath):  # real signature unknown; restored from __doc__
         """
         loadMusic(self: ctre._ctre.Orchestra, filePath: str) -> ctre._ctre.ErrorCode
         
@@ -89,7 +89,7 @@ class Orchestra(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def pause(self): # real signature unknown; restored from __doc__
+    def pause(self):  # real signature unknown; restored from __doc__
         """
         pause(self: ctre._ctre.Orchestra) -> ctre._ctre.ErrorCode
         
@@ -101,7 +101,7 @@ class Orchestra(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def play(self): # real signature unknown; restored from __doc__
+    def play(self):  # real signature unknown; restored from __doc__
         """
         play(self: ctre._ctre.Orchestra) -> ctre._ctre.ErrorCode
         
@@ -113,7 +113,7 @@ class Orchestra(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def stop(self): # real signature unknown; restored from __doc__
+    def stop(self):  # real signature unknown; restored from __doc__
         """
         stop(self: ctre._ctre.Orchestra) -> ctre._ctre.ErrorCode
         
@@ -124,7 +124,7 @@ class Orchestra(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.Orchestra) -> None
         
@@ -132,5 +132,3 @@ class Orchestra(__pybind11_builtins.pybind11_object):
         Call AddInstrument after this to add the instruments.
         """
         pass
-
-

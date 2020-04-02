@@ -6,7 +6,8 @@ class PigeonIMU(CANBusAddressable):
     Pigeon IMU Class.
     Class supports communicating over CANbus and over ribbon-cable (CAN Talon SRX).
     """
-    def addFusedHeading(self, angleDeg, timeoutMs=0): # real signature unknown; restored from __doc__
+
+    def addFusedHeading(self, angleDeg, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         addFusedHeading(self: ctre._ctre.PigeonIMU, angleDeg: float, timeoutMs: int = 0) -> int
         
@@ -22,7 +23,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def addYaw(self, angleDeg, timeoutMs=0): # real signature unknown; restored from __doc__
+    def addYaw(self, angleDeg, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         addYaw(self: ctre._ctre.PigeonIMU, angleDeg: float, timeoutMs: int = 0) -> int
         
@@ -38,7 +39,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def clearStickyFaults(self, timeoutMs=0): # real signature unknown; restored from __doc__
+    def clearStickyFaults(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         clearStickyFaults(self: ctre._ctre.PigeonIMU, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -48,7 +49,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def configAllSettings(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configAllSettings(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configAllSettings(self: ctre._ctre.PigeonIMU, allConfigs: ctre._ctre.PigeonIMUConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -64,7 +65,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def configFactoryDefault(self, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configFactoryDefault(self, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configFactoryDefault(self: ctre._ctre.PigeonIMU, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -78,7 +79,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def configGetCustomParam(self, paramIndex, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configGetCustomParam(self, paramIndex, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configGetCustomParam(self: ctre._ctre.PigeonIMU, paramIndex: int, timeoutMs: int = 0) -> int
         
@@ -98,7 +99,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def configGetParameter(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configGetParameter(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configGetParameter(*args, **kwargs)
         Overloaded function.
@@ -143,7 +144,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def configSetCustomParam(self, newValue, paramIndex, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSetCustomParam(self, newValue, paramIndex, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSetCustomParam(self: ctre._ctre.PigeonIMU, newValue: int, paramIndex: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -165,7 +166,8 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def configSetParameter(self, param, value, subValue, ordinal, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSetParameter(self, param, value, subValue, ordinal,
+                           timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSetParameter(self: ctre._ctre.PigeonIMU, param: ctre._ctre.ParamEnum, value: float, subValue: int, ordinal: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -191,7 +193,8 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def configTemperatureCompensationEnable(self, bTempCompEnable, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configTemperatureCompensationEnable(self, bTempCompEnable,
+                                            timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configTemperatureCompensationEnable(self: ctre._ctre.PigeonIMU, bTempCompEnable: bool, timeoutMs: int = 0) -> int
         
@@ -212,7 +215,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def destroyAllPigeonIMUs(self): # real signature unknown; restored from __doc__
+    def destroyAllPigeonIMUs(self):  # real signature unknown; restored from __doc__
         """
         destroyAllPigeonIMUs() -> None
         
@@ -220,7 +223,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def enterCalibrationMode(self, calMode, timeoutMs=0): # real signature unknown; restored from __doc__
+    def enterCalibrationMode(self, calMode, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         enterCalibrationMode(self: ctre._ctre.PigeonIMU, calMode: ctre._ctre.PigeonIMU.CalibrationMode, timeoutMs: int = 0) -> int
         
@@ -240,7 +243,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def get6dQuaternion(self): # real signature unknown; restored from __doc__
+    def get6dQuaternion(self):  # real signature unknown; restored from __doc__
         """
         get6dQuaternion(self: ctre._ctre.PigeonIMU) -> Tuple[int, List[float[4]]]
         
@@ -252,7 +255,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getAbsoluteCompassHeading(self): # real signature unknown; restored from __doc__
+    def getAbsoluteCompassHeading(self):  # real signature unknown; restored from __doc__
         """
         getAbsoluteCompassHeading(self: ctre._ctre.PigeonIMU) -> float
         
@@ -262,7 +265,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0.0
 
-    def getAccelerometerAngles(self): # real signature unknown; restored from __doc__
+    def getAccelerometerAngles(self):  # real signature unknown; restored from __doc__
         """
         getAccelerometerAngles(self: ctre._ctre.PigeonIMU) -> Tuple[int, List[float[3]]]
         
@@ -274,7 +277,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getAccumGyro(self): # real signature unknown; restored from __doc__
+    def getAccumGyro(self):  # real signature unknown; restored from __doc__
         """
         getAccumGyro(self: ctre._ctre.PigeonIMU) -> Tuple[int, List[float[3]]]
         
@@ -287,7 +290,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getAllConfigs(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getAllConfigs(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getAllConfigs(self: ctre._ctre.PigeonIMU, allConfigs: ctre._ctre.PigeonIMUConfiguration, timeoutMs: int = 50) -> None
         
@@ -301,7 +304,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getBiasedAccelerometer(self): # real signature unknown; restored from __doc__
+    def getBiasedAccelerometer(self):  # real signature unknown; restored from __doc__
         """
         getBiasedAccelerometer(self: ctre._ctre.PigeonIMU) -> Tuple[int, List[int[3]]]
         
@@ -314,7 +317,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getBiasedMagnetometer(self): # real signature unknown; restored from __doc__
+    def getBiasedMagnetometer(self):  # real signature unknown; restored from __doc__
         """
         getBiasedMagnetometer(self: ctre._ctre.PigeonIMU) -> Tuple[int, List[int[3]]]
         
@@ -327,7 +330,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getCompassFieldStrength(self): # real signature unknown; restored from __doc__
+    def getCompassFieldStrength(self):  # real signature unknown; restored from __doc__
         """
         getCompassFieldStrength(self: ctre._ctre.PigeonIMU) -> float
         
@@ -337,7 +340,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0.0
 
-    def getCompassHeading(self): # real signature unknown; restored from __doc__
+    def getCompassHeading(self):  # real signature unknown; restored from __doc__
         """
         getCompassHeading(self: ctre._ctre.PigeonIMU) -> float
         
@@ -348,7 +351,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0.0
 
-    def getFaults(self, toFill, *args, **kwargs): # real signature unknown; NOTE: unreliably restored from __doc__ 
+    def getFaults(self, toFill, *args, **kwargs):  # real signature unknown; NOTE: unreliably restored from __doc__
         """
         getFaults(self: ctre._ctre.PigeonIMU, toFill: ctre::phoenix::sensors::PigeonIMU_Faults) -> ctre._ctre.ErrorCode
         
@@ -360,7 +363,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getFirmVers(self): # real signature unknown; restored from __doc__
+    def getFirmVers(self):  # real signature unknown; restored from __doc__
         """
         getFirmVers(self: ctre._ctre.PigeonIMU) -> int
         
@@ -370,7 +373,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def getFirmwareVersion(self): # real signature unknown; restored from __doc__
+    def getFirmwareVersion(self):  # real signature unknown; restored from __doc__
         """
         getFirmwareVersion(self: ctre._ctre.PigeonIMU) -> int
         
@@ -381,7 +384,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def getFusedHeading(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def getFusedHeading(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         getFusedHeading(*args, **kwargs)
         Overloaded function.
@@ -403,7 +406,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getGeneralStatus(self, statusToFill): # real signature unknown; restored from __doc__
+    def getGeneralStatus(self, statusToFill):  # real signature unknown; restored from __doc__
         """
         getGeneralStatus(self: ctre._ctre.PigeonIMU, statusToFill: ctre._ctre.PigeonIMU.GeneralStatus) -> int
         
@@ -415,7 +418,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def getLastError(self): # real signature unknown; restored from __doc__
+    def getLastError(self):  # real signature unknown; restored from __doc__
         """
         getLastError(self: ctre._ctre.PigeonIMU) -> ctre._ctre.ErrorCode
         
@@ -429,7 +432,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getLowLevelHandle(self): # real signature unknown; restored from __doc__
+    def getLowLevelHandle(self):  # real signature unknown; restored from __doc__
         """
         getLowLevelHandle(self: ctre._ctre.PigeonIMU) -> capsule
         
@@ -439,7 +442,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getRawGyro(self): # real signature unknown; restored from __doc__
+    def getRawGyro(self):  # real signature unknown; restored from __doc__
         """
         getRawGyro(self: ctre._ctre.PigeonIMU) -> Tuple[int, List[float[3]]]
         
@@ -451,7 +454,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getRawMagnetometer(self): # real signature unknown; restored from __doc__
+    def getRawMagnetometer(self):  # real signature unknown; restored from __doc__
         """
         getRawMagnetometer(self: ctre._ctre.PigeonIMU) -> Tuple[int, List[int[3]]]
         
@@ -464,7 +467,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getResetCount(self): # real signature unknown; restored from __doc__
+    def getResetCount(self):  # real signature unknown; restored from __doc__
         """
         getResetCount(self: ctre._ctre.PigeonIMU) -> int
         
@@ -474,7 +477,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def getResetFlags(self): # real signature unknown; restored from __doc__
+    def getResetFlags(self):  # real signature unknown; restored from __doc__
         """
         getResetFlags(self: ctre._ctre.PigeonIMU) -> int
         
@@ -484,7 +487,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def getState(self): # real signature unknown; restored from __doc__
+    def getState(self):  # real signature unknown; restored from __doc__
         """
         getState(self: ctre._ctre.PigeonIMU) -> ctre._ctre.PigeonIMU.PigeonState
         
@@ -494,7 +497,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getStatusFramePeriod(self, frame, timeoutMs=0): # real signature unknown; restored from __doc__
+    def getStatusFramePeriod(self, frame, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         getStatusFramePeriod(self: ctre._ctre.PigeonIMU, frame: ctre._ctre.PigeonIMU_StatusFrame, timeoutMs: int = 0) -> int
         
@@ -510,7 +513,8 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def getStickyFaults(self, toFill, *args, **kwargs): # real signature unknown; NOTE: unreliably restored from __doc__ 
+    def getStickyFaults(self, toFill, *args,
+                        **kwargs):  # real signature unknown; NOTE: unreliably restored from __doc__
         """
         getStickyFaults(self: ctre._ctre.PigeonIMU, toFill: ctre::phoenix::sensors::PigeonIMU_StickyFaults) -> ctre._ctre.ErrorCode
         
@@ -522,7 +526,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def getTemp(self): # real signature unknown; restored from __doc__
+    def getTemp(self):  # real signature unknown; restored from __doc__
         """
         getTemp(self: ctre._ctre.PigeonIMU) -> float
         
@@ -532,7 +536,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0.0
 
-    def getUpTime(self): # real signature unknown; restored from __doc__
+    def getUpTime(self):  # real signature unknown; restored from __doc__
         """
         getUpTime(self: ctre._ctre.PigeonIMU) -> int
         
@@ -543,7 +547,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def getYawPitchRoll(self): # real signature unknown; restored from __doc__
+    def getYawPitchRoll(self):  # real signature unknown; restored from __doc__
         """
         getYawPitchRoll(self: ctre._ctre.PigeonIMU) -> Tuple[int, List[float[3]]]
         
@@ -558,7 +562,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def hasResetOccurred(self): # real signature unknown; restored from __doc__
+    def hasResetOccurred(self):  # real signature unknown; restored from __doc__
         """
         hasResetOccurred(self: ctre._ctre.PigeonIMU) -> bool
         
@@ -568,7 +572,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return False
 
-    def setAccumZAngle(self, angleDeg, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setAccumZAngle(self, angleDeg, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setAccumZAngle(self: ctre._ctre.PigeonIMU, angleDeg: float, timeoutMs: int = 0) -> int
         
@@ -584,7 +588,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def setCompassAngle(self, angleDeg, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setCompassAngle(self, angleDeg, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setCompassAngle(self: ctre._ctre.PigeonIMU, angleDeg: float, timeoutMs: int = 0) -> int
         
@@ -601,7 +605,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def setCompassDeclination(self, angleDegOffset, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setCompassDeclination(self, angleDegOffset, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setCompassDeclination(self: ctre._ctre.PigeonIMU, angleDegOffset: float, timeoutMs: int = 0) -> int
         
@@ -618,7 +622,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def setControlFramePeriod(self, frame, periodMs): # real signature unknown; restored from __doc__
+    def setControlFramePeriod(self, frame, periodMs):  # real signature unknown; restored from __doc__
         """
         setControlFramePeriod(self: ctre._ctre.PigeonIMU, frame: ctre._ctre.PigeonIMU_ControlFrame, periodMs: int) -> ctre._ctre.ErrorCode
         
@@ -632,7 +636,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def setFusedHeading(self, angleDeg, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setFusedHeading(self, angleDeg, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setFusedHeading(self: ctre._ctre.PigeonIMU, angleDeg: float, timeoutMs: int = 0) -> int
         
@@ -648,7 +652,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def setFusedHeadingToCompass(self, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setFusedHeadingToCompass(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setFusedHeadingToCompass(self: ctre._ctre.PigeonIMU, timeoutMs: int = 0) -> int
         
@@ -662,7 +666,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def setStatusFramePeriod(self, statusFrame, periodMs, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setStatusFramePeriod(self, statusFrame, periodMs, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setStatusFramePeriod(self: ctre._ctre.PigeonIMU, statusFrame: ctre._ctre.PigeonIMU_StatusFrame, periodMs: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -680,7 +684,8 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def setTemperatureCompensationDisable(self, bTempCompDisable, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setTemperatureCompensationDisable(self, bTempCompDisable,
+                                          timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setTemperatureCompensationDisable(self: ctre._ctre.PigeonIMU, bTempCompDisable: bool, timeoutMs: int = 0) -> int
         
@@ -696,7 +701,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def setYaw(self, angleDeg, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setYaw(self, angleDeg, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setYaw(self: ctre._ctre.PigeonIMU, angleDeg: float, timeoutMs: int = 0) -> int
         
@@ -712,7 +717,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def setYawToCompass(self, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setYawToCompass(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setYawToCompass(self: ctre._ctre.PigeonIMU, timeoutMs: int = 0) -> int
         
@@ -726,7 +731,7 @@ class PigeonIMU(CANBusAddressable):
         """
         return 0
 
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -749,7 +754,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    def __init__(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def __init__(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         __init__(*args, **kwargs)
         Overloaded function.
@@ -769,9 +774,7 @@ class PigeonIMU(CANBusAddressable):
         """
         pass
 
-    CalibrationMode = None # (!) real value is "<class 'ctre._ctre.PigeonIMU.CalibrationMode'>"
-    FusionStatus = None # (!) real value is "<class 'ctre._ctre.PigeonIMU.FusionStatus'>"
-    GeneralStatus = None # (!) real value is "<class 'ctre._ctre.PigeonIMU.GeneralStatus'>"
-    PigeonState = None # (!) real value is "<class 'ctre._ctre.PigeonIMU.PigeonState'>"
-
-
+    CalibrationMode = None  # (!) real value is "<class 'ctre._ctre.PigeonIMU.CalibrationMode'>"
+    FusionStatus = None  # (!) real value is "<class 'ctre._ctre.PigeonIMU.FusionStatus'>"
+    GeneralStatus = None  # (!) real value is "<class 'ctre._ctre.PigeonIMU.GeneralStatus'>"
+    PigeonState = None  # (!) real value is "<class 'ctre._ctre.PigeonIMU.PigeonState'>"

@@ -3,7 +3,8 @@ from codeinternals.ctre import BaseMotorController, IMotorControllerEnhanced
 
 class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
     """ CTRE Talon SRX Motor Controller when used on CAN Bus. """
-    def configForwardLimitSwitchSource(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def configForwardLimitSwitchSource(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configForwardLimitSwitchSource(*args, **kwargs)
         Overloaded function.
@@ -56,7 +57,7 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         pass
 
-    def configReverseLimitSwitchSource(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configReverseLimitSwitchSource(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configReverseLimitSwitchSource(*args, **kwargs)
         Overloaded function.
@@ -111,7 +112,7 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         pass
 
-    def configSelectedFeedbackSensor(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configSelectedFeedbackSensor(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configSelectedFeedbackSensor(*args, **kwargs)
         Overloaded function.
@@ -148,11 +149,11 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         pass
 
-    def configSupplyCurrentLimit(self, currLimitConfigs, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSupplyCurrentLimit(self, currLimitConfigs, timeoutMs=0):  # real signature unknown; restored from __doc__
         """ configSupplyCurrentLimit(self: ctre._ctre.BaseTalon, currLimitConfigs: ctre._ctre.SupplyCurrentLimitConfiguration, timeoutMs: int = 0) -> ctre._ctre.ErrorCode """
         pass
 
-    def configVelocityMeasurementPeriod(self, period, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVelocityMeasurementPeriod(self, period, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVelocityMeasurementPeriod(self: ctre._ctre.BaseTalon, period: ctre._ctre.VelocityMeasPeriod, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -172,7 +173,7 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         pass
 
-    def configVelocityMeasurementWindow(self, windowSize, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVelocityMeasurementWindow(self, windowSize, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVelocityMeasurementWindow(self: ctre._ctre.BaseTalon, windowSize: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -191,7 +192,7 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         pass
 
-    def getOutputCurrent(self): # real signature unknown; restored from __doc__
+    def getOutputCurrent(self):  # real signature unknown; restored from __doc__
         """
         getOutputCurrent(self: ctre._ctre.BaseTalon) -> float
         
@@ -205,7 +206,7 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         return 0.0
 
-    def getStatorCurrent(self): # real signature unknown; restored from __doc__
+    def getStatorCurrent(self):  # real signature unknown; restored from __doc__
         """
         getStatorCurrent(self: ctre._ctre.BaseTalon) -> float
         
@@ -215,7 +216,7 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         return 0.0
 
-    def getStatusFramePeriod(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def getStatusFramePeriod(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         getStatusFramePeriod(*args, **kwargs)
         Overloaded function.
@@ -246,7 +247,7 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         pass
 
-    def getSupplyCurrent(self): # real signature unknown; restored from __doc__
+    def getSupplyCurrent(self):  # real signature unknown; restored from __doc__
         """
         getSupplyCurrent(self: ctre._ctre.BaseTalon) -> float
         
@@ -256,15 +257,15 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         return 0.0
 
-    def isFwdLimitSwitchClosed(self): # real signature unknown; restored from __doc__
+    def isFwdLimitSwitchClosed(self):  # real signature unknown; restored from __doc__
         """ isFwdLimitSwitchClosed(self: ctre._ctre.BaseTalon) -> int """
         return 0
 
-    def isRevLimitSwitchClosed(self): # real signature unknown; restored from __doc__
+    def isRevLimitSwitchClosed(self):  # real signature unknown; restored from __doc__
         """ isRevLimitSwitchClosed(self: ctre._ctre.BaseTalon) -> int """
         return 0
 
-    def setStatusFramePeriod(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def setStatusFramePeriod(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         setStatusFramePeriod(*args, **kwargs)
         Overloaded function.
@@ -311,7 +312,5 @@ class BaseTalon(BaseMotorController, IMotorControllerEnhanced):
         """
         pass
 
-    def __init__(self, *args, **kwargs): # real signature unknown
+    def __init__(self, *args, **kwargs):  # real signature unknown
         pass
-
-

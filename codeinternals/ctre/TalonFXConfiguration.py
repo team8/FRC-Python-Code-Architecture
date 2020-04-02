@@ -1,9 +1,10 @@
-
 from .BaseTalonConfiguration import BaseTalonConfiguration
+
 
 class TalonFXConfiguration(BaseTalonConfiguration):
     """ Configurables available to TalonFX """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -24,7 +25,7 @@ class TalonFXConfiguration(BaseTalonConfiguration):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.TalonFXConfiguration) -> None """
         pass
 
@@ -56,6 +57,3 @@ In which case use this config to move the discontinuity outside of the function 
 
     supplyCurrLimit = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Supply-side current limiting.  This is typically used to prevent breakers from tripping."""
-
-
-

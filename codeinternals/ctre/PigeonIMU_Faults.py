@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class PigeonIMU_Faults(__pybind11_builtins.pybind11_object):
     """ Faults available to Pigeon (Currently has none) """
-    def hasAnyFault(self): # real signature unknown; restored from __doc__
+
+    def hasAnyFault(self):  # real signature unknown; restored from __doc__
         """
         hasAnyFault(self: ctre._ctre.PigeonIMU_Faults) -> bool
         
@@ -22,7 +21,7 @@ class PigeonIMU_Faults(__pybind11_builtins.pybind11_object):
         """
         return False
 
-    def toBitfield(self): # real signature unknown; restored from __doc__
+    def toBitfield(self):  # real signature unknown; restored from __doc__
         """
         toBitfield(self: ctre._ctre.PigeonIMU_Faults) -> int
         
@@ -32,7 +31,7 @@ class PigeonIMU_Faults(__pybind11_builtins.pybind11_object):
         """
         return 0
 
-    def __init__(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def __init__(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         __init__(*args, **kwargs)
         Overloaded function.
@@ -46,5 +45,3 @@ class PigeonIMU_Faults(__pybind11_builtins.pybind11_object):
         2. __init__(self: ctre._ctre.PigeonIMU_Faults) -> None
         """
         pass
-
-

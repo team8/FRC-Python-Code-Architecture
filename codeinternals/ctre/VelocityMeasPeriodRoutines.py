@@ -1,7 +1,7 @@
-
 class VelocityMeasPeriodRoutines():
     """ Class to handle routines specific to VelocityMeasPeriod """
-    def toString(self, value): # real signature unknown; restored from __doc__
+
+    def toString(self, value):  # real signature unknown; restored from __doc__
         """
         toString(value: ctre._ctre.VelocityMeasPeriod) -> str
         
@@ -13,8 +13,6 @@ class VelocityMeasPeriodRoutines():
         """
         return ""
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.VelocityMeasPeriodRoutines) -> None """
         pass
-
-

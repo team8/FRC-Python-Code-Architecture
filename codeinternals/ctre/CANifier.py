@@ -5,12 +5,9 @@
 # no doc
 
 # imports
-import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
-
 
 from .CANBusAddressable import CANBusAddressable
+
 
 class CANifier(CANBusAddressable):
     """
@@ -18,7 +15,8 @@ class CANifier(CANBusAddressable):
     
     Device for interfacing common devices to the CAN bus.
     """
-    def clearStickyFaults(self, timeoutMs=0): # real signature unknown; restored from __doc__
+
+    def clearStickyFaults(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         clearStickyFaults(self: ctre._ctre.CANifier, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -32,7 +30,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configAllSettings(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configAllSettings(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configAllSettings(self: ctre._ctre.CANifier, allConfigs: ctre._ctre.CANifierConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -48,7 +46,8 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configClearPositionOnLimitF(self, clearPositionOnLimitF, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClearPositionOnLimitF(self, clearPositionOnLimitF,
+                                    timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClearPositionOnLimitF(self: ctre._ctre.CANifier, clearPositionOnLimitF: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -65,7 +64,8 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configClearPositionOnLimitR(self, clearPositionOnLimitR, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClearPositionOnLimitR(self, clearPositionOnLimitR,
+                                    timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClearPositionOnLimitR(self: ctre._ctre.CANifier, clearPositionOnLimitR: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -82,7 +82,8 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configClearPositionOnQuadIdx(self, clearPositionOnQuadIdx, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClearPositionOnQuadIdx(self, clearPositionOnQuadIdx,
+                                     timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClearPositionOnQuadIdx(self: ctre._ctre.CANifier, clearPositionOnQuadIdx: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -99,7 +100,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configFactoryDefault(self, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configFactoryDefault(self, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configFactoryDefault(self: ctre._ctre.CANifier, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -113,7 +114,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configGetCustomParam(self, paramIndex, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configGetCustomParam(self, paramIndex, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configGetCustomParam(self: ctre._ctre.CANifier, paramIndex: int, timeoutMs: int = 0) -> int
         
@@ -133,7 +134,7 @@ class CANifier(CANBusAddressable):
         """
         return 0
 
-    def configGetParameter(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configGetParameter(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configGetParameter(*args, **kwargs)
         Overloaded function.
@@ -178,7 +179,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configSetCustomParam(self, newValue, paramIndex, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSetCustomParam(self, newValue, paramIndex, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSetCustomParam(self: ctre._ctre.CANifier, newValue: int, paramIndex: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -200,7 +201,8 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configSetParameter(self, param, value, subValue, ordinal, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSetParameter(self, param, value, subValue, ordinal,
+                           timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSetParameter(self: ctre._ctre.CANifier, param: ctre._ctre.ParamEnum, value: float, subValue: int, ordinal: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -226,7 +228,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configVelocityMeasurementPeriod(self, period, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVelocityMeasurementPeriod(self, period, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVelocityMeasurementPeriod(self: ctre._ctre.CANifier, period: ctre._ctre.CANifierVelocityMeasPeriod, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -245,7 +247,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def configVelocityMeasurementWindow(self, windowSize, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVelocityMeasurementWindow(self, windowSize, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVelocityMeasurementWindow(self: ctre._ctre.CANifier, windowSize: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -264,7 +266,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def destroyAllCANifiers(self): # real signature unknown; restored from __doc__
+    def destroyAllCANifiers(self):  # real signature unknown; restored from __doc__
         """
         destroyAllCANifiers() -> None
         
@@ -272,7 +274,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def enablePWMOutput(self, pwmChannel, bEnable): # real signature unknown; restored from __doc__
+    def enablePWMOutput(self, pwmChannel, bEnable):  # real signature unknown; restored from __doc__
         """
         enablePWMOutput(self: ctre._ctre.CANifier, pwmChannel: int, bEnable: bool) -> ctre._ctre.ErrorCode
         
@@ -285,7 +287,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def getAllConfigs(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getAllConfigs(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getAllConfigs(self: ctre._ctre.CANifier, allConfigs: ctre._ctre.CANifierConfiguration, timeoutMs: int = 50) -> None
         
@@ -299,7 +301,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def getBusVoltage(self): # real signature unknown; restored from __doc__
+    def getBusVoltage(self):  # real signature unknown; restored from __doc__
         """
         getBusVoltage(self: ctre._ctre.CANifier) -> float
         
@@ -309,7 +311,7 @@ class CANifier(CANBusAddressable):
         """
         return 0.0
 
-    def getFaults(self, toFill): # real signature unknown; restored from __doc__
+    def getFaults(self, toFill):  # real signature unknown; restored from __doc__
         """
         getFaults(self: ctre._ctre.CANifier, toFill: ctre._ctre.CANifierFaults) -> ctre._ctre.ErrorCode
         
@@ -321,7 +323,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def getFirmwareVersion(self): # real signature unknown; restored from __doc__
+    def getFirmwareVersion(self):  # real signature unknown; restored from __doc__
         """
         getFirmwareVersion(self: ctre._ctre.CANifier) -> int
         
@@ -331,7 +333,7 @@ class CANifier(CANBusAddressable):
         """
         return 0
 
-    def getGeneralInput(self, inputPin): # real signature unknown; restored from __doc__
+    def getGeneralInput(self, inputPin):  # real signature unknown; restored from __doc__
         """
         getGeneralInput(self: ctre._ctre.CANifier, inputPin: ctre._ctre.CANifier.GeneralPin) -> bool
         
@@ -343,7 +345,7 @@ class CANifier(CANBusAddressable):
         """
         return False
 
-    def getGeneralInputs(self, allPins): # real signature unknown; restored from __doc__
+    def getGeneralInputs(self, allPins):  # real signature unknown; restored from __doc__
         """
         getGeneralInputs(self: ctre._ctre.CANifier, allPins: ctre._ctre.CANifier.PinValues) -> ctre._ctre.ErrorCode
         
@@ -353,7 +355,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def getLastError(self): # real signature unknown; restored from __doc__
+    def getLastError(self):  # real signature unknown; restored from __doc__
         """
         getLastError(self: ctre._ctre.CANifier) -> ctre._ctre.ErrorCode
         
@@ -367,7 +369,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def getPWMInput(self, pwmChannel): # real signature unknown; restored from __doc__
+    def getPWMInput(self, pwmChannel):  # real signature unknown; restored from __doc__
         """
         getPWMInput(self: ctre._ctre.CANifier, pwmChannel: ctre._ctre.CANifier.PWMChannel) -> Tuple[ctre._ctre.ErrorCode, List[float[2]]]
         
@@ -379,7 +381,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def getQuadraturePosition(self): # real signature unknown; restored from __doc__
+    def getQuadraturePosition(self):  # real signature unknown; restored from __doc__
         """
         getQuadraturePosition(self: ctre._ctre.CANifier) -> int
         
@@ -389,7 +391,7 @@ class CANifier(CANBusAddressable):
         """
         return 0
 
-    def getQuadratureVelocity(self): # real signature unknown; restored from __doc__
+    def getQuadratureVelocity(self):  # real signature unknown; restored from __doc__
         """
         getQuadratureVelocity(self: ctre._ctre.CANifier) -> int
         
@@ -399,7 +401,7 @@ class CANifier(CANBusAddressable):
         """
         return 0
 
-    def getStatusFramePeriod(self, frame, timeoutMs=0): # real signature unknown; restored from __doc__
+    def getStatusFramePeriod(self, frame, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         getStatusFramePeriod(self: ctre._ctre.CANifier, frame: ctre._ctre.CANifierStatusFrame, timeoutMs: int = 0) -> int
         
@@ -415,7 +417,7 @@ class CANifier(CANBusAddressable):
         """
         return 0
 
-    def getStickyFaults(self, toFill): # real signature unknown; restored from __doc__
+    def getStickyFaults(self, toFill):  # real signature unknown; restored from __doc__
         """
         getStickyFaults(self: ctre._ctre.CANifier, toFill: ctre._ctre.CANifierStickyFaults) -> ctre._ctre.ErrorCode
         
@@ -427,7 +429,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def hasResetOccurred(self): # real signature unknown; restored from __doc__
+    def hasResetOccurred(self):  # real signature unknown; restored from __doc__
         """
         hasResetOccurred(self: ctre._ctre.CANifier) -> bool
         
@@ -437,7 +439,7 @@ class CANifier(CANBusAddressable):
         """
         return False
 
-    def setControlFramePeriod(self, frame, periodMs): # real signature unknown; restored from __doc__
+    def setControlFramePeriod(self, frame, periodMs):  # real signature unknown; restored from __doc__
         """
         setControlFramePeriod(self: ctre._ctre.CANifier, frame: ctre._ctre.CANifierControlFrame, periodMs: int) -> ctre._ctre.ErrorCode
         
@@ -451,7 +453,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def setGeneralOutput(self, outputPin, outputValue, outputEnable): # real signature unknown; restored from __doc__
+    def setGeneralOutput(self, outputPin, outputValue, outputEnable):  # real signature unknown; restored from __doc__
         """
         setGeneralOutput(self: ctre._ctre.CANifier, outputPin: ctre._ctre.CANifier.GeneralPin, outputValue: bool, outputEnable: bool) -> ctre._ctre.ErrorCode
         
@@ -465,7 +467,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def setGeneralOutputs(self, outputBits, isOutputBits): # real signature unknown; restored from __doc__
+    def setGeneralOutputs(self, outputBits, isOutputBits):  # real signature unknown; restored from __doc__
         """
         setGeneralOutputs(self: ctre._ctre.CANifier, outputBits: int, isOutputBits: int) -> ctre._ctre.ErrorCode
         
@@ -477,7 +479,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def setLEDOutput(self, percentOutput, ledChannel): # real signature unknown; restored from __doc__
+    def setLEDOutput(self, percentOutput, ledChannel):  # real signature unknown; restored from __doc__
         """
         setLEDOutput(self: ctre._ctre.CANifier, percentOutput: float, ledChannel: ctre._ctre.CANifier.LEDChannel) -> ctre._ctre.ErrorCode
         
@@ -489,7 +491,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def setPWMOutput(self, pwmChannel, dutyCycle): # real signature unknown; restored from __doc__
+    def setPWMOutput(self, pwmChannel, dutyCycle):  # real signature unknown; restored from __doc__
         """
         setPWMOutput(self: ctre._ctre.CANifier, pwmChannel: int, dutyCycle: float) -> ctre._ctre.ErrorCode
         
@@ -502,7 +504,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def setQuadraturePosition(self, newPosition, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setQuadraturePosition(self, newPosition, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setQuadraturePosition(self: ctre._ctre.CANifier, newPosition: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -518,7 +520,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def setStatusFramePeriod(self, statusFrame, periodMs, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setStatusFramePeriod(self, statusFrame, periodMs, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setStatusFramePeriod(self: ctre._ctre.CANifier, statusFrame: ctre._ctre.CANifierStatusFrame, periodMs: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -536,7 +538,7 @@ class CANifier(CANBusAddressable):
         """
         pass
 
-    def __init__(self, deviceNumber): # real signature unknown; restored from __doc__
+    def __init__(self, deviceNumber):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.CANifier, deviceNumber: int) -> None
         
@@ -549,10 +551,7 @@ class CANifier(CANBusAddressable):
     PWMChannelCount = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Number of PWM channels available to CANifier"""
 
-
-    GeneralPin = None # (!) real value is "<class 'ctre._ctre.CANifier.GeneralPin'>"
-    LEDChannel = None # (!) real value is "<class 'ctre._ctre.CANifier.LEDChannel'>"
-    PinValues = None # (!) real value is "<class 'ctre._ctre.CANifier.PinValues'>"
-    PWMChannel = None # (!) real value is "<class 'ctre._ctre.CANifier.PWMChannel'>"
-
-
+    GeneralPin = None  # (!) real value is "<class 'ctre._ctre.CANifier.GeneralPin'>"
+    LEDChannel = None  # (!) real value is "<class 'ctre._ctre.CANifier.LEDChannel'>"
+    PinValues = None  # (!) real value is "<class 'ctre._ctre.CANifier.PinValues'>"
+    PWMChannel = None  # (!) real value is "<class 'ctre._ctre.CANifier.PWMChannel'>"

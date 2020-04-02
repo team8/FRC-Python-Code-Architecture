@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class LimitSwitchRoutines(__pybind11_builtins.pybind11_object):
     """ Class to handle various functions regarding limit switches """
-    def isRemote(self, limitSwitchSource): # real signature unknown; restored from __doc__
+
+    def isRemote(self, limitSwitchSource):  # real signature unknown; restored from __doc__
         """
         isRemote(limitSwitchSource: ctre._ctre.LimitSwitchSource) -> bool
         
@@ -25,7 +24,7 @@ class LimitSwitchRoutines(__pybind11_builtins.pybind11_object):
         """
         return False
 
-    def promote(self, limitSwitchSource): # real signature unknown; restored from __doc__
+    def promote(self, limitSwitchSource):  # real signature unknown; restored from __doc__
         """
         promote(limitSwitchSource: ctre._ctre.RemoteLimitSwitchSource) -> ctre._ctre.LimitSwitchSource
         
@@ -37,7 +36,7 @@ class LimitSwitchRoutines(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -68,8 +67,6 @@ class LimitSwitchRoutines(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.LimitSwitchRoutines) -> None """
         pass
-
-

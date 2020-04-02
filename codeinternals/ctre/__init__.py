@@ -1,31 +1,25 @@
-
 from .AbsoluteSensorRange import AbsoluteSensorRange
 from .AbsoluteSensorRangeRoutines import AbsoluteSensorRangeRoutines
-from .IFollower import IFollower
-from .IMotorController import IMotorController
 from .BaseMotorController import BaseMotorController
-from .CustomParamConfiguration import CustomParamConfiguration
 from .BaseMotorControllerConfiguration import BaseMotorControllerConfiguration
-from .CustomParamConfigUtil import CustomParamConfigUtil
 from .BaseMotorControllerUtil import BaseMotorControllerUtil
 from .BasePIDSetConfiguration import BasePIDSetConfiguration
-from .IMotorControllerEnhanced import IMotorControllerEnhanced
 from .BaseTalon import BaseTalon
-from .BaseTalonConfiguration import BaseTalonConfiguration
 from .BaseTalonConfigUtil import BaseTalonConfigUtil
-from .BaseTalonPIDSetConfiguration import BaseTalonPIDSetConfiguration
+from .BaseTalonConfiguration import BaseTalonConfiguration
 from .BaseTalonPIDSetConfigUtil import BaseTalonPIDSetConfigUtil
+from .BaseTalonPIDSetConfiguration import BaseTalonPIDSetConfiguration
 from .BufferedTrajectoryPointStream import BufferedTrajectoryPointStream
 from .CANBusAddressable import CANBusAddressable
 from .CANCoder import CANCoder
-from .CANCoderConfiguration import CANCoderConfiguration
 from .CANCoderConfigUtils import CANCoderConfigUtils
+from .CANCoderConfiguration import CANCoderConfiguration
 from .CANCoderFaults import CANCoderFaults
 from .CANCoderStatusFrame import CANCoderStatusFrame
 from .CANCoderStickyFaults import CANCoderStickyFaults
 from .CANifier import CANifier
-from .CANifierConfiguration import CANifierConfiguration
 from .CANifierConfigUtils import CANifierConfigUtils
+from .CANifierConfiguration import CANifierConfiguration
 from .CANifierControlFrame import CANifierControlFrame
 from .CANifierFaults import CANifierFaults
 from .CANifierStatusFrame import CANifierStatusFrame
@@ -36,14 +30,19 @@ from .ControlFrame import ControlFrame
 from .ControlFrameEnhanced import ControlFrameEnhanced
 from .ControlFrameRoutines import ControlFrameRoutines
 from .ControlMode import ControlMode
+from .CustomParamConfigUtil import CustomParamConfigUtil
+from .CustomParamConfiguration import CustomParamConfiguration
 from .DemandType import DemandType
 from .ErrorCode import ErrorCode
 from .Faults import Faults
 from .FeedbackDevice import FeedbackDevice
 from .FeedbackDeviceRoutines import FeedbackDeviceRoutines
-from .FilterConfiguration import FilterConfiguration
 from .FilterConfigUtil import FilterConfigUtil
+from .FilterConfiguration import FilterConfiguration
 from .FollowerType import FollowerType
+from .IFollower import IFollower
+from .IMotorController import IMotorController
+from .IMotorControllerEnhanced import IMotorControllerEnhanced
 from .InvertType import InvertType
 from .LimitSwitchNormal import LimitSwitchNormal
 from .LimitSwitchRoutines import LimitSwitchRoutines
@@ -55,8 +54,8 @@ from .NeutralMode import NeutralMode
 from .Orchestra import Orchestra
 from .ParamEnum import ParamEnum
 from .PigeonIMU import PigeonIMU
-from .PigeonIMUConfiguration import PigeonIMUConfiguration
 from .PigeonIMUConfigUtils import PigeonIMUConfigUtils
+from .PigeonIMUConfiguration import PigeonIMUConfiguration
 from .PigeonIMU_ControlFrame import PigeonIMU_ControlFrame
 from .PigeonIMU_Faults import PigeonIMU_Faults
 from .PigeonIMU_StatusFrame import PigeonIMU_StatusFrame
@@ -75,8 +74,8 @@ from .SensorTimeBaseRoutines import SensorTimeBaseRoutines
 from .SensorVelocityMeasPeriod import SensorVelocityMeasPeriod
 from .SensorVelocityMeasPeriodRoutines import SensorVelocityMeasPeriodRoutines
 from .SetValueMotionProfile import SetValueMotionProfile
-from .SlotConfiguration import SlotConfiguration
 from .SlotConfigUtil import SlotConfigUtil
+from .SlotConfiguration import SlotConfiguration
 from .StatorCurrentLimitConfiguration import StatorCurrentLimitConfiguration
 from .StatusFrame import StatusFrame
 from .StatusFrameEnhanced import StatusFrameEnhanced
@@ -84,16 +83,16 @@ from .StatusFrameRoutines import StatusFrameRoutines
 from .StickyFaults import StickyFaults
 from .SupplyCurrentLimitConfiguration import SupplyCurrentLimitConfiguration
 from .TalonFX import TalonFX
-from .TalonFXConfiguration import TalonFXConfiguration
 from .TalonFXConfigUtil import TalonFXConfigUtil
+from .TalonFXConfiguration import TalonFXConfiguration
 from .TalonFXControlMode import TalonFXControlMode
 from .TalonFXFeedbackDevice import TalonFXFeedbackDevice
 from .TalonFXInvertType import TalonFXInvertType
 from .TalonFXPIDSetConfiguration import TalonFXPIDSetConfiguration
 from .TalonFXSensorCollection import TalonFXSensorCollection
 from .TalonSRX import TalonSRX
-from .TalonSRXConfiguration import TalonSRXConfiguration
 from .TalonSRXConfigUtil import TalonSRXConfigUtil
+from .TalonSRXConfiguration import TalonSRXConfiguration
 from .TalonSRXControlMode import TalonSRXControlMode
 from .TalonSRXFeedbackDevice import TalonSRXFeedbackDevice
 from .TalonSRXPIDSetConfiguration import TalonSRXPIDSetConfiguration
@@ -104,15 +103,15 @@ from .VictorConfigUtil import VictorConfigUtil
 from .VictorSPX import VictorSPX
 from .VictorSPXConfiguration import VictorSPXConfiguration
 from .VictorSPXControlMode import VictorSPXControlMode
-from .VictorSPXPIDSetConfiguration import VictorSPXPIDSetConfiguration
 from .VictorSPXPIDSetConfigUtil import VictorSPXPIDSetConfigUtil
+from .VictorSPXPIDSetConfiguration import VictorSPXPIDSetConfiguration
 from .WPI_BaseMotorController import WPI_BaseMotorController
 from .WPI_TalonFX import WPI_TalonFX
 from .WPI_TalonSRX import WPI_TalonSRX
 from .WPI_VictorSPX import WPI_VictorSPX
+
 # variables with complex values
 
-__loader__ = None # (!) real value is '<_frozen_importlib_external.ExtensionFileLoader object at 0x000001E75D7A7148>'
+__loader__ = None  # (!) real value is '<_frozen_importlib_external.ExtensionFileLoader object at 0x000001E75D7A7148>'
 
-__spec__ = None # (!) real value is "ModuleSpec(name='ctre._ctre', loader=<_frozen_importlib_external.ExtensionFileLoader object at 0x000001E75D7A7148>, origin='C:\\\\Users\\\\Nolan\\\\Documents\\\\Robotics\\\\python-frc-robot-architecture\\\\venv\\\\lib\\\\site-packages\\\\ctre\\\\_ctre.cp37-win_amd64.pyd')"
-
+__spec__ = None  # (!) real value is "ModuleSpec(name='ctre._ctre', loader=<_frozen_importlib_external.ExtensionFileLoader object at 0x000001E75D7A7148>, origin='C:\\\\Users\\\\Nolan\\\\Documents\\\\Robotics\\\\python-frc-robot-architecture\\\\venv\\\\lib\\\\site-packages\\\\ctre\\\\_ctre.cp37-win_amd64.pyd')"

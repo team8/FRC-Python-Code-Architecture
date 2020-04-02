@@ -1,40 +1,38 @@
-
 class TalonFXControlMode:
 
-    def __eq__(self, *args, **kwargs): # real signature unknown
+    def __eq__(self, *args, **kwargs):  # real signature unknown
         """ (self: object, arg0: object) -> bool """
         pass
 
-    def __getstate__(self, *args, **kwargs): # real signature unknown
+    def __getstate__(self, *args, **kwargs):  # real signature unknown
         """ (self: object) -> int_ """
         pass
 
-    def __hash__(self, *args, **kwargs): # real signature unknown
+    def __hash__(self, *args, **kwargs):  # real signature unknown
         """ (self: object) -> int_ """
         pass
 
-    def __init__(self, arg0): # real signature unknown; restored from __doc__
+    def __init__(self, arg0):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.TalonFXControlMode, arg0: int) -> None """
         pass
 
-    def __int__(self): # real signature unknown; restored from __doc__
+    def __int__(self):  # real signature unknown; restored from __doc__
         """ __int__(self: ctre._ctre.TalonFXControlMode) -> int """
         return 0
 
-    def __ne__(self, *args, **kwargs): # real signature unknown
+    def __ne__(self, *args, **kwargs):  # real signature unknown
         """ (self: object, arg0: object) -> bool """
         pass
 
-    def __repr__(self, *args, **kwargs): # real signature unknown
+    def __repr__(self, *args, **kwargs):  # real signature unknown
         """ (self: handle) -> str """
         pass
 
-    def __setstate__(self, *args, **kwargs): # real signature unknown
+    def __setstate__(self, *args, **kwargs):  # real signature unknown
         """ (self: ctre._ctre.TalonFXControlMode, arg0: int) -> None """
         pass
 
     name = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
 
     Current = TalonFXControlMode.Current
     Disabled = TalonFXControlMode.Disabled

@@ -6,41 +6,40 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class SlotConfigUtil(__pybind11_builtins.pybind11_object):
     """ Util Class to help with slot configs """
-    def allowableClosedloopErrorDifferent(self, settings): # real signature unknown; restored from __doc__
+
+    def allowableClosedloopErrorDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ allowableClosedloopErrorDifferent(settings: ctre._ctre.SlotConfiguration) -> bool """
         return False
 
-    def closedLoopPeakOutputDifferent(self, settings): # real signature unknown; restored from __doc__
+    def closedLoopPeakOutputDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ closedLoopPeakOutputDifferent(settings: ctre._ctre.SlotConfiguration) -> bool """
         return False
 
-    def closedLoopPeriodDifferent(self, settings): # real signature unknown; restored from __doc__
+    def closedLoopPeriodDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ closedLoopPeriodDifferent(settings: ctre._ctre.SlotConfiguration) -> bool """
         return False
 
-    def integralZoneDifferent(self, settings): # real signature unknown; restored from __doc__
+    def integralZoneDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ integralZoneDifferent(settings: ctre._ctre.SlotConfiguration) -> bool """
         return False
 
-    def KDDifferent(self, settings): # real signature unknown; restored from __doc__
+    def KDDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ KDDifferent(settings: ctre._ctre.SlotConfiguration) -> bool """
         return False
 
-    def KFDifferent(self, settings): # real signature unknown; restored from __doc__
+    def KFDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ KFDifferent(settings: ctre._ctre.SlotConfiguration) -> bool """
         return False
 
-    def KIDifferent(self, settings): # real signature unknown; restored from __doc__
+    def KIDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ KIDifferent(settings: ctre._ctre.SlotConfiguration) -> bool """
         return False
 
-    def KPDifferent(self, settings): # real signature unknown; restored from __doc__
+    def KPDifferent(self, settings):  # real signature unknown; restored from __doc__
         """
         KPDifferent(settings: ctre._ctre.SlotConfiguration) -> bool
         
@@ -53,12 +52,10 @@ class SlotConfigUtil(__pybind11_builtins.pybind11_object):
         """
         return False
 
-    def maxIntegralAccumulatorDifferent(self, settings): # real signature unknown; restored from __doc__
+    def maxIntegralAccumulatorDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ maxIntegralAccumulatorDifferent(settings: ctre._ctre.SlotConfiguration) -> bool """
         return False
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.SlotConfigUtil) -> None """
         pass
-
-

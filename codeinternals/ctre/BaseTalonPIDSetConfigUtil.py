@@ -6,17 +6,16 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class BaseTalonPIDSetConfigUtil(__pybind11_builtins.pybind11_object):
     """ Util class to help with BaseTalon's PID configs """
-    def selectedFeedbackCoefficientDifferent(self, settings): # real signature unknown; restored from __doc__
+
+    def selectedFeedbackCoefficientDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ selectedFeedbackCoefficientDifferent(settings: ctre._ctre.BaseTalonPIDSetConfiguration) -> bool """
         return False
 
-    def selectedFeedbackSensorDifferent(self, settings): # real signature unknown; restored from __doc__
+    def selectedFeedbackSensorDifferent(self, settings):  # real signature unknown; restored from __doc__
         """
         selectedFeedbackSensorDifferent(settings: ctre._ctre.BaseTalonPIDSetConfiguration) -> bool
         
@@ -29,8 +28,6 @@ class BaseTalonPIDSetConfigUtil(__pybind11_builtins.pybind11_object):
         """
         return False
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.BaseTalonPIDSetConfigUtil) -> None """
         pass
-
-

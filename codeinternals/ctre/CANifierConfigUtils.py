@@ -6,33 +6,32 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class CANifierConfigUtils(__pybind11_builtins.pybind11_object):
     """ Util class to help with configuring CANifier """
-    def clearPositionOnLimitFDifferent(self, settings): # real signature unknown; restored from __doc__
+
+    def clearPositionOnLimitFDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ clearPositionOnLimitFDifferent(settings: ctre._ctre.CANifierConfiguration) -> bool """
         return False
 
-    def clearPositionOnLimitRDifferent(self, settings): # real signature unknown; restored from __doc__
+    def clearPositionOnLimitRDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ clearPositionOnLimitRDifferent(settings: ctre._ctre.CANifierConfiguration) -> bool """
         return False
 
-    def clearPositionOnQuadIdxDifferent(self, settings): # real signature unknown; restored from __doc__
+    def clearPositionOnQuadIdxDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ clearPositionOnQuadIdxDifferent(settings: ctre._ctre.CANifierConfiguration) -> bool """
         return False
 
-    def customParam0Different(self, settings): # real signature unknown; restored from __doc__
+    def customParam0Different(self, settings):  # real signature unknown; restored from __doc__
         """ customParam0Different(settings: ctre._ctre.CANifierConfiguration) -> bool """
         return False
 
-    def customParam1Different(self, settings): # real signature unknown; restored from __doc__
+    def customParam1Different(self, settings):  # real signature unknown; restored from __doc__
         """ customParam1Different(settings: ctre._ctre.CANifierConfiguration) -> bool """
         return False
 
-    def velocityMeasurementPeriodDifferent(self, settings): # real signature unknown; restored from __doc__
+    def velocityMeasurementPeriodDifferent(self, settings):  # real signature unknown; restored from __doc__
         """
         velocityMeasurementPeriodDifferent(settings: ctre._ctre.CANifierConfiguration) -> bool
         
@@ -45,12 +44,10 @@ class CANifierConfigUtils(__pybind11_builtins.pybind11_object):
         """
         return False
 
-    def velocityMeasurementWindowDifferent(self, settings): # real signature unknown; restored from __doc__
+    def velocityMeasurementWindowDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ velocityMeasurementWindowDifferent(settings: ctre._ctre.CANifierConfiguration) -> bool """
         return False
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.CANifierConfigUtils) -> None """
         pass
-
-

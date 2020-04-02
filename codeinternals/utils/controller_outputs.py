@@ -1,6 +1,6 @@
+from codeinternals.constants import drive_constants
 from codeinternals.ctre import TalonFXControlMode
 from codeinternals.utils.gains import Gains
-from codeinternals.constants import drive_constants
 
 
 class ControllerOutputs:

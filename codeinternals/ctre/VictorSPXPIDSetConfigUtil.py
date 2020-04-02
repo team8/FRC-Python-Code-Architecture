@@ -1,11 +1,11 @@
-
 class VictorSPXPIDSetConfigUtil():
     """ Util class to help with VictorSPX's PID configs """
-    def selectedFeedbackCoefficientDifferent(self, settings): # real signature unknown; restored from __doc__
+
+    def selectedFeedbackCoefficientDifferent(self, settings):  # real signature unknown; restored from __doc__
         """ selectedFeedbackCoefficientDifferent(settings: ctre._ctre.VictorSPXPIDSetConfiguration) -> bool """
         return False
 
-    def selectedFeedbackSensorDifferent(self, settings): # real signature unknown; restored from __doc__
+    def selectedFeedbackSensorDifferent(self, settings):  # real signature unknown; restored from __doc__
         """
         selectedFeedbackSensorDifferent(settings: ctre._ctre.VictorSPXPIDSetConfiguration) -> bool
         
@@ -18,8 +18,6 @@ class VictorSPXPIDSetConfigUtil():
         """
         return False
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.VictorSPXPIDSetConfigUtil) -> None """
         pass
-
-

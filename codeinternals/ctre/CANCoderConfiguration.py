@@ -3,7 +3,8 @@ from codeinternals.ctre import CustomParamConfiguration
 
 class CANCoderConfiguration(CustomParamConfiguration):
     """ Configurables available to CANCoder """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -24,7 +25,7 @@ class CANCoderConfiguration(CustomParamConfiguration):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.CANCoderConfiguration) -> None
         
@@ -76,6 +77,3 @@ Default is "deg"""
 
     velocityMeasurementWindow = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Velocity measurement window to use"""
-
-
-

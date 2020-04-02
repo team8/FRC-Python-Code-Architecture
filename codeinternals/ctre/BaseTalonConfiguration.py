@@ -5,16 +5,14 @@
 # no doc
 
 # imports
-import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
-
 
 from .BaseMotorControllerConfiguration import BaseMotorControllerConfiguration
 
+
 class BaseTalonConfiguration(BaseMotorControllerConfiguration):
     """ Configurables available to BaseTalon """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -35,7 +33,7 @@ class BaseTalonConfiguration(BaseMotorControllerConfiguration):
         """
         pass
 
-    def __init__(self, defaultFeedbackDevice): # real signature unknown; restored from __doc__
+    def __init__(self, defaultFeedbackDevice):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.BaseTalonConfiguration, defaultFeedbackDevice: ctre._ctre.FeedbackDevice) -> None """
         pass
 
@@ -106,6 +104,3 @@ Alternatively the product specific enum can be used instead.
 configs.sum1Term = (FeedbackDevice)TalonSRXFeedbackDevice::QuadEncoder;
 configs.sum1Term = (FeedbackDevice)TalonFXFeedbackDevice::IntegratedSensor;
 @endcode"""
-
-
-

@@ -1,9 +1,10 @@
-
 from .BaseTalonConfiguration import BaseTalonConfiguration
+
 
 class TalonSRXConfiguration(BaseTalonConfiguration):
     """ Configurables available to TalonSRX """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -24,7 +25,7 @@ class TalonSRXConfiguration(BaseTalonConfiguration):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.TalonSRXConfiguration) -> None """
         pass
 
@@ -51,6 +52,3 @@ Current limit is activated when current exceeds the peak limit for longer
 than the peak duration. Then software will limit to the continuous limit.
 This ensures current limiting while allowing for momentary excess current
 events."""
-
-
-

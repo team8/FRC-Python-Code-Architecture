@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class FilterConfiguration(__pybind11_builtins.pybind11_object):
     """ Configurations for filters """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -33,7 +32,7 @@ class FilterConfiguration(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.FilterConfiguration) -> None """
         pass
 
@@ -42,6 +41,3 @@ class FilterConfiguration(__pybind11_builtins.pybind11_object):
 
     remoteSensorSource = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """The remote sensor device and signal type to bind."""
-
-
-

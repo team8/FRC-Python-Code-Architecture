@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class CANCoderStickyFaults(__pybind11_builtins.pybind11_object):
     """ Sticky Faults for CANCoder (Currently has none) """
-    def hasAnyFault(self): # real signature unknown; restored from __doc__
+
+    def hasAnyFault(self):  # real signature unknown; restored from __doc__
         """
         hasAnyFault(self: ctre._ctre.CANCoderStickyFaults) -> bool
         
@@ -22,7 +21,7 @@ class CANCoderStickyFaults(__pybind11_builtins.pybind11_object):
         """
         return False
 
-    def toBitfield(self): # real signature unknown; restored from __doc__
+    def toBitfield(self):  # real signature unknown; restored from __doc__
         """
         toBitfield(self: ctre._ctre.CANCoderStickyFaults) -> int
         
@@ -32,7 +31,7 @@ class CANCoderStickyFaults(__pybind11_builtins.pybind11_object):
         """
         return 0
 
-    def update(self, bits): # real signature unknown; restored from __doc__
+    def update(self, bits):  # real signature unknown; restored from __doc__
         """
         update(self: ctre._ctre.CANCoderStickyFaults, bits: int) -> None
         
@@ -42,7 +41,7 @@ class CANCoderStickyFaults(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def __init__(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def __init__(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         __init__(*args, **kwargs)
         Overloaded function.
@@ -73,6 +72,3 @@ Check your breakers and wiring."""
 
     UnderVoltage = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Device is under 6.5V"""
-
-
-

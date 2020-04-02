@@ -6,13 +6,13 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class IFollower(__pybind11_builtins.pybind11_object):
     """ Interface for followers """
-    def follow(self, masterToFollow, *args, **kwargs): # real signature unknown; NOTE: unreliably restored from __doc__ 
+
+    def follow(self, masterToFollow, *args,
+               **kwargs):  # real signature unknown; NOTE: unreliably restored from __doc__
         """
         follow(self: ctre._ctre.IFollower, masterToFollow: ctre::phoenix::motorcontrol::IMotorController) -> None
         
@@ -24,7 +24,7 @@ class IFollower(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def valueUpdated(self): # real signature unknown; restored from __doc__
+    def valueUpdated(self):  # real signature unknown; restored from __doc__
         """
         valueUpdated(self: ctre._ctre.IFollower) -> None
         
@@ -32,8 +32,6 @@ class IFollower(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.IFollower) -> None """
         pass
-
-

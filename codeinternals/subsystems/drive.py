@@ -7,7 +7,6 @@ from codeinternals.subsystems.subsystem_base import SubsystemBase
 
 
 class Drive(SubsystemBase):
-
     class State(Enum):
         IDLE = 0
         MOVE_STRAIGHT = 1
@@ -20,7 +19,8 @@ class Drive(SubsystemBase):
         HardwareReader.resetGyro()
         self.__wantedState = commands.getDriveWantedState()
         self.isNewState = self.state != self.__wantedState
-        self.isControllerFinished = True if self.controller is None else (True if self.controller.checkFinished() else False)
+        self.isControllerFinished = True if self.controller is None else (
+            True if self.controller.checkFinished() else False)
         if self.isNewState and self.isControllerFinished:
             self.state = self.__wantedState
             if self.state == Drive.State.IDLE:

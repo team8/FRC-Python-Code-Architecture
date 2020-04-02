@@ -5,16 +5,14 @@
 # no doc
 
 # imports
-import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
-
 
 from .CustomParamConfiguration import CustomParamConfiguration
 
+
 class BaseMotorControllerConfiguration(CustomParamConfiguration):
     """ Configurables available to base motor controllers """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -35,7 +33,7 @@ class BaseMotorControllerConfiguration(CustomParamConfiguration):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.BaseMotorControllerConfiguration) -> None """
         pass
 
@@ -110,7 +108,8 @@ added on to this value"""
     pulseWidthPeriod_EdgesPerRot = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Number of edges per rotation for a tachometer sensor"""
 
-    pulseWidthPeriod_FilterWindowSz = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    pulseWidthPeriod_FilterWindowSz = property(lambda self: object(), lambda self, v: None,
+                                               lambda self: None)  # default
     """Desired window size for a tachometer sensor"""
 
     remoteFilter0 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -119,7 +118,8 @@ added on to this value"""
     remoteFilter1 = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Configuration for RemoteFilter 1"""
 
-    remoteSensorClosedLoopDisableNeutralOnLOS = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    remoteSensorClosedLoopDisableNeutralOnLOS = property(lambda self: object(), lambda self, v: None,
+                                                         lambda self: None)  # default
     """Disable neutral'ing the motor when remote sensor is lost on CAN bus"""
 
     reverseSoftLimitEnable = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -160,6 +160,3 @@ then the TalonSRX will attempt to apply a duty-cycle to produce 5V."""
 
     voltageMeasurementFilter = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Number of samples in rolling average for voltage"""
-
-
-

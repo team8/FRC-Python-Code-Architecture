@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class CANBusAddressable(__pybind11_builtins.pybind11_object):
     """ Simple address holder. """
-    def getDeviceNumber(self): # real signature unknown; restored from __doc__
+
+    def getDeviceNumber(self):  # real signature unknown; restored from __doc__
         """
         getDeviceNumber(self: ctre._ctre.CANBusAddressable) -> int
         
@@ -22,7 +21,7 @@ class CANBusAddressable(__pybind11_builtins.pybind11_object):
         """
         return 0
 
-    def __init__(self, deviceNumber): # real signature unknown; restored from __doc__
+    def __init__(self, deviceNumber):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.CANBusAddressable, deviceNumber: int) -> None
         
@@ -31,5 +30,3 @@ class CANBusAddressable(__pybind11_builtins.pybind11_object):
         :param deviceNumber: CAN Device ID of device
         """
         pass
-
-

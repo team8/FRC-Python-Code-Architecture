@@ -1,5 +1,5 @@
-from codeinternals.hardware_adapter import HardwareAdapter
 from codeinternals import robot_state
+from codeinternals.hardware_adapter import HardwareAdapter
 
 
 class HardwareReader:

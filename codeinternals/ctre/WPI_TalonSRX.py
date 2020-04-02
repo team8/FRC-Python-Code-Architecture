@@ -3,7 +3,8 @@ from codeinternals.ctre import TalonSRX, WPI_BaseMotorController
 
 class WPI_TalonSRX(TalonSRX, WPI_BaseMotorController):
     """ CTRE Talon SRX Motor Controller when used on CAN Bus. """
-    def configSelectedFeedbackSensor(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def configSelectedFeedbackSensor(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configSelectedFeedbackSensor(*args, **kwargs)
         Overloaded function.
@@ -14,7 +15,7 @@ class WPI_TalonSRX(TalonSRX, WPI_BaseMotorController):
         """
         pass
 
-    def set(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def set(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         set(*args, **kwargs)
         Overloaded function.
@@ -31,7 +32,7 @@ class WPI_TalonSRX(TalonSRX, WPI_BaseMotorController):
         """
         pass
 
-    def setInverted(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def setInverted(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         setInverted(*args, **kwargs)
         Overloaded function.
@@ -42,11 +43,11 @@ class WPI_TalonSRX(TalonSRX, WPI_BaseMotorController):
         """
         pass
 
-    def setVoltage(self, output): # real signature unknown; restored from __doc__
+    def setVoltage(self, output):  # real signature unknown; restored from __doc__
         """ setVoltage(self: ctre._ctre.WPI_TalonSRX, output: volts) -> None """
         pass
 
-    def __init__(self, deviceNumber): # real signature unknown; restored from __doc__
+    def __init__(self, deviceNumber):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.WPI_TalonSRX, deviceNumber: int) -> None
         
@@ -55,5 +56,3 @@ class WPI_TalonSRX(TalonSRX, WPI_BaseMotorController):
         :param deviceNumber: Device ID of TalonSRX
         """
         pass
-
-

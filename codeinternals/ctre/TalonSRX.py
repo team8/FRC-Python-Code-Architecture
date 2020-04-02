@@ -3,7 +3,8 @@ from codeinternals.ctre import BaseTalon
 
 class TalonSRX(BaseTalon):
     """ CTRE Talon SRX Motor Controller when used on CAN Bus. """
-    def configAllSettings(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+
+    def configAllSettings(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configAllSettings(self: ctre._ctre.TalonSRX, allConfigs: ctre._ctre.TalonSRXConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -19,7 +20,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def configContinuousCurrentLimit(self, amps, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configContinuousCurrentLimit(self, amps, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configContinuousCurrentLimit(self: ctre._ctre.TalonSRX, amps: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -46,7 +47,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def configPeakCurrentDuration(self, milliseconds, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configPeakCurrentDuration(self, milliseconds, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configPeakCurrentDuration(self: ctre._ctre.TalonSRX, milliseconds: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -72,7 +73,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def configPeakCurrentLimit(self, amps, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configPeakCurrentLimit(self, amps, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configPeakCurrentLimit(self: ctre._ctre.TalonSRX, amps: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -98,7 +99,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def configSelectedFeedbackSensor(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configSelectedFeedbackSensor(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configSelectedFeedbackSensor(*args, **kwargs)
         Overloaded function.
@@ -148,7 +149,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def configSupplyCurrentLimit(self, currLimitConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configSupplyCurrentLimit(self, currLimitConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configSupplyCurrentLimit(self: ctre._ctre.TalonSRX, currLimitConfigs: ctre._ctre.SupplyCurrentLimitConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -164,7 +165,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def configurePID(self, pid, pidIdx=0, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configurePID(self, pid, pidIdx=0, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configurePID(self: ctre._ctre.TalonSRX, pid: ctre._ctre.TalonSRXPIDSetConfiguration, pidIdx: int = 0, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -180,7 +181,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def enableCurrentLimit(self, enable): # real signature unknown; restored from __doc__
+    def enableCurrentLimit(self, enable):  # real signature unknown; restored from __doc__
         """
         enableCurrentLimit(self: ctre._ctre.TalonSRX, enable: bool) -> None
         
@@ -196,7 +197,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def getAllConfigs(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getAllConfigs(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getAllConfigs(self: ctre._ctre.TalonSRX, allConfigs: ctre._ctre.TalonSRXConfiguration, timeoutMs: int = 50) -> None
         
@@ -210,7 +211,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def getPIDConfigs(self, pid, pidIdx=0, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getPIDConfigs(self, pid, pidIdx=0, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getPIDConfigs(self: ctre._ctre.TalonSRX, pid: ctre._ctre.TalonSRXPIDSetConfiguration, pidIdx: int = 0, timeoutMs: int = 50) -> None
         
@@ -226,7 +227,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def getSensorCollection(self): # real signature unknown; restored from __doc__
+    def getSensorCollection(self):  # real signature unknown; restored from __doc__
         """
         getSensorCollection(self: ctre._ctre.TalonSRX) -> ctre._ctre.SensorCollection
         
@@ -236,7 +237,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def set(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def set(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         set(*args, **kwargs)
         Overloaded function.
@@ -310,7 +311,7 @@ class TalonSRX(BaseTalon):
         """
         pass
 
-    def __init__(self, deviceNumber): # real signature unknown; restored from __doc__
+    def __init__(self, deviceNumber):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.TalonSRX, deviceNumber: int) -> None
         
@@ -319,5 +320,3 @@ class TalonSRX(BaseTalon):
         :param deviceNumber: CAN Device ID of TalonSRX
         """
         pass
-
-

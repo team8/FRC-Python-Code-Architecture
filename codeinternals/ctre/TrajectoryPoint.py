@@ -1,10 +1,10 @@
-
 class TrajectoryPoint():
     """
     Motion Profile Trajectory Point
     This is simply a data transfer object.
     """
-    def __init__(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def __init__(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         __init__(*args, **kwargs)
         Overloaded function.
@@ -77,6 +77,3 @@ of all trajectory points so they are correct.
 
 If using multiple sensor sources (Arc modes) we recommend you manually set sensor positions
 before arming MP."""
-
-
-

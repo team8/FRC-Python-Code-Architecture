@@ -1,9 +1,10 @@
-
 from .BaseTalon import BaseTalon
+
 
 class TalonFX(BaseTalon):
     """ CTRE Talon FX Motor Controller when used on CAN Bus. """
-    def configAllSettings(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+
+    def configAllSettings(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configAllSettings(self: ctre._ctre.TalonFX, allConfigs: ctre._ctre.TalonFXConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -19,7 +20,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configGetMotorCommutation(self, motorCommutation, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configGetMotorCommutation(self, motorCommutation, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configGetMotorCommutation(self: ctre._ctre.TalonFX, motorCommutation: ctre._ctre.MotorCommutation, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -32,7 +33,8 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configGetStatorCurrentLimit(self, currLimitConfigsToFill, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configGetStatorCurrentLimit(self, currLimitConfigsToFill,
+                                    timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configGetStatorCurrentLimit(self: ctre._ctre.TalonFX, currLimitConfigsToFill: ctre._ctre.StatorCurrentLimitConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -47,7 +49,8 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configGetSupplyCurrentLimit(self, currLimitConfigsToFill, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configGetSupplyCurrentLimit(self, currLimitConfigsToFill,
+                                    timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configGetSupplyCurrentLimit(self: ctre._ctre.TalonFX, currLimitConfigsToFill: ctre._ctre.SupplyCurrentLimitConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -62,7 +65,8 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configIntegratedSensorAbsoluteRange(self, absoluteSensorRange, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configIntegratedSensorAbsoluteRange(self, absoluteSensorRange,
+                                            timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configIntegratedSensorAbsoluteRange(self: ctre._ctre.TalonFX, absoluteSensorRange: ctre._ctre.AbsoluteSensorRange, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -80,7 +84,8 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configIntegratedSensorInitializationStrategy(self, initializationStrategy, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configIntegratedSensorInitializationStrategy(self, initializationStrategy,
+                                                     timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configIntegratedSensorInitializationStrategy(self: ctre._ctre.TalonFX, initializationStrategy: ctre._ctre.SensorInitializationStrategy, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -100,7 +105,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configIntegratedSensorOffset(self, offsetDegrees, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configIntegratedSensorOffset(self, offsetDegrees, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configIntegratedSensorOffset(self: ctre._ctre.TalonFX, offsetDegrees: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -119,7 +124,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configMotorCommutation(self, motorCommutation, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configMotorCommutation(self, motorCommutation, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configMotorCommutation(self: ctre._ctre.TalonFX, motorCommutation: ctre._ctre.MotorCommutation, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -133,7 +138,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configSelectedFeedbackSensor(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configSelectedFeedbackSensor(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configSelectedFeedbackSensor(*args, **kwargs)
         Overloaded function.
@@ -158,7 +163,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configStatorCurrentLimit(self, currLimitConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configStatorCurrentLimit(self, currLimitConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configStatorCurrentLimit(self: ctre._ctre.TalonFX, currLimitConfigs: ctre._ctre.StatorCurrentLimitConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -174,7 +179,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configSupplyCurrentLimit(self, currLimitConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configSupplyCurrentLimit(self, currLimitConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configSupplyCurrentLimit(self: ctre._ctre.TalonFX, currLimitConfigs: ctre._ctre.SupplyCurrentLimitConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -190,7 +195,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def configurePID(self, pid, pidIdx=0, timeoutMs=50): # real signature unknown; restored from __doc__
+    def configurePID(self, pid, pidIdx=0, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configurePID(self: ctre._ctre.TalonFX, pid: ctre._ctre.TalonFXPIDSetConfiguration, pidIdx: int = 0, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -206,7 +211,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def getAllConfigs(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getAllConfigs(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getAllConfigs(self: ctre._ctre.TalonFX, allConfigs: ctre._ctre.TalonFXConfiguration, timeoutMs: int = 50) -> None
         
@@ -220,7 +225,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def getPIDConfigs(self, pid, pidIdx=0, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getPIDConfigs(self, pid, pidIdx=0, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getPIDConfigs(self: ctre._ctre.TalonFX, pid: ctre._ctre.TalonFXPIDSetConfiguration, pidIdx: int = 0, timeoutMs: int = 50) -> None
         
@@ -236,7 +241,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def getSensorCollection(self): # real signature unknown; restored from __doc__
+    def getSensorCollection(self):  # real signature unknown; restored from __doc__
         """
         getSensorCollection(self: ctre._ctre.TalonFX) -> ctre._ctre.TalonFXSensorCollection
         
@@ -246,7 +251,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def set(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def set(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         set(*args, **kwargs)
         Overloaded function.
@@ -320,7 +325,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def setInverted(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def setInverted(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         setInverted(*args, **kwargs)
         Overloaded function.
@@ -345,7 +350,7 @@ class TalonFX(BaseTalon):
         """
         pass
 
-    def __init__(self, deviceNumber): # real signature unknown; restored from __doc__
+    def __init__(self, deviceNumber):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.TalonFX, deviceNumber: int) -> None
         
@@ -354,5 +359,3 @@ class TalonFX(BaseTalon):
         :param deviceNumber: CAN Device ID of TalonFX
         """
         pass
-
-

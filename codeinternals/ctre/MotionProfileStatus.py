@@ -6,8 +6,6 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class MotionProfileStatus(__pybind11_builtins.pybind11_object):
@@ -15,7 +13,8 @@ class MotionProfileStatus(__pybind11_builtins.pybind11_object):
     Motion Profile Status
     This is simply a data transer object.
     """
-    def __init__(self): # real signature unknown; restored from __doc__
+
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.MotionProfileStatus) -> None """
         pass
 
@@ -62,6 +61,3 @@ confirm the change takes effect before interacting with the top buffer."""
 The robot API holds a "top buffer" of trajectory points, so your applicaion
 can dump several points at once.  The API will then stream them into the Talon's
 low-level buffer, allowing the Talon to act on them."""
-
-
-

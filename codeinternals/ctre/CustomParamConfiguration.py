@@ -1,8 +1,7 @@
-
-
 class CustomParamConfiguration():
     """ Configurables for any custom param configs """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -23,7 +22,7 @@ class CustomParamConfiguration():
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.CustomParamConfiguration) -> None """
         pass
 
@@ -35,6 +34,3 @@ class CustomParamConfiguration():
 
     enableOptimizations = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Enable optimizations for ConfigAll (defaults true)"""
-
-
-

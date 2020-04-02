@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class BufferedTrajectoryPointStream(__pybind11_builtins.pybind11_object):
     """ Stream of trajectory points for Talon/Victor motion profiling. """
-    def clear(self): # real signature unknown; restored from __doc__
+
+    def clear(self):  # real signature unknown; restored from __doc__
         """
         clear(self: ctre._ctre.BufferedTrajectoryPointStream) -> ctre._ctre.ErrorCode
         
@@ -22,7 +21,7 @@ class BufferedTrajectoryPointStream(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def getHandle(self): # real signature unknown; restored from __doc__
+    def getHandle(self):  # real signature unknown; restored from __doc__
         """
         getHandle(self: ctre._ctre.BufferedTrajectoryPointStream) -> capsule
         
@@ -32,7 +31,7 @@ class BufferedTrajectoryPointStream(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def write(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def write(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         write(*args, **kwargs)
         Overloaded function.
@@ -51,8 +50,6 @@ class BufferedTrajectoryPointStream(__pybind11_builtins.pybind11_object):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.BufferedTrajectoryPointStream) -> None """
         pass
-
-

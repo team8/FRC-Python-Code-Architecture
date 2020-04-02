@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class PigeonIMUConfigUtils(__pybind11_builtins.pybind11_object):
     """ Util class to help with Pigeon configurations """
-    def customParam0Different(self, settings): # real signature unknown; restored from __doc__
+
+    def customParam0Different(self, settings):  # real signature unknown; restored from __doc__
         """
         customParam0Different(settings: ctre._ctre.PigeonIMUConfiguration) -> bool
         
@@ -25,12 +24,10 @@ class PigeonIMUConfigUtils(__pybind11_builtins.pybind11_object):
         """
         return False
 
-    def customParam1Different(self, settings): # real signature unknown; restored from __doc__
+    def customParam1Different(self, settings):  # real signature unknown; restored from __doc__
         """ customParam1Different(settings: ctre._ctre.PigeonIMUConfiguration) -> bool """
         return False
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.PigeonIMUConfigUtils) -> None """
         pass
-
-

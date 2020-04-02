@@ -1,4 +1,3 @@
-
 class TalonFXSensorCollection():
     """
     Collection of sensors available to the Talon FX.
@@ -10,7 +9,8 @@ class TalonFXSensorCollection():
     
     Use the GetTalonFXSensorCollection() routine inside your motor controller to create a sensor collection.
     """
-    def getIntegratedSensorAbsolutePosition(self): # real signature unknown; restored from __doc__
+
+    def getIntegratedSensorAbsolutePosition(self):  # real signature unknown; restored from __doc__
         """
         getIntegratedSensorAbsolutePosition(self: ctre._ctre.TalonFXSensorCollection) -> float
         
@@ -23,11 +23,11 @@ class TalonFXSensorCollection():
         """
         return 0.0
 
-    def getIntegratedSensorPosition(self): # real signature unknown; restored from __doc__
+    def getIntegratedSensorPosition(self):  # real signature unknown; restored from __doc__
         """ getIntegratedSensorPosition(self: ctre._ctre.TalonFXSensorCollection) -> float """
         return 0.0
 
-    def getIntegratedSensorVelocity(self): # real signature unknown; restored from __doc__
+    def getIntegratedSensorVelocity(self):  # real signature unknown; restored from __doc__
         """
         getIntegratedSensorVelocity(self: ctre._ctre.TalonFXSensorCollection) -> float
         
@@ -41,15 +41,15 @@ class TalonFXSensorCollection():
         """
         return 0.0
 
-    def isFwdLimitSwitchClosed(self): # real signature unknown; restored from __doc__
+    def isFwdLimitSwitchClosed(self):  # real signature unknown; restored from __doc__
         """ isFwdLimitSwitchClosed(self: ctre._ctre.TalonFXSensorCollection) -> int """
         return 0
 
-    def isRevLimitSwitchClosed(self): # real signature unknown; restored from __doc__
+    def isRevLimitSwitchClosed(self):  # real signature unknown; restored from __doc__
         """ isRevLimitSwitchClosed(self: ctre._ctre.TalonFXSensorCollection) -> int """
         return 0
 
-    def setIntegratedSensorPosition(self, newPosition, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setIntegratedSensorPosition(self, newPosition, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setIntegratedSensorPosition(self: ctre._ctre.TalonFXSensorCollection, newPosition: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -67,7 +67,7 @@ class TalonFXSensorCollection():
         """
         pass
 
-    def setIntegratedSensorPositionToAbsolute(self, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setIntegratedSensorPositionToAbsolute(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setIntegratedSensorPositionToAbsolute(self: ctre._ctre.TalonFXSensorCollection, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -82,7 +82,8 @@ class TalonFXSensorCollection():
         """
         pass
 
-    def __init__(self, motorController, *args, **kwargs): # real signature unknown; NOTE: unreliably restored from __doc__ 
+    def __init__(self, motorController, *args,
+                 **kwargs):  # real signature unknown; NOTE: unreliably restored from __doc__
         """
         __init__(self: ctre._ctre.TalonFXSensorCollection, motorController: ctre::phoenix::motorcontrol::can::BaseTalon) -> None
         
@@ -91,5 +92,3 @@ class TalonFXSensorCollection():
         :param motorController: Talon Motor Controller to connect Collection to
         """
         pass
-
-

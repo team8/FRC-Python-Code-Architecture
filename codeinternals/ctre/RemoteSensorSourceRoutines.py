@@ -6,13 +6,12 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class RemoteSensorSourceRoutines(__pybind11_builtins.pybind11_object):
     """ Class used to get string representation of a remote sensor source """
-    def toString(self, value): # real signature unknown; restored from __doc__
+
+    def toString(self, value):  # real signature unknown; restored from __doc__
         """
         toString(value: ctre._ctre.RemoteSensorSource) -> str
         
@@ -24,8 +23,6 @@ class RemoteSensorSourceRoutines(__pybind11_builtins.pybind11_object):
         """
         return ""
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.RemoteSensorSourceRoutines) -> None """
         pass
-
-

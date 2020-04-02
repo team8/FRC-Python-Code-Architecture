@@ -5,16 +5,14 @@
 # no doc
 
 # imports
-import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
-
 
 from .IFollower import IFollower
 
+
 class IMotorController(IFollower):
     """ Interface for motor controllers """
-    def changeMotionControlFramePeriod(self, periodMs): # real signature unknown; restored from __doc__
+
+    def changeMotionControlFramePeriod(self, periodMs):  # real signature unknown; restored from __doc__
         """
         changeMotionControlFramePeriod(self: ctre._ctre.IMotorController, periodMs: int) -> ctre._ctre.ErrorCode
         
@@ -29,7 +27,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def clearMotionProfileHasUnderrun(self, timeoutMs=0): # real signature unknown; restored from __doc__
+    def clearMotionProfileHasUnderrun(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         clearMotionProfileHasUnderrun(self: ctre._ctre.IMotorController, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -44,7 +42,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def clearMotionProfileTrajectories(self): # real signature unknown; restored from __doc__
+    def clearMotionProfileTrajectories(self):  # real signature unknown; restored from __doc__
         """
         clearMotionProfileTrajectories(self: ctre._ctre.IMotorController) -> ctre._ctre.ErrorCode
         
@@ -55,7 +53,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def clearStickyFaults(self, timeoutMs=0): # real signature unknown; restored from __doc__
+    def clearStickyFaults(self, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         clearStickyFaults(self: ctre._ctre.IMotorController, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -69,7 +67,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configAllowableClosedloopError(self, slotIdx, allowableCloseLoopError, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configAllowableClosedloopError(self, slotIdx, allowableCloseLoopError,
+                                       timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configAllowableClosedloopError(self: ctre._ctre.IMotorController, slotIdx: int, allowableCloseLoopError: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -87,7 +86,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configAuxPIDPolarity(self, invert, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configAuxPIDPolarity(self, invert, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configAuxPIDPolarity(self: ctre._ctre.IMotorController, invert: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -111,7 +110,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configClearPositionOnLimitF(self, clearPositionOnLimitF, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClearPositionOnLimitF(self, clearPositionOnLimitF,
+                                    timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClearPositionOnLimitF(self: ctre._ctre.IMotorController, clearPositionOnLimitF: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -128,7 +128,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configClearPositionOnLimitR(self, clearPositionOnLimitR, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClearPositionOnLimitR(self, clearPositionOnLimitR,
+                                    timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClearPositionOnLimitR(self: ctre._ctre.IMotorController, clearPositionOnLimitR: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -145,7 +146,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configClearPositionOnQuadIdx(self, clearPositionOnQuadIdx, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClearPositionOnQuadIdx(self, clearPositionOnQuadIdx,
+                                     timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClearPositionOnQuadIdx(self: ctre._ctre.IMotorController, clearPositionOnQuadIdx: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -162,7 +164,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configClosedLoopPeakOutput(self, slotIdx, percentOut, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClosedLoopPeakOutput(self, slotIdx, percentOut,
+                                   timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClosedLoopPeakOutput(self: ctre._ctre.IMotorController, slotIdx: int, percentOut: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -183,7 +186,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configClosedLoopPeriod(self, slotIdx, loopTimeMs, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClosedLoopPeriod(self, slotIdx, loopTimeMs, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClosedLoopPeriod(self: ctre._ctre.IMotorController, slotIdx: int, loopTimeMs: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -203,7 +206,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configClosedloopRamp(self, secondsFromNeutralToFull, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configClosedloopRamp(self, secondsFromNeutralToFull,
+                             timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configClosedloopRamp(self: ctre._ctre.IMotorController, secondsFromNeutralToFull: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -220,7 +224,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configFactoryDefault(self, timeout): # real signature unknown; restored from __doc__
+    def configFactoryDefault(self, timeout):  # real signature unknown; restored from __doc__
         """
         configFactoryDefault(self: ctre._ctre.IMotorController, timeout: int) -> ctre._ctre.ErrorCode
         
@@ -236,7 +240,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configFeedbackNotContinuous(self, feedbackNotContinuous, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configFeedbackNotContinuous(self, feedbackNotContinuous,
+                                    timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configFeedbackNotContinuous(self: ctre._ctre.IMotorController, feedbackNotContinuous: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -258,7 +263,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configForwardLimitSwitchSource(self, type, normalOpenOrClose, deviceID, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configForwardLimitSwitchSource(self, type, normalOpenOrClose, deviceID,
+                                       timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configForwardLimitSwitchSource(self: ctre._ctre.IMotorController, type: ctre._ctre.RemoteLimitSwitchSource, normalOpenOrClose: ctre._ctre.LimitSwitchNormal, deviceID: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -282,7 +288,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configForwardSoftLimitEnable(self, enable, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configForwardSoftLimitEnable(self, enable, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configForwardSoftLimitEnable(self: ctre._ctre.IMotorController, enable: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -298,7 +304,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configForwardSoftLimitThreshold(self, forwardSensorLimit, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configForwardSoftLimitThreshold(self, forwardSensorLimit,
+                                        timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configForwardSoftLimitThreshold(self: ctre._ctre.IMotorController, forwardSensorLimit: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -314,7 +321,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configGetCustomParam(self, paramIndex, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configGetCustomParam(self, paramIndex, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configGetCustomParam(self: ctre._ctre.IMotorController, paramIndex: int, timeoutMs: int = 0) -> int
         
@@ -330,7 +337,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def configGetParameter(self, paramEnum, ordinal, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configGetParameter(self, paramEnum, ordinal, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configGetParameter(self: ctre._ctre.IMotorController, paramEnum: ctre._ctre.ParamEnum, ordinal: int, timeoutMs: int = 0) -> float
         
@@ -348,7 +355,8 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def configLimitSwitchDisableNeutralOnLOS(self, limitSwitchDisableNeutralOnLOS, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configLimitSwitchDisableNeutralOnLOS(self, limitSwitchDisableNeutralOnLOS,
+                                             timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configLimitSwitchDisableNeutralOnLOS(self: ctre._ctre.IMotorController, limitSwitchDisableNeutralOnLOS: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -364,7 +372,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configMaxIntegralAccumulator(self, slotIdx, iaccum, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configMaxIntegralAccumulator(self, slotIdx, iaccum,
+                                     timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configMaxIntegralAccumulator(self: ctre._ctre.IMotorController, slotIdx: int, iaccum: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -383,7 +392,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configMotionAcceleration(self, sensorUnitsPer100msPerSec, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configMotionAcceleration(self, sensorUnitsPer100msPerSec,
+                                 timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configMotionAcceleration(self: ctre._ctre.IMotorController, sensorUnitsPer100msPerSec: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -401,7 +411,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configMotionCruiseVelocity(self, sensorUnitsPer100ms, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configMotionCruiseVelocity(self, sensorUnitsPer100ms,
+                                   timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configMotionCruiseVelocity(self: ctre._ctre.IMotorController, sensorUnitsPer100ms: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -418,7 +429,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configMotionProfileTrajectoryPeriod(self, baseTrajDurationMs, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configMotionProfileTrajectoryPeriod(self, baseTrajDurationMs,
+                                            timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configMotionProfileTrajectoryPeriod(self: ctre._ctre.IMotorController, baseTrajDurationMs: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -440,7 +452,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configMotionSCurveStrength(self, curveStrength, timeoutMs): # real signature unknown; restored from __doc__
+    def configMotionSCurveStrength(self, curveStrength, timeoutMs):  # real signature unknown; restored from __doc__
         """
         configMotionSCurveStrength(self: ctre._ctre.IMotorController, curveStrength: int, timeoutMs: int) -> ctre._ctre.ErrorCode
         
@@ -458,7 +470,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configNeutralDeadband(self, percentDeadband, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configNeutralDeadband(self, percentDeadband, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configNeutralDeadband(self: ctre._ctre.IMotorController, percentDeadband: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -475,7 +487,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configNominalOutputForward(self, percentOut, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configNominalOutputForward(self, percentOut, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configNominalOutputForward(self: ctre._ctre.IMotorController, percentOut: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -491,7 +503,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configNominalOutputReverse(self, percentOut, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configNominalOutputReverse(self, percentOut, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configNominalOutputReverse(self: ctre._ctre.IMotorController, percentOut: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -507,7 +519,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configOpenloopRamp(self, secondsFromNeutralToFull, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configOpenloopRamp(self, secondsFromNeutralToFull,
+                           timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configOpenloopRamp(self: ctre._ctre.IMotorController, secondsFromNeutralToFull: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -524,7 +537,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configPeakOutputForward(self, percentOut, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configPeakOutputForward(self, percentOut, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configPeakOutputForward(self: ctre._ctre.IMotorController, percentOut: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -540,7 +553,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configPeakOutputReverse(self, percentOut, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configPeakOutputReverse(self, percentOut, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configPeakOutputReverse(self: ctre._ctre.IMotorController, percentOut: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -556,7 +569,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configPulseWidthPeriod_EdgesPerRot(self, pulseWidthPeriod_EdgesPerRot, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configPulseWidthPeriod_EdgesPerRot(self, pulseWidthPeriod_EdgesPerRot,
+                                           timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configPulseWidthPeriod_EdgesPerRot(self: ctre._ctre.IMotorController, pulseWidthPeriod_EdgesPerRot: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -573,7 +587,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configPulseWidthPeriod_FilterWindowSz(self, pulseWidthPeriod_FilterWindowSz, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configPulseWidthPeriod_FilterWindowSz(self, pulseWidthPeriod_FilterWindowSz,
+                                              timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configPulseWidthPeriod_FilterWindowSz(self: ctre._ctre.IMotorController, pulseWidthPeriod_FilterWindowSz: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -590,7 +605,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configRemoteFeedbackFilter(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configRemoteFeedbackFilter(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configRemoteFeedbackFilter(*args, **kwargs)
         Overloaded function.
@@ -633,7 +648,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configRemoteSensorClosedLoopDisableNeutralOnLOS(self, remoteSensorClosedLoopDisableNeutralOnLOS, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configRemoteSensorClosedLoopDisableNeutralOnLOS(self, remoteSensorClosedLoopDisableNeutralOnLOS,
+                                                        timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configRemoteSensorClosedLoopDisableNeutralOnLOS(self: ctre._ctre.IMotorController, remoteSensorClosedLoopDisableNeutralOnLOS: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -649,7 +665,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configReverseLimitSwitchSource(self, type, normalOpenOrClose, deviceID, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configReverseLimitSwitchSource(self, type, normalOpenOrClose, deviceID,
+                                       timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configReverseLimitSwitchSource(self: ctre._ctre.IMotorController, type: ctre._ctre.RemoteLimitSwitchSource, normalOpenOrClose: ctre._ctre.LimitSwitchNormal, deviceID: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -673,7 +690,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configReverseSoftLimitEnable(self, enable, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configReverseSoftLimitEnable(self, enable, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configReverseSoftLimitEnable(self: ctre._ctre.IMotorController, enable: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -689,7 +706,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configReverseSoftLimitThreshold(self, reverseSensorLimit, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configReverseSoftLimitThreshold(self, reverseSensorLimit,
+                                        timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configReverseSoftLimitThreshold(self: ctre._ctre.IMotorController, reverseSensorLimit: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -705,7 +723,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configSelectedFeedbackCoefficient(self, coefficient, pidIdx=0, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSelectedFeedbackCoefficient(self, coefficient, pidIdx=0,
+                                          timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSelectedFeedbackCoefficient(self: ctre._ctre.IMotorController, coefficient: float, pidIdx: int = 0, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -729,7 +748,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configSelectedFeedbackSensor(self, feedbackDevice, pidIdx=0, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSelectedFeedbackSensor(self, feedbackDevice, pidIdx=0,
+                                     timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSelectedFeedbackSensor(self: ctre._ctre.IMotorController, feedbackDevice: ctre._ctre.RemoteFeedbackDevice, pidIdx: int = 0, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -748,7 +768,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configSensorTerm(self, sensorTerm, feedbackDevice, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSensorTerm(self, sensorTerm, feedbackDevice,
+                         timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSensorTerm(self: ctre._ctre.IMotorController, sensorTerm: ctre._ctre.SensorTerm, feedbackDevice: ctre._ctre.FeedbackDevice, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -770,7 +791,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configSetCustomParam(self, newValue, paramIndex, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSetCustomParam(self, newValue, paramIndex, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSetCustomParam(self: ctre._ctre.IMotorController, newValue: int, paramIndex: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -792,7 +813,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configSetParameter(self, param, value, subValue, ordinal, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSetParameter(self, param, value, subValue, ordinal,
+                           timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSetParameter(self: ctre._ctre.IMotorController, param: ctre._ctre.ParamEnum, value: float, subValue: int, ordinal: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -817,7 +839,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configSoftLimitDisableNeutralOnLOS(self, softLimitDisableNeutralOnLOS, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configSoftLimitDisableNeutralOnLOS(self, softLimitDisableNeutralOnLOS,
+                                           timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configSoftLimitDisableNeutralOnLOS(self: ctre._ctre.IMotorController, softLimitDisableNeutralOnLOS: bool, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -833,7 +856,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configVoltageCompSaturation(self, voltage, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVoltageCompSaturation(self, voltage, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVoltageCompSaturation(self: ctre._ctre.IMotorController, voltage: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -852,7 +875,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def configVoltageMeasurementFilter(self, filterWindowSamples, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVoltageMeasurementFilter(self, filterWindowSamples,
+                                       timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVoltageMeasurementFilter(self: ctre._ctre.IMotorController, filterWindowSamples: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -869,7 +893,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def config_IntegralZone(self, slotIdx, izone, timeoutMs=0): # real signature unknown; restored from __doc__
+    def config_IntegralZone(self, slotIdx, izone, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         config_IntegralZone(self: ctre._ctre.IMotorController, slotIdx: int, izone: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -891,7 +915,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def config_kD(self, slotIdx, value, timeoutMs=0): # real signature unknown; restored from __doc__
+    def config_kD(self, slotIdx, value, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         config_kD(self: ctre._ctre.IMotorController, slotIdx: int, value: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -913,7 +937,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def config_kF(self, slotIdx, value, timeoutMs=0): # real signature unknown; restored from __doc__
+    def config_kF(self, slotIdx, value, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         config_kF(self: ctre._ctre.IMotorController, slotIdx: int, value: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -935,7 +959,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def config_kI(self, slotIdx, value, timeoutMs=0): # real signature unknown; restored from __doc__
+    def config_kI(self, slotIdx, value, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         config_kI(self: ctre._ctre.IMotorController, slotIdx: int, value: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -957,7 +981,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def config_kP(self, slotIdx, value, timeoutMs=0): # real signature unknown; restored from __doc__
+    def config_kP(self, slotIdx, value, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         config_kP(self: ctre._ctre.IMotorController, slotIdx: int, value: float, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -978,7 +1002,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def enableVoltageCompensation(self, enable): # real signature unknown; restored from __doc__
+    def enableVoltageCompensation(self, enable):  # real signature unknown; restored from __doc__
         """
         enableVoltageCompensation(self: ctre._ctre.IMotorController, enable: bool) -> None
         
@@ -991,7 +1015,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def getActiveTrajectoryArbFeedFwd(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getActiveTrajectoryArbFeedFwd(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getActiveTrajectoryArbFeedFwd(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> float
         
@@ -1005,7 +1029,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def getActiveTrajectoryHeading(self): # real signature unknown; restored from __doc__
+    def getActiveTrajectoryHeading(self):  # real signature unknown; restored from __doc__
         """
         getActiveTrajectoryHeading(self: ctre._ctre.IMotorController) -> float
         
@@ -1017,7 +1041,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def getActiveTrajectoryPosition(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getActiveTrajectoryPosition(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getActiveTrajectoryPosition(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> int
         
@@ -1030,7 +1054,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getActiveTrajectoryVelocity(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getActiveTrajectoryVelocity(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getActiveTrajectoryVelocity(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> int
         
@@ -1043,7 +1067,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getBaseID(self): # real signature unknown; restored from __doc__
+    def getBaseID(self):  # real signature unknown; restored from __doc__
         """
         getBaseID(self: ctre._ctre.IMotorController) -> int
         
@@ -1053,7 +1077,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getBusVoltage(self): # real signature unknown; restored from __doc__
+    def getBusVoltage(self):  # real signature unknown; restored from __doc__
         """
         getBusVoltage(self: ctre._ctre.IMotorController) -> float
         
@@ -1063,7 +1087,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def getClosedLoopError(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getClosedLoopError(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getClosedLoopError(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> int
         
@@ -1087,7 +1111,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getClosedLoopTarget(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getClosedLoopTarget(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getClosedLoopTarget(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> float
         
@@ -1099,7 +1123,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def getControlMode(self): # real signature unknown; restored from __doc__
+    def getControlMode(self):  # real signature unknown; restored from __doc__
         """
         getControlMode(self: ctre._ctre.IMotorController) -> ctre._ctre.ControlMode
         
@@ -1109,7 +1133,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def getDeviceID(self): # real signature unknown; restored from __doc__
+    def getDeviceID(self):  # real signature unknown; restored from __doc__
         """
         getDeviceID(self: ctre._ctre.IMotorController) -> int
         
@@ -1119,7 +1143,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getErrorDerivative(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getErrorDerivative(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getErrorDerivative(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> float
         
@@ -1131,7 +1155,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def getFaults(self, toFill): # real signature unknown; restored from __doc__
+    def getFaults(self, toFill):  # real signature unknown; restored from __doc__
         """
         getFaults(self: ctre._ctre.IMotorController, toFill: ctre._ctre.Faults) -> ctre._ctre.ErrorCode
         
@@ -1143,7 +1167,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def getFirmwareVersion(self): # real signature unknown; restored from __doc__
+    def getFirmwareVersion(self):  # real signature unknown; restored from __doc__
         """
         getFirmwareVersion(self: ctre._ctre.IMotorController) -> int
         
@@ -1154,7 +1178,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getIntegralAccumulator(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getIntegralAccumulator(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getIntegralAccumulator(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> float
         
@@ -1166,7 +1190,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def getInverted(self): # real signature unknown; restored from __doc__
+    def getInverted(self):  # real signature unknown; restored from __doc__
         """
         getInverted(self: ctre._ctre.IMotorController) -> bool
         
@@ -1176,7 +1200,7 @@ class IMotorController(IFollower):
         """
         return False
 
-    def getLastError(self): # real signature unknown; restored from __doc__
+    def getLastError(self):  # real signature unknown; restored from __doc__
         """
         getLastError(self: ctre._ctre.IMotorController) -> ctre._ctre.ErrorCode
         
@@ -1188,7 +1212,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def getMotionProfileStatus(self, statusToFill): # real signature unknown; restored from __doc__
+    def getMotionProfileStatus(self, statusToFill):  # real signature unknown; restored from __doc__
         """
         getMotionProfileStatus(self: ctre._ctre.IMotorController, statusToFill: ctre._ctre.MotionProfileStatus) -> ctre._ctre.ErrorCode
         
@@ -1238,7 +1262,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def getMotionProfileTopLevelBufferCount(self): # real signature unknown; restored from __doc__
+    def getMotionProfileTopLevelBufferCount(self):  # real signature unknown; restored from __doc__
         """
         getMotionProfileTopLevelBufferCount(self: ctre._ctre.IMotorController) -> int
         
@@ -1251,7 +1275,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getMotorOutputPercent(self): # real signature unknown; restored from __doc__
+    def getMotorOutputPercent(self):  # real signature unknown; restored from __doc__
         """
         getMotorOutputPercent(self: ctre._ctre.IMotorController) -> float
         
@@ -1261,7 +1285,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def getMotorOutputVoltage(self): # real signature unknown; restored from __doc__
+    def getMotorOutputVoltage(self):  # real signature unknown; restored from __doc__
         """
         getMotorOutputVoltage(self: ctre._ctre.IMotorController) -> float
         
@@ -1271,7 +1295,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def getSelectedSensorPosition(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getSelectedSensorPosition(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getSelectedSensorPosition(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> int
         
@@ -1284,7 +1308,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getSelectedSensorVelocity(self, pidIdx=0): # real signature unknown; restored from __doc__
+    def getSelectedSensorVelocity(self, pidIdx=0):  # real signature unknown; restored from __doc__
         """
         getSelectedSensorVelocity(self: ctre._ctre.IMotorController, pidIdx: int = 0) -> int
         
@@ -1297,7 +1321,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getStatusFramePeriod(self, frame, timeoutMs=0): # real signature unknown; restored from __doc__
+    def getStatusFramePeriod(self, frame, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         getStatusFramePeriod(self: ctre._ctre.IMotorController, frame: ctre._ctre.StatusFrame, timeoutMs: int = 0) -> int
         
@@ -1313,7 +1337,7 @@ class IMotorController(IFollower):
         """
         return 0
 
-    def getStickyFaults(self, toFill): # real signature unknown; restored from __doc__
+    def getStickyFaults(self, toFill):  # real signature unknown; restored from __doc__
         """
         getStickyFaults(self: ctre._ctre.IMotorController, toFill: ctre._ctre.StickyFaults) -> ctre._ctre.ErrorCode
         
@@ -1325,7 +1349,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def getTemperature(self): # real signature unknown; restored from __doc__
+    def getTemperature(self):  # real signature unknown; restored from __doc__
         """
         getTemperature(self: ctre._ctre.IMotorController) -> float
         
@@ -1335,7 +1359,7 @@ class IMotorController(IFollower):
         """
         return 0.0
 
-    def hasResetOccurred(self): # real signature unknown; restored from __doc__
+    def hasResetOccurred(self):  # real signature unknown; restored from __doc__
         """
         hasResetOccurred(self: ctre._ctre.IMotorController) -> bool
         
@@ -1345,7 +1369,7 @@ class IMotorController(IFollower):
         """
         return False
 
-    def isMotionProfileTopLevelBufferFull(self): # real signature unknown; restored from __doc__
+    def isMotionProfileTopLevelBufferFull(self):  # real signature unknown; restored from __doc__
         """
         isMotionProfileTopLevelBufferFull(self: ctre._ctre.IMotorController) -> bool
         
@@ -1358,7 +1382,7 @@ class IMotorController(IFollower):
         """
         return False
 
-    def isVoltageCompensationEnabled(self): # real signature unknown; restored from __doc__
+    def isVoltageCompensationEnabled(self):  # real signature unknown; restored from __doc__
         """
         isVoltageCompensationEnabled(self: ctre._ctre.IMotorController) -> bool
         
@@ -1368,7 +1392,7 @@ class IMotorController(IFollower):
         """
         return False
 
-    def neutralOutput(self): # real signature unknown; restored from __doc__
+    def neutralOutput(self):  # real signature unknown; restored from __doc__
         """
         neutralOutput(self: ctre._ctre.IMotorController) -> None
         
@@ -1376,7 +1400,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def overrideLimitSwitchesEnable(self, enable): # real signature unknown; restored from __doc__
+    def overrideLimitSwitchesEnable(self, enable):  # real signature unknown; restored from __doc__
         """
         overrideLimitSwitchesEnable(self: ctre._ctre.IMotorController, enable: bool) -> None
         
@@ -1386,7 +1410,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def overrideSoftLimitsEnable(self, enable): # real signature unknown; restored from __doc__
+    def overrideSoftLimitsEnable(self, enable):  # real signature unknown; restored from __doc__
         """
         overrideSoftLimitsEnable(self: ctre._ctre.IMotorController, enable: bool) -> None
         
@@ -1398,7 +1422,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def processMotionProfileBuffer(self): # real signature unknown; restored from __doc__
+    def processMotionProfileBuffer(self):  # real signature unknown; restored from __doc__
         """
         processMotionProfileBuffer(self: ctre._ctre.IMotorController) -> None
         
@@ -1412,7 +1436,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def pushMotionProfileTrajectory(self, trajPt): # real signature unknown; restored from __doc__
+    def pushMotionProfileTrajectory(self, trajPt):  # real signature unknown; restored from __doc__
         """
         pushMotionProfileTrajectory(self: ctre._ctre.IMotorController, trajPt: ctre._ctre.TrajectoryPoint) -> ctre._ctre.ErrorCode
         
@@ -1453,7 +1477,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def selectProfileSlot(self, slotIdx, pidIdx): # real signature unknown; restored from __doc__
+    def selectProfileSlot(self, slotIdx, pidIdx):  # real signature unknown; restored from __doc__
         """
         selectProfileSlot(self: ctre._ctre.IMotorController, slotIdx: int, pidIdx: int) -> ctre._ctre.ErrorCode
         
@@ -1465,7 +1489,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def set(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def set(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         set(*args, **kwargs)
         Overloaded function.
@@ -1532,7 +1556,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def setControlFramePeriod(self, frame, periodMs): # real signature unknown; restored from __doc__
+    def setControlFramePeriod(self, frame, periodMs):  # real signature unknown; restored from __doc__
         """
         setControlFramePeriod(self: ctre._ctre.IMotorController, frame: ctre._ctre.ControlFrame, periodMs: int) -> ctre._ctre.ErrorCode
         
@@ -1546,7 +1570,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def setIntegralAccumulator(self, iaccum, pidIdx=0, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setIntegralAccumulator(self, iaccum, pidIdx=0, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setIntegralAccumulator(self: ctre._ctre.IMotorController, iaccum: float, pidIdx: int = 0, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -1567,7 +1591,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def setInverted(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def setInverted(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         setInverted(*args, **kwargs)
         Overloaded function.
@@ -1602,7 +1626,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def setNeutralMode(self, neutralMode): # real signature unknown; restored from __doc__
+    def setNeutralMode(self, neutralMode):  # real signature unknown; restored from __doc__
         """
         setNeutralMode(self: ctre._ctre.IMotorController, neutralMode: ctre._ctre.NeutralMode) -> None
         
@@ -1613,7 +1637,8 @@ class IMotorController(IFollower):
         """
         pass
 
-    def setSelectedSensorPosition(self, sensorPos, pidIdx=0, timeoutMs=50): # real signature unknown; restored from __doc__
+    def setSelectedSensorPosition(self, sensorPos, pidIdx=0,
+                                  timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         setSelectedSensorPosition(self: ctre._ctre.IMotorController, sensorPos: int, pidIdx: int = 0, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -1631,7 +1656,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def setSensorPhase(self, PhaseSensor): # real signature unknown; restored from __doc__
+    def setSensorPhase(self, PhaseSensor):  # real signature unknown; restored from __doc__
         """
         setSensorPhase(self: ctre._ctre.IMotorController, PhaseSensor: bool) -> None
         
@@ -1644,7 +1669,7 @@ class IMotorController(IFollower):
         """
         pass
 
-    def setStatusFramePeriod(self, frame, periodMs, timeoutMs=0): # real signature unknown; restored from __doc__
+    def setStatusFramePeriod(self, frame, periodMs, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         setStatusFramePeriod(self: ctre._ctre.IMotorController, frame: ctre._ctre.StatusFrame, periodMs: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -1668,7 +1693,5 @@ class IMotorController(IFollower):
         """
         pass
 
-    def __init__(self, *args, **kwargs): # real signature unknown
+    def __init__(self, *args, **kwargs):  # real signature unknown
         pass
-
-

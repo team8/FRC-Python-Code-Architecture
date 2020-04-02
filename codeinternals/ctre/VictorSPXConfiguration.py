@@ -3,7 +3,8 @@ from codeinternals.ctre import BaseMotorControllerConfiguration
 
 class VictorSPXConfiguration(BaseMotorControllerConfiguration):
     """ Configurables available to VictorSPX """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -24,7 +25,7 @@ class VictorSPXConfiguration(BaseMotorControllerConfiguration):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.VictorSPXConfiguration) -> None """
         pass
 
@@ -71,6 +72,3 @@ User can choose between the feedback connector, remote Talon SRX, CANifier, or d
 
     sum1Term = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Feedback Device for Sum 1 Term"""
-
-
-

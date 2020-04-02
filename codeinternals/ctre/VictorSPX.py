@@ -3,7 +3,8 @@ from codeinternals.ctre import BaseMotorController, IMotorController
 
 class VictorSPX(BaseMotorController, IMotorController):
     """ VEX Victor SPX Motor Controller when used on CAN Bus. """
-    def configAllSettings(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+
+    def configAllSettings(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         configAllSettings(self: ctre._ctre.VictorSPX, allConfigs: ctre._ctre.VictorSPXConfiguration, timeoutMs: int = 50) -> ctre._ctre.ErrorCode
         
@@ -19,7 +20,7 @@ class VictorSPX(BaseMotorController, IMotorController):
         """
         pass
 
-    def getAllConfigs(self, allConfigs, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getAllConfigs(self, allConfigs, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getAllConfigs(self: ctre._ctre.VictorSPX, allConfigs: ctre._ctre.VictorSPXConfiguration, timeoutMs: int = 50) -> None
         
@@ -33,7 +34,7 @@ class VictorSPX(BaseMotorController, IMotorController):
         """
         pass
 
-    def getPIDConfigs(self, pid, pidIdx=0, timeoutMs=50): # real signature unknown; restored from __doc__
+    def getPIDConfigs(self, pid, pidIdx=0, timeoutMs=50):  # real signature unknown; restored from __doc__
         """
         getPIDConfigs(self: ctre._ctre.VictorSPX, pid: ctre._ctre.VictorSPXPIDSetConfiguration, pidIdx: int = 0, timeoutMs: int = 50) -> None
         
@@ -49,7 +50,7 @@ class VictorSPX(BaseMotorController, IMotorController):
         """
         pass
 
-    def set(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def set(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         set(*args, **kwargs)
         Overloaded function.
@@ -121,7 +122,7 @@ class VictorSPX(BaseMotorController, IMotorController):
         """
         pass
 
-    def __init__(self, deviceNumber): # real signature unknown; restored from __doc__
+    def __init__(self, deviceNumber):  # real signature unknown; restored from __doc__
         """
         __init__(self: ctre._ctre.VictorSPX, deviceNumber: int) -> None
         
@@ -130,5 +131,3 @@ class VictorSPX(BaseMotorController, IMotorController):
         :param deviceNumber: [0,62]
         """
         pass
-
-

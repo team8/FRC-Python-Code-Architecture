@@ -1,8 +1,8 @@
-from codeinternals.ctre import NeutralMode, TalonFXControlMode, InvertType, DemandType
+from codeinternals.constants import drive_constants
+from codeinternals.ctre import NeutralMode, InvertType, DemandType
 from codeinternals.hardware_adapter import HardwareAdapter
 from codeinternals.robot import Robot
 from codeinternals.subsystems.drive import Drive
-from codeinternals.constants import drive_constants
 
 
 class HardwareWriter:
@@ -54,4 +54,3 @@ class HardwareWriter:
         drive_hardware.left_master_falcon.configMotionCruiseVelocity(right_output.getGains().getVelocity())
         drive_hardware.left_master_falcon.configClosedloopRamp(drive_constants.closedLoopRampSec)
         drive_hardware.right_master_falcon.configClosedloopRamp(drive_constants.closedLoopRampSec)
-

@@ -3,7 +3,8 @@ from codeinternals.ctre import BaseMotorController
 
 class WPI_BaseMotorController(BaseMotorController):
     """ VEX Victor SPX Motor Controller when used on CAN Bus. """
-    def disable(self): # real signature unknown; restored from __doc__
+
+    def disable(self):  # real signature unknown; restored from __doc__
         """
         disable(self: ctre._ctre.WPI_BaseMotorController) -> None
         
@@ -11,7 +12,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def feed(self): # real signature unknown; restored from __doc__
+    def feed(self):  # real signature unknown; restored from __doc__
         """
         feed(self: ctre._ctre.WPI_BaseMotorController) -> None
         
@@ -21,7 +22,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def get(self): # real signature unknown; restored from __doc__
+    def get(self):  # real signature unknown; restored from __doc__
         """
         get(self: ctre._ctre.WPI_BaseMotorController) -> float
         
@@ -31,7 +32,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         return 0.0
 
-    def getDescription(self, desc, *args, **kwargs): # real signature unknown; NOTE: unreliably restored from __doc__ 
+    def getDescription(self, desc, *args, **kwargs):  # real signature unknown; NOTE: unreliably restored from __doc__
         """
         getDescription(self: ctre._ctre.WPI_BaseMotorController, desc: wpi::raw_ostream) -> None
         
@@ -41,7 +42,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def getExpiration(self): # real signature unknown; restored from __doc__
+    def getExpiration(self):  # real signature unknown; restored from __doc__
         """
         getExpiration(self: ctre._ctre.WPI_BaseMotorController) -> float
         
@@ -51,7 +52,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         return 0.0
 
-    def getInverted(self): # real signature unknown; restored from __doc__
+    def getInverted(self):  # real signature unknown; restored from __doc__
         """
         getInverted(self: ctre._ctre.WPI_BaseMotorController) -> bool
         
@@ -61,7 +62,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         return False
 
-    def getMotorSafety(self): # real signature unknown; restored from __doc__
+    def getMotorSafety(self):  # real signature unknown; restored from __doc__
         """
         getMotorSafety(self: ctre._ctre.WPI_BaseMotorController) -> wpilib._wpilib.MotorSafety
         
@@ -71,7 +72,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def isAlive(self): # real signature unknown; restored from __doc__
+    def isAlive(self):  # real signature unknown; restored from __doc__
         """
         isAlive(self: ctre._ctre.WPI_BaseMotorController) -> bool
         
@@ -81,7 +82,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         return False
 
-    def isSafetyEnabled(self): # real signature unknown; restored from __doc__
+    def isSafetyEnabled(self):  # real signature unknown; restored from __doc__
         """
         isSafetyEnabled(self: ctre._ctre.WPI_BaseMotorController) -> bool
         
@@ -93,7 +94,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         return False
 
-    def PIDWrite(self, output): # real signature unknown; restored from __doc__
+    def PIDWrite(self, output):  # real signature unknown; restored from __doc__
         """
         PIDWrite(self: ctre._ctre.WPI_BaseMotorController, output: float) -> None
         
@@ -103,7 +104,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def set(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def set(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         set(*args, **kwargs)
         Overloaded function.
@@ -195,7 +196,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def setExpiration(self, expirationTime): # real signature unknown; restored from __doc__
+    def setExpiration(self, expirationTime):  # real signature unknown; restored from __doc__
         """
         setExpiration(self: ctre._ctre.WPI_BaseMotorController, expirationTime: float) -> None
         
@@ -205,7 +206,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def setInverted(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def setInverted(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         setInverted(*args, **kwargs)
         Overloaded function.
@@ -226,7 +227,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def setSafetyEnabled(self, enabled): # real signature unknown; restored from __doc__
+    def setSafetyEnabled(self, enabled):  # real signature unknown; restored from __doc__
         """
         setSafetyEnabled(self: ctre._ctre.WPI_BaseMotorController, enabled: bool) -> None
         
@@ -238,7 +239,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def setVoltage(self, output): # real signature unknown; restored from __doc__
+    def setVoltage(self, output):  # real signature unknown; restored from __doc__
         """
         setVoltage(self: ctre._ctre.WPI_BaseMotorController, output: volts) -> None
         
@@ -255,7 +256,7 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def stopMotor(self): # real signature unknown; restored from __doc__
+    def stopMotor(self):  # real signature unknown; restored from __doc__
         """
         stopMotor(self: ctre._ctre.WPI_BaseMotorController) -> None
         
@@ -263,7 +264,5 @@ class WPI_BaseMotorController(BaseMotorController):
         """
         pass
 
-    def __init__(self, *args, **kwargs): # real signature unknown
+    def __init__(self, *args, **kwargs):  # real signature unknown
         pass
-
-

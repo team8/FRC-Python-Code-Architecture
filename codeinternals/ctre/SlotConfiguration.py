@@ -1,7 +1,7 @@
-
 class SlotConfiguration():
     """ Configurables available to a slot """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -22,7 +22,7 @@ class SlotConfiguration():
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.SlotConfiguration) -> None """
         pass
 
@@ -73,6 +73,3 @@ So use a gain of '0.25' to get full output if err is 4096u (Mag Encoder 1 rotati
 
     maxIntegralAccumulator = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Max integral accumulator (in native units)"""
-
-
-

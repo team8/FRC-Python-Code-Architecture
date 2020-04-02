@@ -6,14 +6,11 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class ControlFrameRoutines(__pybind11_builtins.pybind11_object):
     """ Class to handle promotion of controlFrame to controlFrameEnhanced """
-    def __init__(self): # real signature unknown; restored from __doc__
+
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.ControlFrameRoutines) -> None """
         pass
-
-

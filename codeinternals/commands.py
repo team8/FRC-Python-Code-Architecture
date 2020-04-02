@@ -6,4 +6,3 @@ class Commands:
 
     def getDriveWantedState(self):
         return self.wantedDriveState
-

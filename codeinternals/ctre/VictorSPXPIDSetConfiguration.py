@@ -3,7 +3,8 @@ from codeinternals.ctre import BasePIDSetConfiguration
 
 class VictorSPXPIDSetConfiguration(BasePIDSetConfiguration):
     """ Configurables available to VictorSPX's PID """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -24,12 +25,9 @@ class VictorSPXPIDSetConfiguration(BasePIDSetConfiguration):
         """
         pass
 
-    def __init__(self): # real signature unknown; restored from __doc__
+    def __init__(self):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.VictorSPXPIDSetConfiguration) -> None """
         pass
 
     selectedFeedbackSensor = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """Feedback device for a particular PID loop."""
-
-
-

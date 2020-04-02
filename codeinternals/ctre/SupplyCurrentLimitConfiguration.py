@@ -6,25 +6,24 @@
 
 # imports
 import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
 
 
 class SupplyCurrentLimitConfiguration(__pybind11_builtins.pybind11_object):
     """ Describes the desired stator current limiting behavior. """
-    def deserialize(self, doubles, doubleCnt): # real signature unknown; restored from __doc__
+
+    def deserialize(self, doubles, doubleCnt):  # real signature unknown; restored from __doc__
         """ deserialize(self: ctre._ctre.SupplyCurrentLimitConfiguration, doubles: float, doubleCnt: int) -> None """
         pass
 
-    def equals(self, rhs): # real signature unknown; restored from __doc__
+    def equals(self, rhs):  # real signature unknown; restored from __doc__
         """ equals(self: ctre._ctre.SupplyCurrentLimitConfiguration, rhs: ctre._ctre.SupplyCurrentLimitConfiguration) -> bool """
         return False
 
-    def toArray(self): # real signature unknown; restored from __doc__
+    def toArray(self):  # real signature unknown; restored from __doc__
         """ toArray(self: ctre._ctre.SupplyCurrentLimitConfiguration) -> List[float] """
         return []
 
-    def toString(self): # real signature unknown; restored from __doc__
+    def toString(self):  # real signature unknown; restored from __doc__
         """
         toString(self: ctre._ctre.SupplyCurrentLimitConfiguration) -> str
         
@@ -34,7 +33,7 @@ class SupplyCurrentLimitConfiguration(__pybind11_builtins.pybind11_object):
         """
         return ""
 
-    def __init__(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def __init__(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         __init__(*args, **kwargs)
         Overloaded function.
@@ -61,6 +60,3 @@ If this value is less than currentLimit, then currentLimit is used as the thresh
 
     triggerThresholdTime = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """How long current must exceed threshold (seconds) before limiting occurs."""
-
-
-

@@ -5,16 +5,14 @@
 # no doc
 
 # imports
-import pybind11_builtins as __pybind11_builtins
-import wpilib.interfaces._interfaces as __wpilib_interfaces__interfaces
-import wpilib._wpilib as __wpilib__wpilib
-
 
 from .IMotorController import IMotorController
 
+
 class IMotorControllerEnhanced(IMotorController):
     """ Interface for enhanced motor controllers """
-    def configForwardLimitSwitchSource(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def configForwardLimitSwitchSource(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configForwardLimitSwitchSource(*args, **kwargs)
         Overloaded function.
@@ -59,7 +57,7 @@ class IMotorControllerEnhanced(IMotorController):
         """
         pass
 
-    def configReverseLimitSwitchSource(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configReverseLimitSwitchSource(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configReverseLimitSwitchSource(*args, **kwargs)
         Overloaded function.
@@ -104,7 +102,7 @@ class IMotorControllerEnhanced(IMotorController):
         """
         pass
 
-    def configSelectedFeedbackSensor(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def configSelectedFeedbackSensor(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         configSelectedFeedbackSensor(*args, **kwargs)
         Overloaded function.
@@ -139,7 +137,7 @@ class IMotorControllerEnhanced(IMotorController):
         """
         pass
 
-    def configVelocityMeasurementPeriod(self, period, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVelocityMeasurementPeriod(self, period, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVelocityMeasurementPeriod(self: ctre._ctre.IMotorControllerEnhanced, period: ctre._ctre.VelocityMeasPeriod, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -156,7 +154,7 @@ class IMotorControllerEnhanced(IMotorController):
         """
         pass
 
-    def configVelocityMeasurementWindow(self, windowSize, timeoutMs=0): # real signature unknown; restored from __doc__
+    def configVelocityMeasurementWindow(self, windowSize, timeoutMs=0):  # real signature unknown; restored from __doc__
         """
         configVelocityMeasurementWindow(self: ctre._ctre.IMotorControllerEnhanced, windowSize: int, timeoutMs: int = 0) -> ctre._ctre.ErrorCode
         
@@ -175,7 +173,7 @@ class IMotorControllerEnhanced(IMotorController):
         """
         pass
 
-    def getOutputCurrent(self): # real signature unknown; restored from __doc__
+    def getOutputCurrent(self):  # real signature unknown; restored from __doc__
         """
         getOutputCurrent(self: ctre._ctre.IMotorControllerEnhanced) -> float
         
@@ -189,7 +187,7 @@ class IMotorControllerEnhanced(IMotorController):
         """
         return 0.0
 
-    def getStatusFramePeriod(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def getStatusFramePeriod(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         getStatusFramePeriod(*args, **kwargs)
         Overloaded function.
@@ -220,7 +218,7 @@ class IMotorControllerEnhanced(IMotorController):
         """
         pass
 
-    def setStatusFramePeriod(self, *args, **kwargs): # real signature unknown; restored from __doc__
+    def setStatusFramePeriod(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         setStatusFramePeriod(*args, **kwargs)
         Overloaded function.
@@ -267,7 +265,5 @@ class IMotorControllerEnhanced(IMotorController):
         """
         pass
 
-    def __init__(self, *args, **kwargs): # real signature unknown
+    def __init__(self, *args, **kwargs):  # real signature unknown
         pass
-
-

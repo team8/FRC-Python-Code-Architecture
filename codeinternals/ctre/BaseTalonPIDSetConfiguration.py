@@ -3,7 +3,8 @@ from codeinternals.ctre import BasePIDSetConfiguration
 
 class BaseTalonPIDSetConfiguration(BasePIDSetConfiguration):
     """ Configurables available to BaseTalon's PID """
-    def toString(self, *args, **kwargs): # real signature unknown; restored from __doc__
+
+    def toString(self, *args, **kwargs):  # real signature unknown; restored from __doc__
         """
         toString(*args, **kwargs)
         Overloaded function.
@@ -24,7 +25,7 @@ class BaseTalonPIDSetConfiguration(BasePIDSetConfiguration):
         """
         pass
 
-    def __init__(self, defaultFeedbackDevice): # real signature unknown; restored from __doc__
+    def __init__(self, defaultFeedbackDevice):  # real signature unknown; restored from __doc__
         """ __init__(self: ctre._ctre.BaseTalonPIDSetConfiguration, defaultFeedbackDevice: ctre._ctre.FeedbackDevice) -> None """
         pass
 
@@ -36,6 +37,3 @@ Alternatively the product specific enum can be used instead.
 configs.primaryPID.selectedFeedbackSensor = (FeedbackDevice)TalonSRXFeedbackDevice::QuadEncoder;
 configs.primaryPID.selectedFeedbackSensor = (FeedbackDevice)TalonFXFeedbackDevice::IntegratedSensor;
 @endcode"""
-
-
-
