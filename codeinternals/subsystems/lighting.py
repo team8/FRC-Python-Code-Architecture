@@ -19,9 +19,14 @@ class Lighting(SubsystemBase):
                 self.controller = None
 
             elif self.state == Lighting.State.SHOOTING:
-                self.controller = OneColorController("green", 5.0)
+                self.controller = OneColorController("green", 20, 5.0)
 
-    def isFinished(self, controller):
+        if self.is_finished(self.controller):
+            self.controller = OneColorController("off", 20)
+
+    def is_finished(self, controller):
+        if controller.duration != -1:
+            return False
         if (time.time() - controller.start) >= controller.start():
             return True
         else:

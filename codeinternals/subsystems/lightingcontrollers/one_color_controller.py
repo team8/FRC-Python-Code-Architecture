@@ -2,7 +2,7 @@ from codeinternals.utils.color import color
 import time
 
 class OneColorController:
-    def __init__(self, wanted_color, length, duration):
+    def __init__(self, wanted_color, length, duration=-1):
 
         self.length = length
         self.duration = duration
@@ -13,6 +13,8 @@ class OneColorController:
         self.h = hsv[0]
         self.s = hsv[1]
         self.v = hsv[2]
+
+
 
     def update(self):
         for d in self.data:

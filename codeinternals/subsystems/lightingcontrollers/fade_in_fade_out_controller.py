@@ -3,7 +3,7 @@ import time
 
 
 class FadeInFadeOutController:
-    def __init__(self, wanted_color, length, duration):
+    def __init__(self, wanted_color, length, duration=-1):
 
         self.length = length
         self.data = [(0, 0, 0) for i in range(self.length)]

@@ -30,7 +30,7 @@ class HardwareAdapter:
 
     class LightingHardware:
         def __init__(self):
-            self.led_strip = AddressableLED(5)
+            self.led_strip = AddressableLED(port_constants.led_id)
 
         def __getInstance__(self):
             return self
