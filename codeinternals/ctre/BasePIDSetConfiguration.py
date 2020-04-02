@@ -1,5 +1,3 @@
-
-
 class BasePIDSetConfiguration():
     """ Base set of configurables related to PID """
 
