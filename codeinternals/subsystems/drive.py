@@ -26,9 +26,9 @@ class Drive(SubsystemBase):
             if self.state == Drive.State.IDLE:
                 self.controller = None
             elif self.state == Drive.State.MOVE_STRAIGHT:
-                self.controller = MoveStraightController()
+                self.controller = MoveStraightController(commands.wantedTargetDistance)
             elif self.state == Drive.State.TURN:
-                self.controller = TurnYawController()
+                self.controller = TurnYawController(commands.wantedTurnAngle)
         if self.controller is None:
             self.outputs = None
         else:
