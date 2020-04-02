@@ -7,3 +7,4 @@ right_falcon_encoder_id = 3
 gyro_id = 0
 drive_joystick_id = 0
 turn_joystick_id = 1
+led_id = 5

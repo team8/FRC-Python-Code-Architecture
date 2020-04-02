@@ -3,6 +3,7 @@ from codeinternals.ctre import NeutralMode, InvertType, DemandType
 from codeinternals.hardware_adapter import HardwareAdapter
 from codeinternals.robot import Robot
 from codeinternals.subsystems.drive import Drive
+from codeinternals.subsystems.lighting import Lighting
 
 
 class HardwareWriter:
@@ -26,6 +27,7 @@ class HardwareWriter:
 
     def configureLighting(self):
         lighting_hardware = HardwareAdapter.LightingHardware.__getInstance__()
+        lighting_hardware.led_strip.setLength(20)
         lighting_hardware.led_strip.start()
 
     def __updateDrive(self):
