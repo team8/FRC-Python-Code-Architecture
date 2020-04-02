@@ -1,6 +1,7 @@
 from enum import Enum
 
 from codeinternals.hardware_reader import HardwareReader
+from codeinternals.subsystems.drivecontrollers.joystick_drive_controller import JoystickDriveController
 from codeinternals.subsystems.drivecontrollers.move_straight_controller import MoveStraightController
 from codeinternals.subsystems.drivecontrollers.turn_controller import TurnYawController
 from codeinternals.subsystems.subsystem_base import SubsystemBase
@@ -11,6 +12,7 @@ class Drive(SubsystemBase):
         IDLE = 0
         MOVE_STRAIGHT = 1
         TURN = 2
+        JOYSTICK_DRIVE = 3
 
     def start(self):
         self.instance = Drive()
@@ -29,6 +31,8 @@ class Drive(SubsystemBase):
                 self.controller = MoveStraightController(commands.wantedTargetDistance)
             elif self.state == Drive.State.TURN:
                 self.controller = TurnYawController(commands.wantedTurnAngle)
+            elif self.state == Drive.State.JOYSTICK_DRIVE:
+                self.controller = JoystickDriveController()
         if self.controller is None:
             self.outputs = None
         else:

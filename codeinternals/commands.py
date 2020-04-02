@@ -19,3 +19,6 @@ class Commands:
     def setDriveStateMoveStraight(self, targetDistance):
         self.wantedDriveState = Drive.State.MOVE_STRAIGHT
         self.wantedTargetDistance = targetDistance
+
+    def setDriveStateJoystickControl(self):
+        self.wantedDriveState = Drive.State.JOYSTICK_DRIVE
