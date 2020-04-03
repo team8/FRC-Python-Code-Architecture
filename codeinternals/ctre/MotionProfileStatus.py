@@ -22,7 +22,7 @@ class MotionProfileStatus(__pybind11_builtins.pybind11_object):
     """True if the active trajectory point is not empty, false otherwise.
 The members in activePoint are only valid if this signal is set."""
 
-    btmBufferCnt = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    btledBufferCnt = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """The number of points in the low level Talon/Victor buffer."""
 
     hasUnderrun = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default

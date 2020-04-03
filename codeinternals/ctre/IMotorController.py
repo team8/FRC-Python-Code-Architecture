@@ -1231,7 +1231,7 @@ class IMotorController(IFollower):
         
                     topBufferRem: The number of points in the top trajectory buffer.
         
-                    btmBufferCnt: The number of points in the low level controller buffer.
+                    btledBufferCnt: The number of points in the low level controller buffer.
         
                     hasUnderrun: 	Set if isUnderrun ever gets set.
                     Can be manually cleared by clearMotionProfileHasUnderrun() or automatically cleared by startMotionProfile().

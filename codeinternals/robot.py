@@ -3,10 +3,11 @@ import wpilib
 from codeinternals.hardware_reader import HardwareReader
 from codeinternals.hardware_writer import HardwareWriter
 from codeinternals.subsystems.drive import Drive
+from codeinternals.subsystems.lighting import Lighting
 
 
 class Robot(wpilib.TimedRobot):
-    enabledSystems = [Drive.getInstance()]
+    enabledSystems = [Drive.getInstance(), Lighting.getInstance()]
 
     def robotInit(self):
 

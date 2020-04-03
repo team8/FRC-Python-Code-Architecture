@@ -11,14 +11,14 @@ class HardwareWriter:
     def configureSubsystems(self):
         if Robot.enabledSystems.__contains__(Drive.getInstance()):
             self.__configureDrive()
-        if Robot.enabledSystems.__contains__("lighting"):
-            self.configureLighting()
+        if Robot.enabledSystems.__contains__(Lighting.getInstance()):
+            self.__configureLighting()
 
     def updateSubsystems(self):
         if Robot.enabledSystems.__contains__(Drive.getInstance()):
             self.__updateDrive()
-        if Robot.enabledSystems.__contains__("lighting"):
-            self.updateLighting()
+        if Robot.enabledSystems.__contains__(Lighting.getInstance()):
+            self.__updateLighting()
 
     def __configureDrive(self):
         drive_hardware = HardwareAdapter.DriveHardware.__getInstance__()
@@ -26,7 +26,7 @@ class HardwareWriter:
         drive_hardware.right_slave_falcon.follow(drive_hardware.right_master_falcon)
         drive_hardware.right_master_falcon.setInverted(InvertType.InvertMotorOutput)
 
-    def configureLighting(self):
+    def __configureLighting(self):
         lighting_hardware = HardwareAdapter.LightingHardware.__getInstance__()
         lighting_hardware.led_strip.setLength(lighting_constants.led_length)
         lighting_hardware.led_strip.start()
@@ -66,13 +66,7 @@ class HardwareWriter:
         drive_hardware.left_master_falcon.configClosedloopRamp(drive_constants.closedLoopRampSec)
         drive_hardware.right_master_falcon.configClosedloopRamp(drive_constants.closedLoopRampSec)
 
-
-    def updateLighting(self):
+    def __updateLighting(self):
         lighting_hardware = HardwareAdapter.LightingHardware.__getInstance__()
         lighting_output = Lighting.getOutput()
         lighting_hardware.led_strip.setData(lighting_output)
-
-
-
-
-

@@ -1,8 +1,10 @@
-from codeinternals.subsystems.lighting import Lighting
 import time
 
+from codeinternals.subsystems.lighting import Lighting
+from codeinternals.subsystems.lightingcontrollers.lighting_controller_base import LightingControllerBase
 
-class FadeInController(Lighting.AddressableLedBuffer):
+
+class FadeInController(LightingControllerBase, Lighting):
     def __init__(self, wanted_color, length, duration=-1):
 
         self.length = length
@@ -18,11 +20,11 @@ class FadeInController(Lighting.AddressableLedBuffer):
 
         n = 1 - (((self.start - time.time()) % self.duration) / self.duration)
 
-        for d in self.mBuffer:
+        for d in self.ledBuffer:
 
             d.setHSV(self.h, self.s, int(self.v * n))
 
-        return self.mBuffer
+        return self.ledBuffer
 
 
 
