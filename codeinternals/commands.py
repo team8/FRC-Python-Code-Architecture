@@ -1,6 +1,7 @@
 from codeinternals.subsystems.drive import Drive
 from codeinternals.subsystems.lighting import Lighting
 
+
 class Commands:
     wantedDriveState = Drive.State.IDLE
     wantedTurnAngle = 0
@@ -26,4 +27,3 @@ class Commands:
 
     def getLightingWantedState(self):
         return self.wantedLightingState
-

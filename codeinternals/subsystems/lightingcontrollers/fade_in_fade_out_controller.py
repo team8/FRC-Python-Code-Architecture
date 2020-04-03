@@ -1,45 +1,36 @@
-from codeinternals.subsystems.lighting import Lighting
+from codeinternals.subsystems.lightingcontrollers.fade_in_controller import FadeInController
+from codeinternals.subsystems.lightingcontrollers.fade_out_controller import FadeOutController
 
 from codeinternals.subsystems.lightingcontrollers.lighting_controller_base import LightingControllerBase
 
 
-class FadeInFadeOutController(LightingControllerBase, Lighting):
+class FadeInFadeOutController(LightingControllerBase, FadeInController, FadeOutController):
     def __init__(self, wanted_color, duration=-1):
-
+        FadeOutController.__init__()
+        FadeInController.__init__()
         self.duration = duration
-        self.mTimer.start()
+        super().timer.reset()
 
         self.h = wanted_color[0]
         self.s = wanted_color[1]
         self.v = wanted_color[2]
 
-        self.state = "fade_in"
+        self.toggle = True
 
     def update(self):
-        if float(self.mTimer.get() % self.duration) == 0.0:
-            if self.state == "fade_in":
-                self.state = "fade_out"
+        if float(self.timer.get() % self.duration) == 0.0:
+            if self.toggle:
+                self.toggle = False
             else:
-                self.state = "fade_in"
+                self.toggle = True
 
-        if self.state == "fade_in":
-            n = 1 - ((self.mTimer.get() % self.duration) / self.duration)
-
-            for d in self.ledBuffer:
-                d.setHSV(self.h, self.s, int(self.v * n))
-
+        if self.toggle:
+            self.ledBuffer = FadeInController.update()
         else:
-            n = (self.mTimer.get() % self.duration) / self.duration
-
-            for d in self.ledBuffer:
-                d.setHSV(self.h, self.s, int(self.v * n))
-
+            self.ledBuffer = FadeOutController.update()
         return self.ledBuffer
 
-    def is_finished(self):
-        if self.duration != -1 and self.duration >= self.mTimer.get():
+    def isFinished(self) -> bool:
+        if self.duration != -1 and self.duration >= self.timer.get():
             return True
         return False
-
-
-
