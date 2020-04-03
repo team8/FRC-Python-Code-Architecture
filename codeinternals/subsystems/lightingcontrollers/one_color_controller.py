@@ -1,30 +1,18 @@
-from codeinternals.utils.color import color
+from codeinternals.subsystems.lighting import Lighting
 import time
 
-class OneColorController:
-    def __init__(self, wanted_color, length, duration=-1):
 
-        self.length = length
+class OneColorController(Lighting.AddressableLedBuffer):
+    def __init__(self, wanted_color, duration=-1):
         self.duration = duration
         self.start = time.time()
-        self.data = [(0, 0, 0) for i in range(self.length)]
 
-        hsv = color(wanted_color)
-        self.h = hsv[0]
-        self.s = hsv[1]
-        self.v = hsv[2]
-
-
+        self.h = wanted_color[0]
+        self.s = wanted_color[1]
+        self.v = wanted_color[2]
 
     def update(self):
-        for d in self.data:
+        for d in self.mBuffer:
             d.setHSV(self.h, self.s, self.v)
 
-        return self.data
-
-
-
-
-
-
-
+        return self.mBuffer

@@ -1,18 +1,17 @@
-from codeinternals.utils.color import color
+from codeinternals.subsystems.lighting import Lighting
 import time
 
 
-class FadeInFadeOutController:
-    def __init__(self, wanted_color, length, duration=-1):
+class FadeInFadeOutController(Lighting.AddressableLedBuffer):
+    def __init__(self, wanted_color, duration=-1):
 
-        self.length = length
-        self.data = [(0, 0, 0) for i in range(self.length)]
-        hsv = color(wanted_color)
-        self.h = hsv[0]
-        self.s = hsv[1]
-        self.v = hsv[2]
         self.duration = duration
         self.start = time.time()
+
+        self.h = wanted_color[0]
+        self.s = wanted_color[1]
+        self.v = wanted_color[2]
+
         self.state = "fade_in"
 
     def update(self):
@@ -25,16 +24,16 @@ class FadeInFadeOutController:
         if self.state == "fade_in":
             n = 1 - (((self.start - time.time()) % self.duration) / self.duration)
 
-            for d in self.data:
+            for d in self.mBuffer:
                 d.setHSV(self.h, self.s, int(self.v * n))
 
         else:
             n = ((self.start - time.time()) % self.duration) / self.duration
 
-            for d in self.data:
+            for d in self.mBuffer:
                 d.setHSV(self.h, self.s, int(self.v * n))
 
-        return self.data
+        return self.mBuffer
 
 
 

@@ -1,5 +1,5 @@
 from wpilib._wpilib import Joystick
-from wpilib import AddressableLED
+from wpilib._wpilib import AddressableLED
 
 from codeinternals import ctre
 from codeinternals.constants import port_constants
