@@ -5,6 +5,7 @@ import time
 from codeinternals.utils import color
 from wpilib._wpilib import AddressableLED
 from codeinternals.constants import lighting_constants
+from wpilib._wpilib import Timer
 
 
 class Lighting(SubsystemBase):
@@ -15,6 +16,7 @@ class Lighting(SubsystemBase):
     def start(self):
         self.instance = Lighting()
         self.ledBuffer = [AddressableLED.LEDData(0, 0, 0)] * lighting_constants.led_length
+        self.mTimer = Timer()
 
     def update(self, commands, state):
 

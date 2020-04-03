@@ -14,11 +14,11 @@ class FadeOutController(LightingControllerBase, Lighting):
         self.v = wanted_color[2]
 
         self.duration = duration
-        self.start = time.time()
+        self.mTimer.start()
 
     def update(self):
 
-        n = ((self.start - time.time()) % self.duration) / self.duration
+        n = (self.mTimer % self.duration) / self.duration
 
         for d in self.ledBuffer:
 

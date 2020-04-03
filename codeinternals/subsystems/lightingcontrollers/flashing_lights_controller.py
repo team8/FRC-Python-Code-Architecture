@@ -1,6 +1,4 @@
 from codeinternals.subsystems.lighting import Lighting
-import time
-
 from codeinternals.subsystems.lightingcontrollers.lighting_controller_base import LightingControllerBase
 
 
@@ -14,11 +12,11 @@ class FlashingLightsController(LightingControllerBase, Lighting):
         self.s = wanted_color[1]
         self.v = wanted_color[2]
 
-        self.start_time = time.time()
+        self.mTimer.start()
 
     def update(self):
         for d in self.ledBuffer:
-            if int(time.time() - self.start_time()) % self.cycle_time == 0:
+            if self.mTimer % self.cycle_time == 0:
                 d.setHSV(self.h, self.s, self.v)
 
             else:

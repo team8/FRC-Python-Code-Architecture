@@ -16,9 +16,11 @@ class FadeInController(LightingControllerBase, Lighting):
         self.duration = duration
         self.start = time.time()
 
+        self.mTimer.start()
+
     def update(self):
 
-        n = 1 - (((self.start - time.time()) % self.duration) / self.duration)
+        n = 1 - ((self.mTimer % self.duration) / self.duration)
 
         for d in self.ledBuffer:
 
