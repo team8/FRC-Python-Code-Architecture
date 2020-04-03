@@ -20,7 +20,7 @@ class FadeInController(LightingControllerBase, Lighting):
 
     def update(self):
 
-        n = 1 - ((self.mTimer % self.duration) / self.duration)
+        n = 1 - ((self.mTimer.get() % self.duration) / self.duration)
 
         for d in self.ledBuffer:
 
@@ -28,6 +28,9 @@ class FadeInController(LightingControllerBase, Lighting):
 
         return self.ledBuffer
 
-
+    def is_finished(self):
+        if self.duration != -1 and self.duration >= self.mTimer.get():
+            return True
+        return False
 
 

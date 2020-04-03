@@ -16,7 +16,7 @@ class FlashingLightsController(LightingControllerBase, Lighting):
 
     def update(self):
         for d in self.ledBuffer:
-            if self.mTimer % self.cycle_time == 0:
+            if self.mTimer.get() % self.cycle_time == 0:
                 d.setHSV(self.h, self.s, self.v)
 
             else:
@@ -24,7 +24,10 @@ class FlashingLightsController(LightingControllerBase, Lighting):
 
         return self.ledBuffer
 
-
+    def is_finished(self):
+        if self.duration != -1 and self.duration >= self.mTimer.get():
+            return True
+        return False
 
 
 

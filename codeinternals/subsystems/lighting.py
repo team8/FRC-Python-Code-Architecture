@@ -31,18 +31,10 @@ class Lighting(SubsystemBase):
             elif self.state == Lighting.State.SHOOTING:
                 self.controller = OneColorController(color.green, lighting_constants.led_length, 5)
 
-        if self.__is_finished(self.controller):
+        if self.controller.is_finished():
             self.controller = None
 
         self.ledBuffer = self.controller.update()
-
-    def __is_finished(self, controller):
-        if controller.duration != -1:
-            return False
-        if (time.time() - controller.start) >= controller.start():
-            return True
-        else:
-            return False
 
     def getOutput(self):
         return self.ledBuffer

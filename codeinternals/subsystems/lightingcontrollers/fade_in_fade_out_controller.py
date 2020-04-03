@@ -16,25 +16,30 @@ class FadeInFadeOutController(LightingControllerBase, Lighting):
         self.state = "fade_in"
 
     def update(self):
-        if float(self.mTimer % self.duration) == 0.0:
+        if float(self.mTimer.get() % self.duration) == 0.0:
             if self.state == "fade_in":
                 self.state = "fade_out"
             else:
                 self.state = "fade_in"
 
         if self.state == "fade_in":
-            n = 1 - ((self.mTimer % self.duration) / self.duration)
+            n = 1 - ((self.mTimer.get() % self.duration) / self.duration)
 
             for d in self.ledBuffer:
                 d.setHSV(self.h, self.s, int(self.v * n))
 
         else:
-            n = (self.mTimer % self.duration) / self.duration
+            n = (self.mTimer.get() % self.duration) / self.duration
 
             for d in self.ledBuffer:
                 d.setHSV(self.h, self.s, int(self.v * n))
 
         return self.ledBuffer
+
+    def is_finished(self):
+        if self.duration != -1 and self.duration >= self.mTimer.get():
+            return True
+        return False
 
 
 

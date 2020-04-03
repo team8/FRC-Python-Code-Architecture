@@ -18,7 +18,7 @@ class FadeOutController(LightingControllerBase, Lighting):
 
     def update(self):
 
-        n = (self.mTimer % self.duration) / self.duration
+        n = (self.mTimer.get() % self.duration) / self.duration
 
         for d in self.ledBuffer:
 
@@ -26,7 +26,10 @@ class FadeOutController(LightingControllerBase, Lighting):
 
         return self.ledBuffer
 
-
+    def is_finished(self):
+        if self.duration != -1 and self.duration >= self.mTimer.get():
+            return True
+        return False
 
 
 
