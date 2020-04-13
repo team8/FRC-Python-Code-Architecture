@@ -12,6 +12,7 @@ class TurnYawController(DriveControllerBase):
     def __init__(self, targetAngle):  # TODO add some sort of python doc where it says - means left, + means right etc.
         self.output = DriveOutputs()
         self.__targetAngle = targetAngle
+        drive_constants.turnGains.setTolerance(self.__acceptableYawError)
 
     def update(self):
         abs_angular_output = math_util.clamp(-0.4, 0.4, drive_constants.turnGains.calculate(
@@ -21,4 +22,4 @@ class TurnYawController(DriveControllerBase):
         return self.output
 
     def checkFinished(self) -> bool:
-        return abs(self.__targetAngle - robot_state.gyroCompassHeadingDegrees) <= self.__acceptableYawError
+        return drive_constants.turnGains.atSetpoint()
