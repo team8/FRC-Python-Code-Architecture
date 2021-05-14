@@ -1,10 +1,10 @@
 from enum import Enum
 
-from codeinternals.hardware_reader import HardwareReader
-from codeinternals.subsystems.drivecontrollers.joystick_drive_controller import JoystickDriveController
-from codeinternals.subsystems.drivecontrollers.move_straight_controller import MoveStraightController
-from codeinternals.subsystems.drivecontrollers.turn_controller import TurnYawController
-from codeinternals.subsystems.subsystem_base import SubsystemBase
+from hardware_reader import HardwareReader
+from subsystems.drivecontrollers.joystick_drive_controller import JoystickDriveController
+from subsystems.drivecontrollers.move_straight_controller import MoveStraightController
+from subsystems.drivecontrollers.turn_controller import TurnYawController
+from subsystems.subsystem_base import SubsystemBase
 
 
 class Drive(SubsystemBase):

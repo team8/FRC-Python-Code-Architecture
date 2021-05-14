@@ -1,9 +1,9 @@
 from wpilib._wpilib import AddressableLED
 from wpilib._wpilib import Joystick
 
-from codeinternals import ctre
-from codeinternals.constants import port_constants
-from codeinternals.ctre import PigeonIMU
+import ctre
+from constants import port_constants
+from ctre import PigeonIMU
 
 
 class HardwareAdapter:

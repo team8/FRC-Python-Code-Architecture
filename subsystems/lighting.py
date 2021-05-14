@@ -2,11 +2,11 @@ from enum import Enum
 
 from wpilib._wpilib import AddressableLED
 
-from codeinternals.constants import lighting_constants
-from codeinternals.subsystems.lightingcontrollers.lighting_controller_base import LightingControllerBase
-from codeinternals.subsystems.lightingcontrollers.one_color_controller import OneColorController
-from codeinternals.subsystems.subsystem_base import SubsystemBase
-from codeinternals.utils import color
+from constants import lighting_constants
+from subsystems.lightingcontrollers.lighting_controller_base import LightingControllerBase
+from subsystems.lightingcontrollers.one_color_controller import OneColorController
+from subsystems.subsystem_base import SubsystemBase
+from utils import color
 
 
 class Lighting(SubsystemBase):

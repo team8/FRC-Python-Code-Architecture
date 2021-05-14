@@ -1,10 +1,10 @@
-from codeinternals.constants import drive_constants
-from codeinternals.constants import lighting_constants
-from codeinternals.ctre import NeutralMode, InvertType, DemandType
-from codeinternals.hardware_adapter import HardwareAdapter
-from codeinternals.robot import Robot
-from codeinternals.subsystems.drive import Drive
-from codeinternals.subsystems.lighting import Lighting
+from constants import drive_constants
+from constants import lighting_constants
+from ctre import NeutralMode, InvertType, DemandType
+from hardware_adapter import HardwareAdapter
+from robot import Robot
+from subsystems.drive import Drive
+from subsystems.lighting import Lighting
 
 
 class HardwareWriter:

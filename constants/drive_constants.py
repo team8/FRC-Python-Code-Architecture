@@ -1,4 +1,4 @@
-from codeinternals.utils.pid_controller import PIDController
+from utils.pid_controller import PIDController
 
 maxWheelPercentOutput = 0.4
 closedLoopRampSec = 2

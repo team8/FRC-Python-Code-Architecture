@@ -1,7 +1,7 @@
-from codeinternals import robot_state
-from codeinternals.constants import drive_constants
-from codeinternals.utils import math_util
-from codeinternals.utils.drive_outputs import DriveOutputs
+import robot_state
+from constants import drive_constants
+from utils import math_util
+from utils.drive_outputs import DriveOutputs
 
 
 class JoystickDriveController:

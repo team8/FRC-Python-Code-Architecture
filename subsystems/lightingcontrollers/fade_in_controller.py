@@ -1,5 +1,5 @@
-from codeinternals.subsystems.lighting import Lighting
-from codeinternals.subsystems.lightingcontrollers.lighting_controller_base import LightingControllerBase
+from subsystems.lighting import Lighting
+from subsystems.lightingcontrollers.lighting_controller_base import LightingControllerBase
 
 
 class FadeInController(LightingControllerBase, Lighting):

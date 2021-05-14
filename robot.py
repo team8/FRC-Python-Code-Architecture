@@ -1,9 +1,9 @@
 import wpilib
 
-from codeinternals.hardware_reader import HardwareReader
-from codeinternals.hardware_writer import HardwareWriter
-from codeinternals.subsystems.drive import Drive
-from codeinternals.subsystems.lighting import Lighting
+from hardware_reader import HardwareReader
+from hardware_writer import HardwareWriter
+from subsystems.drive import Drive
+from subsystems.lighting import Lighting
 
 
 class Robot(wpilib.TimedRobot):

@@ -1,6 +1,6 @@
-from codeinternals.constants import drive_constants
-from codeinternals.subsystems.drivecontrollers.drive_controller_base import DriveControllerBase
-from codeinternals.utils.drive_outputs import DriveOutputs
+from constants import drive_constants
+from subsystems.drivecontrollers.drive_controller_base import DriveControllerBase
+from utils.drive_outputs import DriveOutputs
 
 
 class MoveStraightController(DriveControllerBase):

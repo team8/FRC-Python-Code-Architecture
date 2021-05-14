@@ -1,5 +1,5 @@
-from codeinternals.subsystems.drive import Drive
-from codeinternals.subsystems.lighting import Lighting
+from subsystems.drive import Drive
+from subsystems.lighting import Lighting
 
 
 class Commands:

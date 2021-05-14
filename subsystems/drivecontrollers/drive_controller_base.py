@@ -1,4 +1,4 @@
-from codeinternals.utils import drive_outputs
+from utils import drive_outputs
 
 
 class DriveControllerBase:

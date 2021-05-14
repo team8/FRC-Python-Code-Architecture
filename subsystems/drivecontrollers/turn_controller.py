@@ -1,8 +1,8 @@
-from codeinternals import robot_state
-from codeinternals.constants import drive_constants
-from codeinternals.subsystems.drivecontrollers.drive_controller_base import DriveControllerBase
-from codeinternals.utils import math_util
-from codeinternals.utils.drive_outputs import DriveOutputs
+import robot_state
+from constants import drive_constants
+from subsystems.drivecontrollers.drive_controller_base import DriveControllerBase
+from utils import math_util
+from utils.drive_outputs import DriveOutputs
 
 
 class TurnYawController(DriveControllerBase):
