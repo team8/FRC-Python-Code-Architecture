@@ -10,7 +10,6 @@ class Robot(wpilib.TimedRobot):
     enabledSystems = [Drive.getInstance(), Lighting.getInstance()]
 
     def robotInit(self):
-
         """Happens on code deployment"""
 
     def autonomousInit(self):
