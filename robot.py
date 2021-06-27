@@ -1,11 +1,9 @@
 import wpilib
 
-from hardware_reader import HardwareReader
-from hardware_writer import HardwareWriter
-from subsystems.drive import Drive
-from subsystems.lighting import Lighting
+from hardware import reader
 
 
+# The file is already written, nothing needs to be done here. Write your code in user_robot_code.py!
 class Robot(wpilib.TimedRobot):
     enabledSystems = [Drive.getInstance(), Lighting.getInstance()]
 
