@@ -1,9 +1,9 @@
-from codeinternals.utils.controller_outputs import ControllerOutputs
+from utils.controller_outputs import ControllerOutputs
 
 
 class DriveOutputs:
-    leftOutput = ControllerOutputs()
-    rightOutput = ControllerOutputs()
+    left_output = ControllerOutputs()
+    right_output = ControllerOutputs()
 
     def getInstance(self):
         return self
