@@ -2,7 +2,6 @@ from ctre import NeutralMode, InvertType, DemandType
 
 from hardware import drive_hardware
 from subsystems import drive
-from
 
 
 def reset_devices():
@@ -40,7 +39,6 @@ def update_subsystems():
         drive_hardware.left_master_falcon.configMotionCruiseVelocity(right_output.getGains().getVelocity())
         drive_hardware.left_master_falcon.configClosedloopRamp(drive_hardware.closedLoopRampSec)
         drive_hardware.right_master_falcon.configClosedloopRamp(drive_hardware.closedLoopRampSec)
-
 
     def update_drive():
         drive_output = drive.outputs

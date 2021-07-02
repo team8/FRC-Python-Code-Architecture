@@ -5,6 +5,7 @@ from robot import reader
 
 from subsystems import drive
 
+
 # The file is already written, nothing needs to be done here. Write your code in user_robot_code.py!
 class Robot(wpilib.TimedRobot):
     def robotInit(self):
@@ -18,15 +19,14 @@ class Robot(wpilib.TimedRobot):
 
     def teleopInit(self):
         writer.reset_devices()
+        writer.configure_subsystems()
+
+    def teleopPeriodic(self):
+        reader.update_state()
 
         drive.update()
 
-        HardwareWriter.configureSubsystems()
-
-    def teleopPeriodic(self):
-        HardwareReader.updateState()
-        for subsystem in self.enabledSystems: subsystem.update()
-        HardwareWriter.updateSubsystems()
+        writer.update_subsystems()
 
 
 if __name__ == "__main__":
