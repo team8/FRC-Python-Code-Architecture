@@ -1,14 +1,13 @@
 from constants import drive_constants
-from subsystems.drivecontrollers.drive_controller_base import DriveControllerBase
 from utils.drive_outputs import DriveOutputs
 
 
-class MoveStraightController(DriveControllerBase):
+class MoveStraightController:
     __targetDistance = 0
 
-    def __init__(self, targetDistance):
+    def __init__(self, target_distance):
         self.output = DriveOutputs()
-        self.__targetDistance = targetDistance
+        self.__targetDistance = target_distance
 
     def update(self):
         self.output.left_output.setMotionMagicTargetPosition(self.__targetDistance, drive_constants.moveStraightGains)

@@ -1,12 +1,12 @@
 import wpilib
 
-from hardware import reader
+from robot import writer
+from robot import reader
 
+from subsystems import drive
 
 # The file is already written, nothing needs to be done here. Write your code in user_robot_code.py!
 class Robot(wpilib.TimedRobot):
-    enabledSystems = [Drive.getInstance(), Lighting.getInstance()]
-
     def robotInit(self):
         """Happens on code deployment"""
 
@@ -17,8 +17,10 @@ class Robot(wpilib.TimedRobot):
         """Called every 20ms through autonomous period"""
 
     def teleopInit(self):
-        HardwareReader.configureState()
-        for subsystem in self.enabledSystems: subsystem.start()
+        writer.reset_devices()
+
+        drive.update()
+
         HardwareWriter.configureSubsystems()
 
     def teleopPeriodic(self):

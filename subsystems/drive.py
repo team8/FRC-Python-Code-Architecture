@@ -1,7 +1,10 @@
 from enum import Enum
-from hardware import writer
+from robot import writer
 from robot import commands
 
+from subsystems.controllers.move_straight_controller import MoveStraightController
+from subsystems.controllers.turn_controller import TurnYawController
+from subsystems.controllers.joystick_drive_controller import JoystickDriveController
 
 class State(Enum):
     IDLE = 0
@@ -32,7 +35,7 @@ def update():
     if is_new_state and is_controller_finished:
         state = wanted_state
         if state == State.IDLE:
-            controller == None
+            controller = None
         if state == State.MOVE_STRAIGHT:
             controller = MoveStraightController(commands.wanted_target_distance)
         if state == State.TURN:
