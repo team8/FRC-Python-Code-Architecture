@@ -6,6 +6,7 @@ from subsystems.controllers.move_straight_controller import MoveStraightControll
 from subsystems.controllers.turn_controller import TurnYawController
 from subsystems.controllers.joystick_drive_controller import JoystickDriveController
 
+
 class State(Enum):
     IDLE = 0
     MOVE_STRAIGHT = 1
@@ -14,7 +15,6 @@ class State(Enum):
 
 
 global outputs
-outputs = None
 
 
 def update():
