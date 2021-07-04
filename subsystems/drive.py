@@ -14,6 +14,12 @@ class State(Enum):
     JOYSTICK_DRIVE = 3
 
 
+global wanted_state
+global is_new_state
+global drive_state
+global is_controller_finished
+global controller
+global state
 global outputs
 
 
