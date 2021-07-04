@@ -23,6 +23,24 @@ global state
 global outputs
 
 
+def start():
+    global wanted_state
+    global is_new_state
+    global drive_state
+    global is_controller_finished
+    global controller
+    global state
+    global outputs
+
+    wanted_state = None
+    is_new_state = False
+    drive_state = None
+    is_controller_finished = True
+    controller = None
+    state = State.IDLE
+    outputs = None
+
+
 def update():
     writer.reset_devices()
 
