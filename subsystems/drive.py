@@ -34,6 +34,8 @@ def update():
 
     if is_new_state and is_controller_finished:
         state = wanted_state
+        if state is None:
+            controller = None
         if state == State.IDLE:
             controller = None
         if state == State.MOVE_STRAIGHT:
