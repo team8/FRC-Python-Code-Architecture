@@ -15,7 +15,12 @@ class State(Enum):
 
 
 global outputs
-
+global wanted_state
+global is_new_state
+global drive_state
+global is_controller_finished
+global controller
+global state
 
 def update():
     writer.reset_devices()

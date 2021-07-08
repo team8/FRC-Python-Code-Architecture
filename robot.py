@@ -18,6 +18,7 @@ class Robot(wpilib.TimedRobot):
         writer.reset_devices()
         writer.configure_subsystems()
 
+
     def autonomousPeriodic(self):
         reader.update_state()
 

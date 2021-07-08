@@ -1,5 +1,6 @@
 from ctre import NeutralMode, InvertType, DemandType
 
+from constants import lighting_constants
 from hardware import drive_hardware
 from subsystems import drive
 
@@ -17,7 +18,10 @@ def configure_subsystems():
         drive_hardware.right_slave_falcon.follow(drive_hardware.right_master_falcon)
         drive_hardware.right_master_falcon.setInverted(InvertType.InvertMotorOutput)
 
+    def configure_lighting():
+
     configure_drive()
+    configure_lighting()
 
 
 def update_subsystems():
@@ -52,4 +56,7 @@ def update_subsystems():
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                    right_output.getGains().getFF())
 
+    def update_lighting():
+
     update_drive()
+    update_lighting()

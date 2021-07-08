@@ -14,5 +14,5 @@ class MoveStraightController:
         self.output.right_output.setMotionMagicTargetPosition(self.__targetDistance, drive_constants.moveStraightGains)
         return self.output
 
-    def checkFinished(self) -> bool:
+    def checkFinished(self):
         return True
