@@ -8,6 +8,9 @@ class ControllerOutputs:
     __gains = Gains(0.0, 0.0, 0.0, 0.0, 0.0)
     __reference = 0.0
 
+    def __init__(self, gains):
+        self.__gains = gains
+
     def setPercentageOutput(self, output):
         self.__reference = output
         self.__gains = None
