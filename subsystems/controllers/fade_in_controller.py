@@ -1,6 +1,7 @@
 from wpilib._wpilib import Timer
 from utils import math_util
 
+
 class FadeInController:
     def __init__(self, wanted_color, duration):
         self.timer = Timer()

@@ -19,6 +19,8 @@ def configure_subsystems():
         drive_hardware.right_master_falcon.setInverted(InvertType.InvertMotorOutput)
 
     def configure_lighting():
+        lighting_hardware.led_strip.setLength(lighting_constants.led_length)
+        lighting_hardware.led_strip.start()
 
     configure_drive()
     configure_lighting()
@@ -57,6 +59,7 @@ def update_subsystems():
                                                    right_output.getGains().getFF())
 
     def update_lighting():
+        return None
 
     update_drive()
     update_lighting()

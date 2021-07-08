@@ -5,9 +5,11 @@ from hardware import port_constants
 from subsystems.controllers.one_color_controller import OneColorController
 from utils import color
 
+
 class State(Enum):
     IDLE = 0
     SHOOTING = 1
+
 
 global led_buffer
 global controller
@@ -15,11 +17,13 @@ global __wanted_state
 global is_new_state
 global is_controller_finished
 
-def start(self):
+
+def start():
     global led_buffer
     led_buffer = [AddressableLED.LEDData(0, 0, 0)] * lighting_constants.led_length
 
-def update(self, commands, state):
+
+def update(commands, state):
     global led_buffer
     global controller
     global __wanted_state

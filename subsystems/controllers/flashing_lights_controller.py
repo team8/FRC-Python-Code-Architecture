@@ -1,5 +1,6 @@
 from wpilib._wpilib import Timer
 
+
 class FlashingLightsController:
     def __init__(self, wanted_color, cycle_time, duration):
 

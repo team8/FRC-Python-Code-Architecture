@@ -3,6 +3,7 @@ from subsystems.controllers.fade_out_controller import FadeOutController
 from utils import math_util
 from wpilib._wpilib import Timer
 
+
 class FadeInFadeOutController(FadeInController, FadeOutController):
     def __init__(self, wanted_color, duration):
         self.timer = Timer()
@@ -18,7 +19,7 @@ class FadeInFadeOutController(FadeInController, FadeOutController):
         self.toggle = True
 
     def update(self, led_buffer):
-        if math_util.float(self.timer.get() % (self.duration/2)) == 0.0:
+        if math_util.float(self.timer.get() % (self.duration / 2)) == 0.0:
             if self.toggle:
                 self.toggle = False
             else:

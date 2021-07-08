@@ -1,5 +1,6 @@
 from wpilib._wpilib import Timer
 
+
 class OneColorController:
     def __init__(self, wanted_color, duration):
         self.timer = Timer()
