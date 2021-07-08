@@ -61,7 +61,8 @@ def update_subsystems():
 
     def update_lighting():
         lighting_output = lighting.led_buffer
-        lighting_hardware.led_strip.setData(lighting_output)
+        if lighting_output is not None:
+            lighting_hardware.led_strip.setData(lighting_output)
 
     update_drive()
     update_lighting()

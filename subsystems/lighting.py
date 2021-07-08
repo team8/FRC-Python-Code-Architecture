@@ -1,6 +1,6 @@
 from enum import Enum
 from wpilib._wpilib import AddressableLED
-from constants import lighting_constants
+from hardware import lighting_constants
 from hardware import port_constants
 from subsystems.controllers.one_color_controller import OneColorController
 from utils import color
@@ -44,4 +44,4 @@ def update(commands, state):
     if controller.isFinished():
         controller = OneColorController(color.off)
 
-    led_buffer = controller.update()
+    led_buffer = controller.update(led_buffer)

@@ -4,7 +4,7 @@ import user_robot_code
 from robot import writer
 from robot import reader
 
-from subsystems import drive
+from subsystems import drive, lighting
 
 
 # The file is already written, nothing needs to be done here. Write your code in user_robot_code.py!
@@ -19,6 +19,7 @@ class Robot(wpilib.TimedRobot):
         writer.configure_subsystems()
 
         drive.start()
+        lighting.start()
 
     def autonomousPeriodic(self):
         reader.update_state()
@@ -34,6 +35,7 @@ class Robot(wpilib.TimedRobot):
         writer.configure_subsystems()
 
         drive.start()
+        lighting.start()
 
     def teleopPeriodic(self):
         reader.update_state()

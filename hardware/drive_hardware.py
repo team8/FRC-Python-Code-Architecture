@@ -2,7 +2,7 @@ from wpilib._wpilib import AddressableLED
 from wpilib._wpilib import Joystick
 
 import ctre
-from constants import port_constants
+from hardware import port_constants
 from ctre import PigeonIMU
 
 from utils.pid_controller import PIDController

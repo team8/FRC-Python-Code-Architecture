@@ -1,7 +1,5 @@
 from wpilib._wpilib import Timer
 
-from subsystems.lighting import led_buffer
-
 
 class OneColorController:
     def __init__(self, wanted_color, duration):
@@ -12,7 +10,7 @@ class OneColorController:
         self.v = wanted_color[2]
         self.timer.reset()
 
-    def update(self):
+    def update(self, led_buffer):
         for d in led_buffer:
             d.setHSV(self.h, self.s, self.v)
 
