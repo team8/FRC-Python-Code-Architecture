@@ -1,4 +1,6 @@
 from wpilib._wpilib import Timer
+
+from subsystems.lighting import led_buffer
 from utils import math_util
 
 
@@ -12,7 +14,7 @@ class FadeOutController:
         self.duration = duration
         self.timer.reset()
 
-    def update(self, led_buffer):
+    def update(self):
         n = (self.timer.get() % self.duration) / self.duration
 
         for d in led_buffer:

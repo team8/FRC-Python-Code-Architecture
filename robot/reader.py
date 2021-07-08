@@ -11,8 +11,4 @@ def update_state():
         robot_state.drive_joystick_x = -joysticks.drive_joystick.getX()
         robot_state.turn_joystick_x = joysticks.turnJoystick.getX()
 
-    def update_lighting():
-        return None
-
     update_drive()
-    update_lighting()

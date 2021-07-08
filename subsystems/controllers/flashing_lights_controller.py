@@ -1,5 +1,7 @@
 from wpilib._wpilib import Timer
 
+from subsystems.lighting import led_buffer
+
 
 class FlashingLightsController:
     def __init__(self, wanted_color, cycle_time, duration):
@@ -13,7 +15,7 @@ class FlashingLightsController:
         self.v = wanted_color[2]
         self.timer.reset()
 
-    def update(self, led_buffer):
+    def update(self):
         for d in led_buffer:
             if self.timer.get() % self.cycle_time == 0:
                 d.setHSV(self.h, self.s, self.v)

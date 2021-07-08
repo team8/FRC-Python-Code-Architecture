@@ -1,5 +1,6 @@
 from subsystems.controllers.fade_in_controller import FadeInController
 from subsystems.controllers.fade_out_controller import FadeOutController
+from subsystems.lighting import led_buffer
 from utils import math_util
 from wpilib._wpilib import Timer
 
@@ -18,7 +19,7 @@ class FadeInFadeOutController(FadeInController, FadeOutController):
 
         self.toggle = True
 
-    def update(self, led_buffer):
+    def update(self):
         if math_util.float(self.timer.get() % (self.duration / 2)) == 0.0:
             if self.toggle:
                 self.toggle = False
@@ -26,10 +27,10 @@ class FadeInFadeOutController(FadeInController, FadeOutController):
                 self.toggle = True
 
         if self.toggle:
-            led_buffer = FadeInController.update(led_buffer)
+            led_buffer2 = FadeInController.update(led_buffer)
         else:
-            led_buffer = FadeOutController.update(led_buffer)
-        return led_buffer
+            led_buffer2 = FadeOutController.update(led_buffer)
+        return led_buffer2
 
     def isFinished(self):
         if self.duration <= self.timer.get():

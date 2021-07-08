@@ -1,8 +1,8 @@
 from ctre import NeutralMode, InvertType, DemandType
 
-from constants import lighting_constants
-from hardware import drive_hardware
-from subsystems import drive
+from hardware import lighting_constants
+from hardware import drive_hardware, lighting_hardware
+from subsystems import drive, lighting
 
 
 def reset_devices():
@@ -60,7 +60,8 @@ def update_subsystems():
                                                    right_output.getGains().getFF())
 
     def update_lighting():
-        return None
+        lighting_output = lighting.led_buffer
+        lighting_hardware.led_strip.setData(lighting_output)
 
     update_drive()
     update_lighting()
