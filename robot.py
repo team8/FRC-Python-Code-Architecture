@@ -18,6 +18,7 @@ class Robot(wpilib.TimedRobot):
         writer.reset_devices()
         writer.configure_subsystems()
 
+        drive.start()
 
     def autonomousPeriodic(self):
         reader.update_state()
@@ -31,6 +32,8 @@ class Robot(wpilib.TimedRobot):
     def teleopInit(self):
         writer.reset_devices()
         writer.configure_subsystems()
+
+        drive.start()
 
     def teleopPeriodic(self):
         reader.update_state()

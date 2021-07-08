@@ -48,10 +48,11 @@ def update_subsystems():
 
     def update_drive():
         drive_output = drive.outputs
-        left_output = drive_output.leftOutput
-        right_output = drive_output.rightOutput
 
         if drive_output is not None:
+            left_output = drive_output.leftOutput
+            right_output = drive_output.rightOutput
+
             set_gains()
             drive_hardware.left_master_falcon.set(left_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                   left_output.getGains().getFF())

@@ -14,6 +14,12 @@ class State(Enum):
     JOYSTICK_DRIVE = 3
 
 
+global wanted_state
+global is_new_state
+global drive_state
+global is_controller_finished
+global controller
+global state
 global outputs
 global wanted_state
 global is_new_state
@@ -21,6 +27,24 @@ global drive_state
 global is_controller_finished
 global controller
 global state
+
+def start():
+    global wanted_state
+    global is_new_state
+    global drive_state
+    global is_controller_finished
+    global controller
+    global state
+    global outputs
+
+    wanted_state = None
+    is_new_state = False
+    drive_state = None
+    is_controller_finished = True
+    controller = None
+    state = State.IDLE
+    outputs = None
+
 
 def update():
     writer.reset_devices()
@@ -39,6 +63,8 @@ def update():
 
     if is_new_state and is_controller_finished:
         state = wanted_state
+        if state is None:
+            controller = None
         if state == State.IDLE:
             controller = None
         if state == State.MOVE_STRAIGHT:
