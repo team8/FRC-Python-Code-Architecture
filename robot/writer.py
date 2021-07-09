@@ -55,13 +55,12 @@ def update_subsystems():
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                    right_output.getGains().getFF())
 
-    #TODO: set intake outputs correctly
     def update_intake():
         intake_output = intake.outputs
         solenoid_output = intake.solenoid_output
 
         if intake_output is not None:
-            intake_hardware.talon.set()
-            intake_hardware.solenoid
+            intake_hardware.talon.set(ControlMode.PercentOutput, intake_output)
+            intake_hardware.solenoid.set(solenoid_output)
     update_drive()
     update_intake()

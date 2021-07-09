@@ -8,3 +8,5 @@ gyro_id = 0
 drive_joystick_id = 0
 turn_joystick_id = 1
 led_id = 5
+intake_id = 8
+intake_solenoid_id = 0
