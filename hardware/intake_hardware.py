@@ -1,0 +1,9 @@
+from wpilib._wpilib import Solenoid
+
+import ctre
+
+from constants import port_constants
+
+# TODO: add port constants
+talon = ctre.TalonFX(port_constants.intake_id)
+solenoid = Solenoid(port_constants.intake_solenoid_id)

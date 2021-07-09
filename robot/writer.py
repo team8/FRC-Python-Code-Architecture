@@ -1,7 +1,9 @@
 from ctre import NeutralMode, InvertType, DemandType
 
 from hardware import drive_hardware
+from hardware import intake_hardware
 from subsystems import drive
+from subsystems import intake
 
 
 def reset_devices():
@@ -53,4 +55,13 @@ def update_subsystems():
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                    right_output.getGains().getFF())
 
+    #TODO: set intake outputs correctly
+    def update_intake():
+        intake_output = intake.outputs
+        solenoid_output = intake.solenoid_output
+
+        if intake_output is not None:
+            intake_hardware.talon.set()
+            intake_hardware.solenoid
     update_drive()
+    update_intake()
