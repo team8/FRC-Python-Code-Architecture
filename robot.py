@@ -21,9 +21,8 @@ class Robot(wpilib.TimedRobot):
         self.routine = user_robot_code.auto_robot_code()
 
         drive.start()
-        # print("drive started")
         lighting.start()
-        # print("lighting started")
+
     def autonomousPeriodic(self):
         reader.update_state()
         self.update_user_input()
@@ -44,9 +43,7 @@ class Robot(wpilib.TimedRobot):
         writer.configure_subsystems()
 
         drive.start()
-        # print("drive started")
         lighting.start()
-        # print("lighting started")
 
     def teleopPeriodic(self):
         reader.update_state()
