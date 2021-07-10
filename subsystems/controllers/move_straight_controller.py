@@ -3,8 +3,6 @@ from utils.drive_outputs import DriveOutputs
 
 
 class MoveStraightController:
-    __targetDistance = 0
-
     def __init__(self, target_distance):
         self.output = DriveOutputs()
         self.__targetDistance = target_distance

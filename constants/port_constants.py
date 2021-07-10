@@ -1,0 +1,10 @@
+left_master_falcon_id = 12
+left_slave_falcon_id = 13
+right_master_falcon_id = 2
+right_slave_falcon_id = 3
+left_falcon_encoder_id = 12
+right_falcon_encoder_id = 2
+gyro_id = 9
+drive_joystick_id = 0
+turn_joystick_id = 1
+led_id = 9
