@@ -19,15 +19,16 @@ class Robot(wpilib.TimedRobot):
         writer.configure_subsystems()
 
         drive.start()
+        # print("drive started")
         lighting.start()
-
+        # print("lighting started")
     def autonomousPeriodic(self):
         reader.update_state()
 
         user_robot_code.auto_robot_code()
 
         drive.update()
-
+        lighting.update()
         writer.update_subsystems()
 
     def teleopInit(self):
@@ -35,7 +36,9 @@ class Robot(wpilib.TimedRobot):
         writer.configure_subsystems()
 
         drive.start()
+        # print("drive started")
         lighting.start()
+        # print("lighting started")
 
     def teleopPeriodic(self):
         reader.update_state()
@@ -43,7 +46,7 @@ class Robot(wpilib.TimedRobot):
         user_robot_code.teleop_robot_code()
 
         drive.update()
-
+        lighting.update()
         writer.update_subsystems()
 
 

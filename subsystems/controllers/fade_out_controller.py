@@ -1,25 +1,22 @@
 from wpilib._wpilib import Timer
-
-from subsystems.lighting import led_buffer
 from utils import math_util
 
 
 class FadeOutController:
     def __init__(self, wanted_color, duration):
-        self.timer = Timer()
         self.h = wanted_color[0]
         self.s = wanted_color[1]
         self.v = wanted_color[2]
 
         self.duration = duration
-        self.timer.reset()
 
-    def update(self):
-        n = (self.timer.get() % self.duration) / self.duration
+    def update(self, led_buffer, timer):
+        n = (timer % self.duration) / self.duration
 
         for d in led_buffer:
-            d.setHSV(self.h, self.s, math_util.int(self.v * n))
+            d.setHSV(self.h, self.s, int(self.v * n))
 
+        print(v * n)
         return led_buffer
 
     def isFinished(self):

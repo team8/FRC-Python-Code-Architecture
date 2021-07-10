@@ -7,7 +7,8 @@ from subsystems import drive, lighting
 
 def reset_devices():
     def reset_gyro():
-        drive_hardware.gyro.setCompassAngle(0)
+        #drive_hardware.gyro.setCompassAngle(0)
+        lol = 0
 
     reset_gyro()
 
@@ -17,10 +18,12 @@ def configure_subsystems():
         drive_hardware.left_slave_falcon.follow(drive_hardware.left_master_falcon)
         drive_hardware.right_slave_falcon.follow(drive_hardware.right_master_falcon)
         drive_hardware.right_master_falcon.setInverted(InvertType.InvertMotorOutput)
+        #print("configured drive")
 
     def configure_lighting():
         lighting_hardware.led_strip.setLength(lighting_constants.led_length)
         lighting_hardware.led_strip.start()
+        #print("configured lighting")
 
     configure_drive()
     configure_lighting()
@@ -45,11 +48,16 @@ def update_subsystems():
         drive_hardware.left_master_falcon.configMotionCruiseVelocity(right_output.getGains().getVelocity())
         drive_hardware.left_master_falcon.configClosedloopRamp(drive_hardware.closedLoopRampSec)
         drive_hardware.right_master_falcon.configClosedloopRamp(drive_hardware.closedLoopRampSec)
+        #print("set gains")
 
     def update_drive():
+        #print("start updating drive")
         drive_output = drive.outputs
+        #print(drive_output)
 
         if drive_output is not None:
+            #print("setting outputs")
+            #print(drive_output.leftOutput)
             left_output = drive_output.leftOutput
             right_output = drive_output.rightOutput
 
@@ -58,11 +66,14 @@ def update_subsystems():
                                                   left_output.getGains().getFF())
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                    right_output.getGains().getFF())
+        #print("updated drive")
 
     def update_lighting():
         lighting_output = lighting.led_buffer
+        print(lighting_output)
         if lighting_output is not None:
             lighting_hardware.led_strip.setData(lighting_output)
+        #print("updated lighting")
 
     update_drive()
     update_lighting()

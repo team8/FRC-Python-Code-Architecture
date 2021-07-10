@@ -42,7 +42,7 @@ def start():
     drive_state = None
     is_controller_finished = True
     controller = None
-    state = State.IDLE
+    state = State.MOVE_STRAIGHT
     outputs = None
 
 
