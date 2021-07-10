@@ -1,11 +1,11 @@
-class indexer_column_controller():
+class IndexerColumnController():
     #to implement: indexer config
     #implement controller output
 
-    def __init__(self, robot_state):
+    def __init__(self):
         pass
 
-    def update(self, robot_state):
+    def update(self):
         pass
 
     def is_finished(self):
