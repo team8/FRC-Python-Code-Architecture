@@ -18,13 +18,20 @@ class Robot(wpilib.TimedRobot):
         writer.reset_devices()
         writer.configure_subsystems()
 
+        self.routine = user_robot_code.auto_robot_code()
+
         drive.start()
 
     def autonomousPeriodic(self):
         reader.update_state()
         self.update_user_input()
 
-        user_robot_code.auto_robot_code()
+        if len(self.routine) == 0:
+            return
+
+        self.routine[0].update()
+        if self.routine[0].finished():
+            self.routine.pop(0)
 
         drive.update()
 
