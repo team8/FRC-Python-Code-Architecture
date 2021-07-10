@@ -1,8 +1,8 @@
 import wpilib
 
+import user_input
 import user_robot_code
-from robot import writer
-from robot import reader
+from robot import writer, reader, robot_state
 
 from subsystems import drive
 
@@ -22,6 +22,7 @@ class Robot(wpilib.TimedRobot):
 
     def autonomousPeriodic(self):
         reader.update_state()
+        self.update_user_input()
 
         user_robot_code.auto_robot_code()
 
@@ -37,12 +38,17 @@ class Robot(wpilib.TimedRobot):
 
     def teleopPeriodic(self):
         reader.update_state()
+        self.update_user_input()
 
         user_robot_code.teleop_robot_code()
 
         drive.update()
 
         writer.update_subsystems()
+
+    def update_user_input(self):
+        user_input.turn_joystick = robot_state.turn_joystick_x
+        user_input.drive_joystick = robot_state.drive_joystick_x
 
 
 if __name__ == "__main__":
