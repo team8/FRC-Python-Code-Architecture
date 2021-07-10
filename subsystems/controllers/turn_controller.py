@@ -1,4 +1,4 @@
-from hardware import drive_constants
+from constants import drive_constants
 from utils import math_util
 from utils.drive_outputs import DriveOutputs
 from robot import robot_state

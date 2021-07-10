@@ -1,7 +1,6 @@
 from enum import Enum
 from wpilib._wpilib import AddressableLED
-from hardware import lighting_constants
-from hardware import port_constants
+from constants import lighting_constants, port_constants
 from robot import commands, robot_state
 from subsystems.controllers.fade_in_fade_out_controller import FadeInFadeOutController
 from subsystems.controllers.flashing_lights_controller import FlashingLightsController

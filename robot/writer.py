@@ -1,6 +1,6 @@
 from ctre import NeutralMode, InvertType, DemandType
 
-from hardware import lighting_constants
+from constants import lighting_constants
 from hardware import drive_hardware, lighting_hardware
 from subsystems import drive, lighting
 

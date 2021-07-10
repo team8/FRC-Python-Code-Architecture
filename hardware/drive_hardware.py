@@ -1,5 +1,5 @@
 import ctre
-from hardware import port_constants
+from constants import port_constants
 from ctre import PigeonIMU
 
 from utils.pid_controller import PIDController
