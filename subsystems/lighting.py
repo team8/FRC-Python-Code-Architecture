@@ -42,7 +42,7 @@ def update():
             controller = OneColorController(color.off)
 
         elif state == State.SHOOTING:
-            controller = FadeInFadeOutController(color.green, 10)
+            controller = OneColorController(color.green,10)
 
     if controller.isFinished():
         controller = OneColorController(color.off)

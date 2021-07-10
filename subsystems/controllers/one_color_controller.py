@@ -17,6 +17,7 @@ class OneColorController:
         return led_buffer
 
     def isFinished(self):
+        print(self.timer.get())
         if self.duration <= self.timer.get():
             return True
         return False
