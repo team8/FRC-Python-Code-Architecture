@@ -1,4 +1,4 @@
-from ctre import NeutralMode, InvertType, DemandType
+from ctre import NeutralMode, InvertType, DemandType, ControlMode
 
 from hardware import drive_hardware
 from hardware import intake_hardware
@@ -60,7 +60,7 @@ def update_subsystems():
         solenoid_output = intake.solenoid_output
 
         if intake_output is not None:
-            intake_hardware.talon.set(ControlMode.PercentOutput, intake_output)
+            intake_hardware.talon.set(ControlMode.PercentOutput, 0.7)
             intake_hardware.solenoid.set(solenoid_output)
     update_drive()
     update_intake()

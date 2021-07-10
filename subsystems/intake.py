@@ -33,7 +33,7 @@ def start():
     is_new_state = False
     intake_state = None
     controller = None
-    state = State.IDLE
+    state = State.STOWED
     outputs = None
 
 
