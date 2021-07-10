@@ -1,1 +1,1 @@
-led_length = 20
+led_length = 28

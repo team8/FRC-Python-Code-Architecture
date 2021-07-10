@@ -3,12 +3,11 @@ from utils import math_util
 from utils.drive_outputs import DriveOutputs
 from robot import robot_state
 
-
 class TurnYawController:
     __targetAngle = 0
     __acceptableYawError = 5
 
-    def __init__(self, target_angle):  # TODO add some sort of python doc where it says - means left, + means right etc.
+    def __init__(self, target_angle):
         self.output = DriveOutputs()
         self.__targetAngle = target_angle
 
@@ -19,5 +18,5 @@ class TurnYawController:
         self.output.left_output.setPercentageOutput(-abs_angular_output)
         return self.output
 
-    def checkFinished(self) -> bool:
-        return abs(self.__targetAngle - robot_state.gyro_compass_heading_degrees) <= self.__acceptableYawError
+    def checkFinished(self):
+        return math_util.abs(self.__targetAngle - robot_state.gyro_compass_heading_degrees) <= self.__acceptableYawError

@@ -21,7 +21,12 @@ global is_controller_finished
 global controller
 global state
 global outputs
-
+global wanted_state
+global is_new_state
+global drive_state
+global is_controller_finished
+global controller
+global state
 
 def start():
     global wanted_state
@@ -37,7 +42,7 @@ def start():
     drive_state = None
     is_controller_finished = True
     controller = None
-    state = State.IDLE
+    state = State.MOVE_STRAIGHT
     outputs = None
 
 

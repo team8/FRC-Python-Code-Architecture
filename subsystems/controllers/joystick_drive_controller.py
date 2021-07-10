@@ -18,5 +18,5 @@ class JoystickDriveController:
                             robot_state.drive_joystick_y + robot_state.turn_joystick_x))
         return self.output
 
-    def checkFinished(self) -> bool:
+    def checkFinished(self):
         return True  # finished at all times so it can be overwritten by other drive controllers

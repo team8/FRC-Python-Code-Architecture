@@ -3,3 +3,4 @@ active_trajectory_position = 0
 drive_joystick_y = 0
 drive_joystick_x = 0
 turn_joystick_x = 0
+lighting_state = None

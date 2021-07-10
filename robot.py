@@ -4,7 +4,7 @@ import user_input
 import user_robot_code
 from robot import writer, reader, robot_state
 
-from subsystems import drive
+from subsystems import drive, lighting
 
 
 # The file is already written, nothing needs to be done here. Write your code in user_robot_code.py!
@@ -21,6 +21,7 @@ class Robot(wpilib.TimedRobot):
         self.routine = user_robot_code.auto_robot_code()
 
         drive.start()
+        lighting.start()
 
     def autonomousPeriodic(self):
         reader.update_state()
@@ -34,7 +35,7 @@ class Robot(wpilib.TimedRobot):
             self.routine.pop(0)
 
         drive.update()
-
+        lighting.update()
         writer.update_subsystems()
 
     def teleopInit(self):
@@ -42,6 +43,7 @@ class Robot(wpilib.TimedRobot):
         writer.configure_subsystems()
 
         drive.start()
+        lighting.start()
 
     def teleopPeriodic(self):
         reader.update_state()
@@ -50,7 +52,7 @@ class Robot(wpilib.TimedRobot):
         user_robot_code.teleop_robot_code()
 
         drive.update()
-
+        lighting.update()
         writer.update_subsystems()
 
     def update_user_input(self):
