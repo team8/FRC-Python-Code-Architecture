@@ -2,6 +2,9 @@ from ctre import NeutralMode, InvertType, DemandType
 
 from hardware import drive_hardware
 from subsystems import drive
+from subsystems import shooter
+from hardware import shooter_hardware
+from robot import robot_state
 
 
 def reset_devices():
@@ -17,7 +20,11 @@ def configure_subsystems():
         drive_hardware.right_slave_falcon.follow(drive_hardware.right_master_falcon)
         drive_hardware.right_master_falcon.setInverted(InvertType.InvertMotorOutput)
 
+    def configure_shooter():
+        shooter_hardware.shooter_master_neo.setInverted(True)
+
     configure_drive()
+    configure_shooter()
 
 
 def update_subsystems():
@@ -52,5 +59,11 @@ def update_subsystems():
                                                   left_output.getGains().getFF())
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                    right_output.getGains().getFF())
+    def update_shooter():
+        print("f")
+        #shooter_hardware.shooter_slave_neo.set(0.2)
+        #shooter_hardware.shooter_master_neo.set(0.2)
+        shooter_hardware.shooter_blocker_solenoid.set(robot_state.shooter_hood_extended)
 
     update_drive()
+    update_shooter()

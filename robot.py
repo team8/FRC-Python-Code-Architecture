@@ -5,6 +5,7 @@ from robot import writer
 from robot import reader
 
 from subsystems import drive
+from subsystems import shooter
 
 
 # The file is already written, nothing needs to be done here. Write your code in user_robot_code.py!
@@ -41,6 +42,7 @@ class Robot(wpilib.TimedRobot):
         user_robot_code.teleop_robot_code()
 
         drive.update()
+        shooter.update()
 
         writer.update_subsystems()
 
