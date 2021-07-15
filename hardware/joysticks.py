@@ -1,4 +1,4 @@
-from wpilib._wpilib import Joystick
+from wpilib import Joystick
 from hardware import port_constants
 
 drive_joystick = Joystick(port_constants.drive_joystick_id)

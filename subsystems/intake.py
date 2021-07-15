@@ -20,6 +20,7 @@ global outputs
 global solenoid_output
 falcon_output = ControllerOutputs()
 
+
 def start():
     global wanted_state
     global is_new_state
@@ -38,7 +39,6 @@ def start():
 
 
 def update():
-    writer.reset_devices()
 
     global wanted_state
     global is_new_state

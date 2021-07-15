@@ -1,8 +1,8 @@
 from wpilib._wpilib import Solenoid
 
-import ctre
+from ctre import TalonSRX
 
 from constants import port_constants
 
-talon = ctre.TalonSRX(port_constants.intake_id)
+talon = TalonSRX(port_constants.intake_id)
 solenoid = Solenoid(port_constants.intake_solenoid_id)
