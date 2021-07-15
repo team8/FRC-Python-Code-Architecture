@@ -5,7 +5,17 @@ from rev import CANSparkMax, MotorType
 from wpilib.controller import PIDController
 
 import internals.commands
+from internals.utils.controller_outputs import ControllerOutputs
+from internals.utils.gains import Gains
 from robot import RobotName
+
+
+maxWheelPercentOutput = 0.4
+closedLoopRampSec = 2
+positionConversionFactor = 1000
+velocityConversionFactor = 1000
+moveStraightGains = PIDController(0.0, 0.0, 0.0)
+turnGains = PIDController(0.0, 0.0, 0.0)
 
 
 class DriveState(Enum):
@@ -13,6 +23,12 @@ class DriveState(Enum):
     MOVE_STRAIGHT = 1
     TURN = 2
     JOYSTICK_DRIVE = 3
+
+
+class DriveOutputs:
+    def __init__(self, drive_gains):
+        self.left_output = ControllerOutputs(drive_gains)
+        self.right_output = ControllerOutputs(drive_gains)
 
 
 class Drive:
@@ -30,18 +46,24 @@ class Drive:
             right_spark_slave_1.follow(self.right_master)
             right_spark_slave_2.follow(self.right_master)
 
+            self.drive_gains = Gains(0.016, 0.0, 0.0, 0.0294, 0.0)
+
+            # self.gyro = PigeonIMU()
+
+        if robot_type == RobotName.NARI:
+            self.left_master = TalonFX(12)
+            left_slave = TalonFX(13)
+            self.right_master = TalonFX(2)
+            right_slave = TalonFX(3)
+
+            left_slave.follow(self.left_master)
+            right_slave.follow(self.right_master)
+
             # self.gyro = PigeonIMU()
 
         self.state = DriveState.IDLE
         self.wanted_state = None
         self.controller = None
-
-        self.maxWheelPercentOutput = 0.4
-        self.closedLoopRampSec = 2
-        self.positionConversionFactor = 1000
-        self.velocityConversionFactor = 1000
-        self.moveStraightGains = PIDController(0.0, 0.0, 0.0)
-        self.turnGains = PIDController(0.0, 0.0, 0.0)
 
     def update_state(self):
         pass
