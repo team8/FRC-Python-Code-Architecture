@@ -1,19 +1,14 @@
-from enum import Enum
-
 import wpilib
 
-
-class RobotName(Enum):
-    NARI = 0
-    OSR = 1
-
+from hardware import *
 
 # The file is already written, nothing needs to be done here. Write your code in user_robot_code.py!
 # noinspection PyPep8Naming
 class Robot(wpilib.TimedRobot):
 
     def robotInit(self):
-        """Happens on code deployment"""
+        left_slave.follow(left_master)
+        right_slave.follow(right_master)
 
     def autonomousInit(self):
         pass
@@ -26,7 +21,6 @@ class Robot(wpilib.TimedRobot):
 
     def teleopPeriodic(self):
         pass
-
 
 if __name__ == "__main__":
     wpilib.run(Robot)

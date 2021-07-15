@@ -1,3 +1,10 @@
-from internals.subsystems.drive import DriveState
+from enum import Enum
 
-wanted_drive_state = DriveState.IDLE
+
+class RobotName(Enum):
+    NARI = 0
+    OSR = 1
+
+
+wanted_drive_state = None
+wanted_drive_target_distance = 0

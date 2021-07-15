@@ -4,6 +4,12 @@ from internals.utils.gains import Gains
 from ctre import TalonFXControlMode
 
 
+maxWheelPercentOutput = 0.4
+closedLoopRampSec = 2
+positionConversionFactor = 1000
+velocityConversionFactor = 1000
+
+
 # noinspection PyPep8Naming
 class ControllerOutputs:
     __controlMode = TalonFXControlMode.Disabled
