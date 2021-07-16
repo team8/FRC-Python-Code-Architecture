@@ -18,35 +18,35 @@ class Robot(wpilib.TimedRobot):
         """Happens on code deployment"""
 
     def autonomousInit(self):
-        # writer.reset_devices()
-        # writer.configure_subsystems()
+        writer.reset_devices()
+        writer.configure_subsystems()
 
-        # drive.start()
+        drive.start()
         intake.start()
 
     def autonomousPeriodic(self):
-        # reader.update_state()
+        reader.update_state()
 
         user_robot_code.auto_robot_code()
 
-        # drive.update()
+        drive.update()
         intake.update()
 
         writer.update_subsystems()
 
     def teleopInit(self):
-        # writer.reset_devices()
-        # writer.configure_subsystems()
+        writer.reset_devices()
+        writer.configure_subsystems()
 
-        # drive.start()
+        drive.start()
         intake.start()
 
     def teleopPeriodic(self):
-        # reader.update_state()
+        reader.update_state()
 
         user_robot_code.teleop_robot_code()
 
-        # drive.update()
+        drive.update()
         intake.update()
 
         writer.update_subsystems()
