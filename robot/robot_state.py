@@ -3,6 +3,3 @@ active_trajectory_position = 0
 drive_joystick_y = 0
 drive_joystick_x = 0
 turn_joystick_x = 0
-intake_extended = bool
-intake_transitioning = bool
-intake_stalled = bool

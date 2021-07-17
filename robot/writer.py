@@ -5,6 +5,7 @@ from hardware import intake_hardware
 from subsystems import drive
 from subsystems import intake
 from constants import intake_constants
+from hardware import joysticks
 
 
 def reset_devices():
@@ -56,11 +57,4 @@ def update_subsystems():
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                    right_output.getGains().getFF())
 
-    def update_intake():
-        intake_output = intake.outputs
-
-        if intake_output is not None:
-            intake_hardware.talon.set(ControlMode.PercentOutput, intake_constants.rollerPo)
-            intake_hardware.solenoid.set(True)
     update_drive()
-    update_intake()
