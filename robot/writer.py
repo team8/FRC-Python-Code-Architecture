@@ -22,6 +22,7 @@ def configure_subsystems():
 
     def configure_shooter():
         shooter_hardware.shooter_master_neo.setInverted(True)
+        #shooter_hardware.shooter_slave_neo.follow(shooter_hardware.shooter_master_neo, False)
 
     configure_drive()
     configure_shooter()
@@ -59,11 +60,19 @@ def update_subsystems():
                                                   left_output.getGains().getFF())
             drive_hardware.right_master_falcon.set(right_output.getControlMode(), DemandType.ArbitraryFeedForward,
                                                    right_output.getGains().getFF())
+
     def update_shooter():
-        print("f")
-        #shooter_hardware.shooter_slave_neo.set(0.2)
-        #shooter_hardware.shooter_master_neo.set(0.2)
-        shooter_hardware.shooter_blocker_solenoid.set(robot_state.shooter_hood_extended)
+        #print("f")
+        shooter_hardware.shooter_blocker_solenoid.set(robot_state.shooter_blocker_extended)
+        shooter_hardware.shooter_hood_solenoid.set(robot_state.shooter_hood_extended)
+        #shooter_hardware.shooter_master_neo.set(0.1)
+        #shooter_hardware.shooter_slave_neo.set(0.1)
+        if robot_state.shooter_flywheel_running:
+            shooter_hardware.shooter_master_neo.set(0.1)
+            shooter_hardware.shooter_slave_neo.set(0.1)
+        else:
+            shooter_hardware.shooter_master_neo.set(0.0)
+            shooter_hardware.shooter_slave_neo.set(0.0)
 
     update_drive()
     update_shooter()

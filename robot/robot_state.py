@@ -5,3 +5,4 @@ drive_joystick_x = 0
 turn_joystick_x = 0
 shooter_blocker_extended = False
 shooter_hood_extended = False
+shooter_flywheel_running = False
