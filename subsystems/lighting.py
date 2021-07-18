@@ -22,7 +22,7 @@ global is_controller_finished
 def start():
     global led_buffer
     global controller
-    controller = None
+    controller = OneColorController(color.off,3)
     led_buffer = [AddressableLED.LEDData(0, 0, 0)] * lighting_constants.led_length
 
 
@@ -36,14 +36,15 @@ def update():
     is_new_state = robot_state.lighting_state != __wanted_state
     state = __wanted_state
     is_controller_finished = True if controller is None else controller.isFinished()
+    print(controller.isFinished())
     if is_new_state and is_controller_finished:
         if state == State.IDLE:
-            controller = OneColorController(color.off)
+            controller = OneColorController(color.off, 1)
 
         elif state == State.SHOOTING:
-            controller = OneColorController(color.green,10)
+            controller = OneColorController(color.red,10)
 
     if controller.isFinished():
-        controller = OneColorController(color.off)
+        controller = OneColorController(color.off,1)
 
     led_buffer = controller.update(led_buffer)

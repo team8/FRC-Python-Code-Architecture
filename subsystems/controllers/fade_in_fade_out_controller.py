@@ -11,6 +11,7 @@ class FadeInFadeOutController:
         self.fade_in = FadeInController(wanted_color, duration)
         self.duration = duration
         self.timer.reset()
+        self.timer.start()
 
         self.h = wanted_color[0]
         self.s = wanted_color[1]
