@@ -17,3 +17,5 @@ indexer_blocking_solenoid_id = 3
 indexer_back_infrared_dio = 1
 indexer_front_infrared_dio = 8
 indexer_top_infrared_dio = 0
+shooter_master = 16,
+shooter_slave = 1,

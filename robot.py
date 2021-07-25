@@ -13,6 +13,7 @@ class Robot(wpilib.TimedRobot):
 
     def robotInit(self):
         """Happens on code deployment"""
+        indexer.init()
 
     def autonomousInit(self):
         writer.reset_devices()
@@ -21,9 +22,8 @@ class Robot(wpilib.TimedRobot):
         self.routine = user_robot_code.auto_robot_code()
 
         drive.start()
-        # print("drive started")
         lighting.start()
-        # print("lighting started")
+        indexer.start()
     def autonomousPeriodic(self):
         reader.update_state()
         self.update_user_input()
@@ -37,6 +37,8 @@ class Robot(wpilib.TimedRobot):
 
         drive.update()
         lighting.update()
+        indexer.update()
+
         writer.update_subsystems()
 
     def teleopInit(self):
@@ -44,9 +46,7 @@ class Robot(wpilib.TimedRobot):
         writer.configure_subsystems()
 
         drive.start()
-        #print("drive started")
         lighting.start()
-        #print("lighting started")
         indexer.start()
 
     def teleopPeriodic(self):
@@ -57,8 +57,9 @@ class Robot(wpilib.TimedRobot):
 
         drive.update()
         lighting.update()
-        writer.update_subsystems()
         indexer.update()
+
+        writer.update_subsystems()
     def update_user_input(self):
         user_input.turn_joystick = robot_state.turn_joystick_x
         user_input.drive_joystick = robot_state.drive_joystick_x

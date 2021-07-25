@@ -36,7 +36,6 @@ def update():
     is_new_state = robot_state.lighting_state != __wanted_state
     state = __wanted_state
     is_controller_finished = True if controller is None else controller.isFinished()
-    print(controller.isFinished())
     if is_new_state and is_controller_finished:
         if state == State.IDLE:
             controller = OneColorController(color.off, 1)

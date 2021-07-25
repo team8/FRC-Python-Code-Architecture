@@ -11,6 +11,5 @@ def update_state():
         robot_state.drive_joystick_y = -joysticks.drive_joystick.getY()
         robot_state.drive_joystick_x = -joysticks.drive_joystick.getX()
         robot_state.turn_joystick_x = joysticks.turnJoystick.getX()
-        print("updated red drive")
 
     update_drive()
