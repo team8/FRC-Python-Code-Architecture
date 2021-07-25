@@ -16,7 +16,7 @@ class Robot(wpilib.TimedRobot):
         gyro.calibrate()
 
     def autonomousInit(self):
-        self.routines = {BangBangTurn(90)}
+        self.routines = {DriveForward(3)}
         self.current_routine = None
 
     def autonomousPeriodic(self):
