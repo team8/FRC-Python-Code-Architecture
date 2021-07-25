@@ -1,4 +1,3 @@
-from ctre import TalonFX, PigeonIMU
 from wpilib._wpilib import Joystick
 import rev
 
@@ -7,5 +6,3 @@ import rev
 #CANSparkMax
 
 #Joystick
-
-gyro = PigeonIMU(9)

@@ -1,8 +1,5 @@
 import wpilib
-
 from hardware import *
-from drive_time import *
-from bang_bang_turn import *
 
 # The file is already written, nothing needs to be done here. Write your code in user_robot_code.py!
 # noinspection PyPep8Naming
